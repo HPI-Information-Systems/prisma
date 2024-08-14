@@ -111,6 +111,9 @@ public class KangEtNaughton extends TablePairMatcher {
                 }
                 double a_ij = sourceEntropyMatrix[i][j];
                 double b_ij = targetEntropyMatrix[alignments.get(i)][alignments.get(j)];
+                if((a_ij + b_ij) == 0.0){
+                    continue;
+                }
                 normalDistance += 1 - (normalizedDistanceAlpha * Math.abs(a_ij - b_ij) / (a_ij + b_ij));
             }
         }
