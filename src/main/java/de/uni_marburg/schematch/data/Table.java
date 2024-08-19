@@ -32,7 +32,7 @@ public class Table {
     }
 
     public String pathRelativeToDataDirectory() {
-        String[] splitPath = path.split("/data");
+        String[] splitPath = path.split("/prisma_data");
         return splitPath[splitPath.length-1];
     }
 

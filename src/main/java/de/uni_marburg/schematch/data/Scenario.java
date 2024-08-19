@@ -28,6 +28,13 @@ public class Scenario {
         this.name = StringUtils.getFolderName(path);
         this.sourceDatabase = new Database(this, this.path + File.separator + Configuration.getInstance().getDefaultSourceDatabaseDir());
         this.targetDatabase = new Database(this, this.path + File.separator + Configuration.getInstance().getDefaultTargetDatabaseDir());
+        this.sourceDatabase.setGraph(new MetaNodesDatabaseGraph(this.sourceDatabase));
+        this.targetDatabase.setGraph(new MetaNodesDatabaseGraph(this.targetDatabase));
+        this.sourceDatabase.setDatabaseFeatures(new DatabaseFeatures(this.sourceDatabase));
+        this.sourceDatabase.getDatabaseFeatures().exportFeatures("target/features/" + this.dataset.getName() +  "/" + this.name);
+        this.targetDatabase.setDatabaseFeatures(new DatabaseFeatures(this.targetDatabase));
+        this.targetDatabase.getDatabaseFeatures().exportFeatures("target/features/" + this.dataset.getName() +  "/" + this.name);
+
 
         String actual_ground_truth_path = this.path + File.separator + Configuration.getInstance().getDefaultGroundTruthDir() + File.separator + "actual_ground_truth.txt";
         this.isDenormalized = new File(actual_ground_truth_path).exists();

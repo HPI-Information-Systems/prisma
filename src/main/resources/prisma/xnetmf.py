@@ -3,6 +3,7 @@
 import numpy as np, scipy as sp, networkx as nx
 import math, time, os, sys
 from config import *
+from prisma_graph import extract_node_type
 
 #Input: graph, RepMethod
 #Output: dictionary of dictionaries: for each node, dictionary containing {node : {layer_num : [list of neighbors]}}
@@ -136,13 +137,15 @@ def get_features(graph, rep_method, verbose = True):
 #Input: two vectors of the same length
 #Optional: tuple of (same length) vectors of node attributes for corresponding nodes
 #Output: number between 0 and 1 representing their similarity
-def compute_similarity(graph, rep_method, vec1, vec2, node_attributes = None, node_indices = None):
+def compute_similarity(graph, rep_method, vec1, vec2, node_attributes = None, node_indices = None, column_id={}):
     dist = rep_method.gammastruc * np.linalg.norm(vec1 - vec2) #compare distances between structural identities
     if graph.node_attributes is not None:
         # previousle (in REGAL), distance is number of disagreeing attributes
         # as we use real world values, we instead use the euclidean distance, as also proposed in the REGAL paper
         # prev: attr_dist = np.sum(graph.node_attributes[node_indices[0]] != graph.node_attributes[node_indices[1]])
-        attr_dist = np.sqrt(np.sum((graph.node_attributes[node_indices[0]] - graph.node_attributes[node_indices[1]])**2))
+        attr_dist = 0
+        if node_indices[1] in column_id:
+            attr_dist += graph.node_attributes[node_indices[0]][column_id[node_indices[1]]]
         dist += rep_method.gammaattr * attr_dist
     return np.exp(-dist) #convert distances (weighted by coefficients on structure and attributes) to similarities
 
@@ -167,6 +170,14 @@ def get_feature_dimensionality(graph, rep_method, verbose = True):
 
 #xNetMF pipeline
 def get_representations(graph, rep_method, verbose = True):
+    # give column nodes its ids starting with source_col1 = 0 .. source_coln = n - 1, target_col1 = n ... target_coln = n + m - 1
+    column_id = {}
+    counter = 0
+    for i, node in enumerate(graph.node_labels):
+        if extract_node_type(node) == "COLUMN":
+            column_id[i] = counter
+            counter += 1
+
     #Node identity extraction
     feature_matrix = get_features(graph, rep_method, verbose)
 
@@ -190,7 +201,8 @@ def get_representations(graph, rep_method, verbose = True):
                                                               feature_matrix[node_index],
                                                               feature_matrix[landmarks[landmark_index]],
                                                               graph.node_attributes,
-                                                              (node_index, landmarks[landmark_index]))
+                                                              (node_index, landmarks[landmark_index]),
+                                                              column_id)
 
     before_computerep = time.time()
 

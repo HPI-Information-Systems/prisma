@@ -3,6 +3,8 @@ package de.uni_marburg.schematch.data;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.uni_marburg.schematch.data.metadata.Datatype;
+import de.uni_marburg.schematch.similarity.list.EuclideanDistance;
+import de.uni_marburg.schematch.similarity.list.ProbabilityMassFunction;
 import lombok.Data;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -65,14 +67,22 @@ public class DatabaseFeatures {
 
     public DatabaseFeatures(final Database database){
         this.database = database;
+        List<Table> sourceTables = database.getScenario().getSourceDatabase().getTables();
+        List<Table> targetTables = database.getScenario().getTargetDatabase().getTables();
+
         for (Table table : database.getTables()){
             for(Column column: table.getColumns()){
-                double avgLength = getAverageLength(column.getValues());
-                double entropy = getEntropy(column.getValues());
                 List<Double> featureVector = new ArrayList<>();
-                featureVector.add(avgLength);
-                featureVector.add(entropy);
-                featureVector.addAll(getDatatypeEncoded(column));
+
+                ProbabilityMassFunction<String> similarityMeasure = new EuclideanDistance<>();
+                List<Table>[] tablesArray = new List[]{sourceTables, targetTables};
+                for(List<Table> tables: tablesArray){
+                    for(Table t : tables){
+                        for(Column c : t.getColumns()){
+                            featureVector.add((double) similarityMeasure.compare(column.getValues(), c.getValues()));
+                        }
+                    }
+                }
                 if(features.containsKey(table.getName())){
                     Map<String, List<Double>> column_map = features.get(table.getName());
                     column_map.put(column.getLabel(), featureVector);

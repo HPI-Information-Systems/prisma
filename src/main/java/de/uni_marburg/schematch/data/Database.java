@@ -17,7 +17,9 @@ public class Database {
     private List<Table> tables;
     private DatabaseMetadata metadata;
     private int numColumns;
+    @Setter
     private DatabaseGraph graph;
+    @Setter
     private DatabaseFeatures databaseFeatures;
     @Setter
     private float profilingTime = 0;
@@ -40,10 +42,6 @@ public class Database {
         }
         // set numColumns
         numColumns = currentOffset;
-
-        this.graph = new MetaNodesDatabaseGraph(this);
-        this.databaseFeatures = new DatabaseFeatures(this);
-        this.databaseFeatures.exportFeatures("target/features/" + scenario.getDataset().getName() +  "/" + scenario.getName());
     }
 
     public String getFullColumnNameByIndex(int idx) {

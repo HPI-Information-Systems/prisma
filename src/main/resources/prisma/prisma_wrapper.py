@@ -17,8 +17,8 @@ EMBEDDING_GENERATION = "XNET"  # "N2V" "XNET"
 
 
 def embed_xnetmf(graph, features, xNetMFGammaAttrStruc):
-    repmethod = REGAL_config.RepMethod(gammastruc=xNetMFGammaAttrStruc, gammaattr=1-xNetMFGammaAttrStruc)
-    graph = REGAL_config.Graph(adj=nx.adjacency_matrix(graph), node_attributes=features)
+    repmethod = REGAL_config.RepMethod(gammastruc=xNetMFGammaAttrStruc, gammaattr=1-xNetMFGammaAttrStruc, k=1000000)
+    graph = REGAL_config.Graph(adj=nx.adjacency_matrix(graph), node_attributes=features, node_labels=list(graph.nodes))
     return REGAL_xnetmf.get_representations(graph, repmethod)
 
 
