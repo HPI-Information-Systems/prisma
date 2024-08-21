@@ -1,2 +1,0 @@
-[categoria.csv.categoria_id] --> categoria.csv.nome
-[categoria.csv.nome] --> categoria.csv.categoria_id

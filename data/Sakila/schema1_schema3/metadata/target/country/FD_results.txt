@@ -1,2 +1,0 @@
-[country.csv.country_id] --> country.csv.country
-[country.csv.country] --> country.csv.country_id
