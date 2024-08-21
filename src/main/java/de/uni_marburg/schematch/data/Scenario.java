@@ -10,6 +10,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.List;
 
 @Data
 public class Scenario {
@@ -28,8 +30,11 @@ public class Scenario {
         this.name = StringUtils.getFolderName(path);
         this.sourceDatabase = new Database(this, this.path + File.separator + Configuration.getInstance().getDefaultSourceDatabaseDir());
         this.targetDatabase = new Database(this, this.path + File.separator + Configuration.getInstance().getDefaultTargetDatabaseDir());
-        this.sourceDatabase.setGraph(new MetaNodesDatabaseGraph(this.sourceDatabase));
-        this.targetDatabase.setGraph(new MetaNodesDatabaseGraph(this.targetDatabase));
+        List<String> gdepTresholds = Arrays.asList("0.00", "0.01", "0.02", "0.04", "0.06", "0.08", "0.10", "0.15", "0.20", "0.30", "0.40", "0.50", "1.00");
+        for(String gdepTreshold : gdepTresholds){
+            this.sourceDatabase.getGraphs().add(new MetaNodesDatabaseGraph(this.sourceDatabase, gdepTreshold));
+            this.targetDatabase.getGraphs().add(new MetaNodesDatabaseGraph(this.targetDatabase, gdepTreshold));
+        }
         this.sourceDatabase.setDatabaseFeatures(new DatabaseFeatures(this.sourceDatabase));
         this.sourceDatabase.getDatabaseFeatures().exportFeatures("target/features/" + this.dataset.getName() +  "/" + this.name);
         this.targetDatabase.setDatabaseFeatures(new DatabaseFeatures(this.targetDatabase));
