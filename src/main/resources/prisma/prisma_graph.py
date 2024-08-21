@@ -20,20 +20,22 @@ def extract_table(node_label):
     return node_label.split("|")[3]
 
 
-def load_feature_dict(path):
+def load_feature_dict(path, kind_of_feature):
     with open(path, "r") as fp:
         dict = json.loads(json.load(fp))
+    dict = dict[kind_of_feature]
     dict = {table: {column: np.asarray(features) for column, features in columns.items()} for table, columns in dict.items()}
     return dict
 
 
 class EmbedGraph:
-    def __init__(self, graph: nx.Graph, feature_json_path: str):
+    def __init__(self, graph: nx.Graph, feature_json_path: str, kind_of_feature : str):
         self.graph = graph
         self.original_mappings = self.get_mappings()
         self.mappings = self.get_mappings()
         self.feature_json_path = feature_json_path
-        self.feature_dict = load_feature_dict(feature_json_path)
+        self.feature_dict = load_feature_dict(feature_json_path, kind_of_feature)
+        self.kind_of_feature = kind_of_feature
         self.default_feature_vector_length_dict = (
             self.get_default_feature_vector_length_dict()
         )

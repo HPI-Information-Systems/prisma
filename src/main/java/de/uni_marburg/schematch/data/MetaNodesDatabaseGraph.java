@@ -30,6 +30,8 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
     private final SimpleDirectedGraph<String, DefaultEdge> graph = new SimpleDirectedGraph<>(DefaultEdge.class);
     @Getter
     private final Integer graphId; // in order to ensure that two graphs won't have identically named nodes
+    @Getter
+    private final String gDepThreshold;
     private Integer uccCounter = 1;
     private Integer fdCounter = 1;
 
@@ -38,9 +40,9 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
 //          "ptmxztdd" // author_fname
     );
 
-    public MetaNodesDatabaseGraph(final Database database) {
-        logger.info("Building graph");
+    public MetaNodesDatabaseGraph(final Database database, String gDepThreshold) {
         this.database = database;
+        this.gDepThreshold = gDepThreshold;
         this.graphId = globalGraphCounter;
         globalGraphCounter++;
 
@@ -70,9 +72,11 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
         }
 
 
-        int maxFdSize = countMaxAFDsSourceTargetAboveThreshold(database.getScenario(), 0.9);
+        int maxFdSize = countMaxAFDsSourceTargetAboveThreshold(database.getScenario(), Double.parseDouble(this.gDepThreshold));
+        logger.info("Building graph for " + database.getName() + "using "  + maxFdSize + " FDs @ gDepThreshold " + this.gDepThreshold);
+
         List<FunctionalDependency> fds = database.getMetadata().getFds().stream()
-                .sorted((FunctionalDependency l, FunctionalDependency r) -> Double.compare(r.getPdepTuple().pdep, l.getPdepTuple().pdep))
+                .sorted((FunctionalDependency l, FunctionalDependency r) -> Double.compare(r.getPdepTuple().gpdep, l.getPdepTuple().gpdep))
                 .toList();
 
         Iterator<FunctionalDependency> iterator = fds.iterator();
@@ -95,7 +99,7 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
         return Path.of("target/graphs")
                 .resolve(database.getScenario().getDataset().getName())
                 .resolve(database.getScenario().getName())
-                .resolve(database.getName() + ".gml");
+                .resolve(this.gDepThreshold + "_" + database.getName() + ".gml");
     }
 
     private void exportGraph() {
@@ -130,12 +134,12 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
         Integer sourceFDs = 0;
         Integer targetFDs = 0;
         for(FunctionalDependency fd : scenario.getSourceDatabase().getMetadata().getFds()){
-            if(fd.getPdepTuple().pdep >= threshold){
+            if(fd.getPdepTuple().gpdep >= threshold){
                 sourceFDs++;
             }
         }
         for(FunctionalDependency fd : scenario.getTargetDatabase().getMetadata().getFds()){
-            if(fd.getPdepTuple().pdep >= threshold){
+            if(fd.getPdepTuple().gpdep >= threshold){
                 targetFDs++;
             }
         }

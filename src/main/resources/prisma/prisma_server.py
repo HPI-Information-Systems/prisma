@@ -23,12 +23,10 @@ if __name__ == "__main__":
         ]
 
         CONFIG_KEYS = [
-            "dropColumns",
-            "dropConstraints",
             "xNetMFGammaStrucAttr",
-            "top_k_row",
-            "top_k_col",
-            "top_k_by_union"
+            "postprocessing",
+            "kind_of_feature",
+            "thresholdMatches"
         ]
         for arg in ARGS + CONFIG_KEYS:
             if arg not in request.args:
@@ -42,6 +40,6 @@ if __name__ == "__main__":
             request.args.get("target_table"),
             request.args.get("features_dir"),
             config,
-        )
+            )
 
     app.run(host=args.embedAlign_host, port=args.embedAlign_port)
