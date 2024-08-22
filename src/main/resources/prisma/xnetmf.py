@@ -152,9 +152,11 @@ def compute_similarity(graph, rep_method, vec1, vec2, node_attributes = None, no
 #Sample landmark nodes (to compute all pairwise similarities to in Nystrom approx)
 #Input: graph (just need graph size here), RepMethod (just need dimensionality here)
 #Output: np array of node IDs
-def get_sample_nodes(graph, rep_method, verbose = True):
-    #Sample uniformly at random
-    sample = np.random.RandomState(seed=42).permutation((np.arange(graph.N)))[:rep_method.p]
+def get_sample_nodes(graph, rep_method, verbose = True, already_sampled_nodes=[]):
+    all_nodes = np.arange(graph.N)
+    available_nodes = np.setdiff1d(all_nodes, already_sampled_nodes)
+    # Sample uniformly at random from available nodes
+    sample = np.random.RandomState(seed=42).permutation(available_nodes)[:rep_method.p]
     return sample
 
 #Get dimensionality of learned representations
@@ -182,13 +184,18 @@ def get_representations(graph, rep_method, verbose = True):
     feature_matrix = get_features(graph, rep_method, verbose)
 
     #Efficient similarity-based representation
+
+    # Add all Column nodes to landmarks for higher precision and more stable results
+    landmarks = [i for i, node in enumerate(graph.node_labels) if extract_node_type(node) == "COLUMN"]
     #Get landmark nodes
     if rep_method.p is None:
-        rep_method.p = get_feature_dimensionality(graph, rep_method, verbose = verbose) #k*log(n), where k = 10
-    elif rep_method.p > graph.N:
+        rep_method.p = len(landmarks) + get_feature_dimensionality(graph, rep_method, verbose = verbose) #k*log(n), where k = 10
+    if rep_method.p > graph.N:
         print("Warning: dimensionality greater than number of nodes. Reducing to n")
         rep_method.p = graph.N
-    landmarks = get_sample_nodes(graph, rep_method, verbose = verbose)
+
+    landmarks = np.concatenate((np.array(landmarks), get_sample_nodes(graph, rep_method, verbose = verbose, already_sampled_nodes=landmarks)))
+
 
     #Explicitly compute similarities of all nodes to these landmarks
     before_computesim = time.time()
