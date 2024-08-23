@@ -1,4 +1,4 @@
-[amazon.csv.manufacturer] --> amazon.csv.title
-[amazon.csv.title] --> amazon.csv.manufacturer
-[amazon.csv.title] --> amazon.csv.price
-[amazon.csv.manufacturer] --> amazon.csv.price
+[amazon.csv.manufacturer] --> amazon.csv.price (pdep 0.4076994061470032, 0.09639180451631546)
+[amazon.csv.title] --> amazon.csv.price (pdep 0.9933969378471375, 0.007102240342646837)
+[amazon.csv.manufacturer] --> amazon.csv.title (pdep 0.26330626010894775, 6.344736320897937E-4)
+[amazon.csv.title] --> amazon.csv.manufacturer (pdep 0.994864284992218, 0.009287013672292233)

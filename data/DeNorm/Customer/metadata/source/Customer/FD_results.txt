@@ -1,33 +1,33 @@
-[Customer.csv.Price] --> Customer.csv.CustomerID
-[Customer.csv.Price] --> Customer.csv.CustomerName
-[Customer.csv.Price] --> Customer.csv.Age
-[Customer.csv.Price] --> Customer.csv.ProductID
-[Customer.csv.Price] --> Customer.csv.ProductName
-[Customer.csv.Price] --> Customer.csv.Manufacturer
-[Customer.csv.Price] --> Customer.csv.Category
-[Customer.csv.CustomerID] --> Customer.csv.CustomerName
-[Customer.csv.CustomerID] --> Customer.csv.Age
-[Customer.csv.CustomerID, Customer.csv.ProductID] --> Customer.csv.Price
-[Customer.csv.CustomerID, Customer.csv.ProductID] --> Customer.csv.Manufacturer
-[Customer.csv.CustomerID, Customer.csv.ProductName] --> Customer.csv.Price
-[Customer.csv.CustomerID, Customer.csv.ProductName] --> Customer.csv.Manufacturer
-[Customer.csv.Category, Customer.csv.CustomerID] --> Customer.csv.Manufacturer
-[Customer.csv.CustomerName] --> Customer.csv.CustomerID
-[Customer.csv.CustomerName] --> Customer.csv.Age
-[Customer.csv.CustomerName, Customer.csv.ProductID] --> Customer.csv.Price
-[Customer.csv.CustomerName, Customer.csv.ProductID] --> Customer.csv.Manufacturer
-[Customer.csv.CustomerName, Customer.csv.ProductName] --> Customer.csv.Price
-[Customer.csv.CustomerName, Customer.csv.ProductName] --> Customer.csv.Manufacturer
-[Customer.csv.Category, Customer.csv.CustomerName] --> Customer.csv.Manufacturer
-[Customer.csv.Age] --> Customer.csv.CustomerID
-[Customer.csv.Age] --> Customer.csv.CustomerName
-[Customer.csv.Age, Customer.csv.ProductID] --> Customer.csv.Price
-[Customer.csv.Age, Customer.csv.ProductID] --> Customer.csv.Manufacturer
-[Customer.csv.Age, Customer.csv.ProductName] --> Customer.csv.Price
-[Customer.csv.Age, Customer.csv.ProductName] --> Customer.csv.Manufacturer
-[Customer.csv.Age, Customer.csv.Category] --> Customer.csv.Manufacturer
-[Customer.csv.ProductID] --> Customer.csv.ProductName
-[Customer.csv.ProductID] --> Customer.csv.Category
-[Customer.csv.ProductName] --> Customer.csv.ProductID
-[Customer.csv.ProductName] --> Customer.csv.Category
-[Customer.csv.Manufacturer] --> Customer.csv.Category
+[Customer.csv.ProductID] --> Customer.csv.Category (pdep 1.0, 0.190476194024086)
+[Customer.csv.CustomerName, Customer.csv.ProductID] --> Customer.csv.Price (pdep 1.0, 0.0)
+[Customer.csv.ProductName] --> Customer.csv.ProductID (pdep 1.0, 0.25850340723991394)
+[Customer.csv.CustomerID] --> Customer.csv.CustomerName (pdep 1.0, 0.25850340723991394)
+[Customer.csv.Age, Customer.csv.ProductID] --> Customer.csv.Manufacturer (pdep 1.0, 0.0)
+[Customer.csv.Age, Customer.csv.ProductName] --> Customer.csv.Price (pdep 1.0, 0.0)
+[Customer.csv.CustomerName] --> Customer.csv.CustomerID (pdep 1.0, 0.25850340723991394)
+[Customer.csv.Price] --> Customer.csv.ProductName (pdep 1.0, 0.0)
+[Customer.csv.CustomerName, Customer.csv.ProductName] --> Customer.csv.Price (pdep 1.0, 0.0)
+[Customer.csv.Price] --> Customer.csv.Manufacturer (pdep 1.0, 0.0)
+[Customer.csv.CustomerID, Customer.csv.ProductName] --> Customer.csv.Manufacturer (pdep 1.0, 0.0)
+[Customer.csv.Age, Customer.csv.ProductName] --> Customer.csv.Manufacturer (pdep 1.0, 0.0)
+[Customer.csv.Age, Customer.csv.ProductID] --> Customer.csv.Price (pdep 1.0, 0.0)
+[Customer.csv.CustomerID, Customer.csv.ProductID] --> Customer.csv.Price (pdep 1.0, 0.0)
+[Customer.csv.Category, Customer.csv.CustomerName] --> Customer.csv.Manufacturer (pdep 1.0, 0.12244898080825806)
+[Customer.csv.Price] --> Customer.csv.CustomerName (pdep 1.0, 0.0)
+[Customer.csv.CustomerName] --> Customer.csv.Age (pdep 1.0, 0.25850340723991394)
+[Customer.csv.Manufacturer] --> Customer.csv.Category (pdep 1.0, 0.190476194024086)
+[Customer.csv.CustomerID, Customer.csv.ProductID] --> Customer.csv.Manufacturer (pdep 1.0, 0.0)
+[Customer.csv.Age] --> Customer.csv.CustomerID (pdep 1.0, 0.25850340723991394)
+[Customer.csv.Category, Customer.csv.CustomerID] --> Customer.csv.Manufacturer (pdep 1.0, 0.12244898080825806)
+[Customer.csv.Age] --> Customer.csv.CustomerName (pdep 1.0, 0.25850340723991394)
+[Customer.csv.CustomerName, Customer.csv.ProductName] --> Customer.csv.Manufacturer (pdep 1.0, 0.0)
+[Customer.csv.CustomerID, Customer.csv.ProductName] --> Customer.csv.Price (pdep 1.0, 0.0)
+[Customer.csv.CustomerID] --> Customer.csv.Age (pdep 1.0, 0.25850340723991394)
+[Customer.csv.Price] --> Customer.csv.ProductID (pdep 1.0, 0.0)
+[Customer.csv.ProductName] --> Customer.csv.Category (pdep 1.0, 0.190476194024086)
+[Customer.csv.Price] --> Customer.csv.CustomerID (pdep 1.0, 0.0)
+[Customer.csv.Price] --> Customer.csv.Age (pdep 1.0, 0.0)
+[Customer.csv.Age, Customer.csv.Category] --> Customer.csv.Manufacturer (pdep 1.0, 0.12244898080825806)
+[Customer.csv.ProductID] --> Customer.csv.ProductName (pdep 1.0, 0.25850340723991394)
+[Customer.csv.Price] --> Customer.csv.Category (pdep 1.0, 0.0)
+[Customer.csv.CustomerName, Customer.csv.ProductID] --> Customer.csv.Manufacturer (pdep 1.0, 0.0)

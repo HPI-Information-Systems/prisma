@@ -1,49 +1,49 @@
-[itunes.csv.album_name] --> itunes.csv.song_name
-[itunes.csv.song_name] --> itunes.csv.artist_name
-[itunes.csv.album_name] --> itunes.csv.released
-[itunes.csv.album_name] --> itunes.csv.genre
-[itunes.csv.album_name] --> itunes.csv.copyright
-[itunes.csv.song_name] --> itunes.csv.price
-[itunes.csv.song_name] --> itunes.csv.album_name
-[itunes.csv.song_name] --> itunes.csv.genre
-[itunes.csv.song_name] --> itunes.csv.copyright
-[itunes.csv.song_name] --> itunes.csv.time
-[itunes.csv.copyright] --> itunes.csv.song_name
-[itunes.csv.album_name] --> itunes.csv.artist_name
-[itunes.csv.album_name] --> itunes.csv.price
-[itunes.csv.copyright] --> itunes.csv.genre
-[itunes.csv.copyright] --> itunes.csv.album_name
-[itunes.csv.song_name] --> itunes.csv.released
-[itunes.csv.released] --> itunes.csv.song_name
-[itunes.csv.copyright] --> itunes.csv.artist_name
-[itunes.csv.released] --> itunes.csv.genre
-[itunes.csv.released] --> itunes.csv.copyright
-[itunes.csv.copyright] --> itunes.csv.released
-[itunes.csv.copyright] --> itunes.csv.price
-[itunes.csv.album_name] --> itunes.csv.time
-[itunes.csv.released] --> itunes.csv.album_name
-[itunes.csv.time] --> itunes.csv.copyright
-[itunes.csv.time] --> itunes.csv.genre
-[itunes.csv.released] --> itunes.csv.price
-[itunes.csv.time] --> itunes.csv.released
-[itunes.csv.time] --> itunes.csv.song_name
-[itunes.csv.released] --> itunes.csv.artist_name
-[itunes.csv.copyright] --> itunes.csv.time
-[itunes.csv.artist_name] --> itunes.csv.copyright
-[itunes.csv.time] --> itunes.csv.price
-[itunes.csv.time] --> itunes.csv.artist_name
-[itunes.csv.time] --> itunes.csv.album_name
-[itunes.csv.artist_name] --> itunes.csv.released
-[itunes.csv.artist_name] --> itunes.csv.genre
-[itunes.csv.artist_name] --> itunes.csv.song_name
-[itunes.csv.released] --> itunes.csv.time
-[itunes.csv.artist_name] --> itunes.csv.album_name
-[itunes.csv.artist_name] --> itunes.csv.price
-[itunes.csv.genre] --> itunes.csv.song_name
-[itunes.csv.genre] --> itunes.csv.released
-[itunes.csv.genre] --> itunes.csv.copyright
-[itunes.csv.genre] --> itunes.csv.artist_name
-[itunes.csv.artist_name] --> itunes.csv.time
-[itunes.csv.genre] --> itunes.csv.price
-[itunes.csv.genre] --> itunes.csv.album_name
-[itunes.csv.genre] --> itunes.csv.time
+[itunes.csv.released] --> itunes.csv.genre (pdep 0.6504037380218506, 0.5393000245094299)
+[itunes.csv.album_name] --> itunes.csv.artist_name (pdep 0.8700190186500549, 0.6971376538276672)
+[itunes.csv.released] --> itunes.csv.artist_name (pdep 0.6379601359367371, 0.5284945368766785)
+[itunes.csv.artist_name] --> itunes.csv.song_name (pdep 0.2812974750995636, 0.14508859813213348)
+[itunes.csv.album_name] --> itunes.csv.genre (pdep 0.9546430110931396, 0.7802402377128601)
+[itunes.csv.song_name] --> itunes.csv.price (pdep 0.9906585812568665, 0.26774662733078003)
+[itunes.csv.time] --> itunes.csv.song_name (pdep 0.27620601654052734, 0.2166307419538498)
+[itunes.csv.copyright] --> itunes.csv.song_name (pdep 0.4335283935070038, 0.34503477811813354)
+[itunes.csv.genre] --> itunes.csv.released (pdep 0.5055178999900818, 0.4448207914829254)
+[itunes.csv.genre] --> itunes.csv.artist_name (pdep 0.5730926394462585, 0.5049043893814087)
+[itunes.csv.time] --> itunes.csv.price (pdep 0.6728590726852417, 0.13578759133815765)
+[itunes.csv.artist_name] --> itunes.csv.price (pdep 0.7423751950263977, 0.16758042573928833)
+[itunes.csv.album_name] --> itunes.csv.time (pdep 0.6886844635009766, 0.5216223001480103)
+[itunes.csv.copyright] --> itunes.csv.price (pdep 0.8782918453216553, 0.3269851803779602)
+[itunes.csv.released] --> itunes.csv.copyright (pdep 0.6926866769790649, 0.5916187167167664)
+[itunes.csv.song_name] --> itunes.csv.copyright (pdep 0.9662232995033264, 0.5274971127510071)
+[itunes.csv.released] --> itunes.csv.time (pdep 0.44711917638778687, 0.34391894936561584)
+[itunes.csv.song_name] --> itunes.csv.time (pdep 0.9737085103988647, 0.5336509943008423)
+[itunes.csv.song_name] --> itunes.csv.album_name (pdep 0.9644415974617004, 0.526910126209259)
+[itunes.csv.released] --> itunes.csv.song_name (pdep 0.44436633586883545, 0.3458958864212036)
+[itunes.csv.copyright] --> itunes.csv.album_name (pdep 0.6483849287033081, 0.5591996312141418)
+[itunes.csv.artist_name] --> itunes.csv.copyright (pdep 0.41447851061820984, 0.2757808566093445)
+[itunes.csv.copyright] --> itunes.csv.time (pdep 0.44371041655540466, 0.35043466091156006)
+[itunes.csv.artist_name] --> itunes.csv.album_name (pdep 0.33981820940971375, 0.20295381546020508)
+[itunes.csv.song_name] --> itunes.csv.genre (pdep 0.9386196136474609, 0.4936273694038391)
+[itunes.csv.artist_name] --> itunes.csv.time (pdep 0.2846878468990326, 0.14394713938236237)
+[itunes.csv.released] --> itunes.csv.price (pdep 0.8411343097686768, 0.2849165201187134)
+[itunes.csv.song_name] --> itunes.csv.artist_name (pdep 0.985896646976471, 0.54192715883255)
+[itunes.csv.song_name] --> itunes.csv.released (pdep 0.9660079479217529, 0.5265085697174072)
+[itunes.csv.genre] --> itunes.csv.song_name (pdep 0.3466677963733673, 0.2899843454360962)
+[itunes.csv.album_name] --> itunes.csv.price (pdep 0.9515833258628845, 0.36376336216926575)
+[itunes.csv.time] --> itunes.csv.released (pdep 0.27915695309638977, 0.2155803143978119)
+[itunes.csv.artist_name] --> itunes.csv.released (pdep 0.3742583394050598, 0.23437416553497314)
+[itunes.csv.time] --> itunes.csv.genre (pdep 0.27078700065612793, 0.19803346693515778)
+[itunes.csv.copyright] --> itunes.csv.released (pdep 0.7090954184532166, 0.6167234778404236)
+[itunes.csv.released] --> itunes.csv.album_name (pdep 0.6383578777313232, 0.5392032861709595)
+[itunes.csv.time] --> itunes.csv.artist_name (pdep 0.2867733836174011, 0.21572856605052948)
+[itunes.csv.artist_name] --> itunes.csv.genre (pdep 0.4275820553302765, 0.279268741607666)
+[itunes.csv.genre] --> itunes.csv.price (pdep 0.7311655282974243, 0.19551753997802734)
+[itunes.csv.genre] --> itunes.csv.album_name (pdep 0.48474544286727905, 0.4273461699485779)
+[itunes.csv.time] --> itunes.csv.album_name (pdep 0.27018800377845764, 0.20989909768104553)
+[itunes.csv.album_name] --> itunes.csv.copyright (pdep 0.9764838218688965, 0.8114021420478821)
+[itunes.csv.copyright] --> itunes.csv.artist_name (pdep 0.7573615908622742, 0.6577510833740234)
+[itunes.csv.copyright] --> itunes.csv.genre (pdep 0.7015998959541321, 0.6003332138061523)
+[itunes.csv.genre] --> itunes.csv.copyright (pdep 0.5218974947929382, 0.46249616146087646)
+[itunes.csv.time] --> itunes.csv.copyright (pdep 0.27555567026138306, 0.21327084302902222)
+[itunes.csv.album_name] --> itunes.csv.released (pdep 0.9707444906234741, 0.804512619972229)
+[itunes.csv.genre] --> itunes.csv.time (pdep 0.3519134819507599, 0.2902810275554657)
+[itunes.csv.album_name] --> itunes.csv.song_name (pdep 0.6897546052932739, 0.5270854234695435)

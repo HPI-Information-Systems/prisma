@@ -1,12 +1,12 @@
-[Books.csv.DueDate] --> Books.csv.BookID
-[Books.csv.DueDate] --> Books.csv.Title
-[Books.csv.DueDate] --> Books.csv.BorrowerID
-[Books.csv.DueDate] --> Books.csv.BorrowerName
-[Books.csv.BookID] --> Books.csv.Title
-[Books.csv.BookID, Books.csv.BorrowerID] --> Books.csv.DueDate
-[Books.csv.BookID, Books.csv.BorrowerName] --> Books.csv.DueDate
-[Books.csv.Title] --> Books.csv.BookID
-[Books.csv.BorrowerID, Books.csv.Title] --> Books.csv.DueDate
-[Books.csv.BorrowerName, Books.csv.Title] --> Books.csv.DueDate
-[Books.csv.BorrowerID] --> Books.csv.BorrowerName
-[Books.csv.BorrowerName] --> Books.csv.BorrowerID
+[Books.csv.BookID, Books.csv.BorrowerID] --> Books.csv.DueDate (pdep 1.0, 0.0)
+[Books.csv.BorrowerName] --> Books.csv.BorrowerID (pdep 1.0, 0.3199999928474426)
+[Books.csv.BorrowerID] --> Books.csv.BorrowerName (pdep 1.0, 0.3199999928474426)
+[Books.csv.DueDate] --> Books.csv.Title (pdep 1.0, 0.0)
+[Books.csv.BorrowerID, Books.csv.Title] --> Books.csv.DueDate (pdep 1.0, 0.0)
+[Books.csv.DueDate] --> Books.csv.BookID (pdep 1.0, 0.0)
+[Books.csv.BookID] --> Books.csv.Title (pdep 1.0, 0.18000000715255737)
+[Books.csv.DueDate] --> Books.csv.BorrowerID (pdep 1.0, 0.0)
+[Books.csv.BookID, Books.csv.BorrowerName] --> Books.csv.DueDate (pdep 1.0, 0.0)
+[Books.csv.Title] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.BorrowerName, Books.csv.Title] --> Books.csv.DueDate (pdep 1.0, 0.0)
+[Books.csv.DueDate] --> Books.csv.BorrowerName (pdep 1.0, 0.0)

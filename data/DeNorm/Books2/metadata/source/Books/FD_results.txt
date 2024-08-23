@@ -1,65 +1,65 @@
-[Books.csv.DueDate] --> Books.csv.BookID
-[Books.csv.DueDate] --> Books.csv.Author
-[Books.csv.DueDate] --> Books.csv.ISBN
-[Books.csv.DueDate] --> Books.csv.Title
-[Books.csv.DueDate] --> Books.csv.Genre
-[Books.csv.DueDate] --> Books.csv.BorrowerID
-[Books.csv.DueDate] --> Books.csv.BorrowerName
-[Books.csv.DueDate] --> Books.csv.BranchID
-[Books.csv.BookID] --> Books.csv.Author
-[Books.csv.BookID] --> Books.csv.ISBN
-[Books.csv.BookID] --> Books.csv.Title
-[Books.csv.BookID] --> Books.csv.Genre
-[Books.csv.BookID] --> Books.csv.BorrowerID
-[Books.csv.BookID] --> Books.csv.BorrowerName
-[Books.csv.BookID] --> Books.csv.BranchID
-[Books.csv.Author] --> Books.csv.BookID
-[Books.csv.Author] --> Books.csv.ISBN
-[Books.csv.Author] --> Books.csv.Title
-[Books.csv.Author] --> Books.csv.Genre
-[Books.csv.Author] --> Books.csv.BorrowerID
-[Books.csv.Author] --> Books.csv.BorrowerName
-[Books.csv.Author] --> Books.csv.BranchID
-[Books.csv.ISBN] --> Books.csv.BookID
-[Books.csv.ISBN] --> Books.csv.Author
-[Books.csv.ISBN] --> Books.csv.Title
-[Books.csv.ISBN] --> Books.csv.Genre
-[Books.csv.ISBN] --> Books.csv.BorrowerID
-[Books.csv.ISBN] --> Books.csv.BorrowerName
-[Books.csv.ISBN] --> Books.csv.BranchID
-[Books.csv.Title] --> Books.csv.BorrowerID
-[Books.csv.Title] --> Books.csv.BorrowerName
-[Books.csv.Genre, Books.csv.Title] --> Books.csv.BookID
-[Books.csv.Genre, Books.csv.Title] --> Books.csv.Author
-[Books.csv.Genre, Books.csv.Title] --> Books.csv.ISBN
-[Books.csv.Genre, Books.csv.Title] --> Books.csv.BranchID
-[Books.csv.BranchID, Books.csv.Title] --> Books.csv.BookID
-[Books.csv.BranchID, Books.csv.Title] --> Books.csv.Author
-[Books.csv.BranchID, Books.csv.Title] --> Books.csv.ISBN
-[Books.csv.BranchID, Books.csv.Title] --> Books.csv.Genre
-[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.BookID
-[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.Author
-[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.ISBN
-[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.BranchID
-[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.BookID
-[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.Author
-[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.ISBN
-[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.BranchID
-[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.BookID
-[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.Author
-[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.ISBN
-[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.Title
-[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.BorrowerID
-[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.BorrowerName
-[Books.csv.BorrowerID] --> Books.csv.Title
-[Books.csv.BorrowerID] --> Books.csv.BorrowerName
-[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.BookID
-[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.Author
-[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.ISBN
-[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.Genre
-[Books.csv.BorrowerName] --> Books.csv.Title
-[Books.csv.BorrowerName] --> Books.csv.BorrowerID
-[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.BookID
-[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.Author
-[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.ISBN
-[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.Genre
+[Books.csv.DueDate] --> Books.csv.Genre (pdep 1.0, 0.0)
+[Books.csv.BranchID, Books.csv.Title] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.BookID] --> Books.csv.Title (pdep 1.0, 0.1599999964237213)
+[Books.csv.BranchID, Books.csv.Title] --> Books.csv.Genre (pdep 1.0, 0.14000000059604645)
+[Books.csv.BorrowerName] --> Books.csv.Title (pdep 1.0, 0.3199999928474426)
+[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.Title] --> Books.csv.BorrowerName (pdep 1.0, 0.3199999928474426)
+[Books.csv.BorrowerID] --> Books.csv.BorrowerName (pdep 1.0, 0.3199999928474426)
+[Books.csv.Author] --> Books.csv.Title (pdep 1.0, 0.1599999964237213)
+[Books.csv.ISBN] --> Books.csv.BorrowerName (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.Genre (pdep 1.0, 0.14000000059604645)
+[Books.csv.ISBN] --> Books.csv.Title (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.BookID] --> Books.csv.BranchID (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.BranchID (pdep 1.0, 0.1599999964237213)
+[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.DueDate] --> Books.csv.Author (pdep 1.0, 0.0)
+[Books.csv.BookID] --> Books.csv.BorrowerID (pdep 1.0, 0.1599999964237213)
+[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.Genre, Books.csv.Title] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.Genre, Books.csv.Title] --> Books.csv.BranchID (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.BranchID (pdep 1.0, 0.1599999964237213)
+[Books.csv.Author] --> Books.csv.BorrowerName (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.BorrowerID] --> Books.csv.Title (pdep 1.0, 0.3199999928474426)
+[Books.csv.ISBN] --> Books.csv.Genre (pdep 1.0, 0.14000000059604645)
+[Books.csv.ISBN] --> Books.csv.BranchID (pdep 1.0, 0.1599999964237213)
+[Books.csv.Author] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.BookID] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.ISBN] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.ISBN] --> Books.csv.BorrowerID (pdep 1.0, 0.1599999964237213)
+[Books.csv.Genre, Books.csv.Title] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.BorrowerID, Books.csv.Genre] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.DueDate] --> Books.csv.ISBN (pdep 1.0, 0.0)
+[Books.csv.DueDate] --> Books.csv.BranchID (pdep 1.0, 0.0)
+[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.Title (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.ISBN] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.BranchID, Books.csv.Title] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.BranchID, Books.csv.Title] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.DueDate] --> Books.csv.BorrowerName (pdep 1.0, 0.0)
+[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.Genre (pdep 1.0, 0.14000000059604645)
+[Books.csv.BookID] --> Books.csv.Genre (pdep 1.0, 0.14000000059604645)
+[Books.csv.Author] --> Books.csv.BorrowerID (pdep 1.0, 0.1599999964237213)
+[Books.csv.DueDate] --> Books.csv.Title (pdep 1.0, 0.0)
+[Books.csv.BookID] --> Books.csv.BorrowerName (pdep 1.0, 0.1599999964237213)
+[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.BorrowerName (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.Author] --> Books.csv.Genre (pdep 1.0, 0.14000000059604645)
+[Books.csv.Author] --> Books.csv.BranchID (pdep 1.0, 0.1599999964237213)
+[Books.csv.BookID] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.BorrowerName, Books.csv.BranchID] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)
+[Books.csv.BranchID, Books.csv.Genre] --> Books.csv.BorrowerID (pdep 1.0, 0.1599999964237213)
+[Books.csv.BorrowerName] --> Books.csv.BorrowerID (pdep 1.0, 0.3199999928474426)
+[Books.csv.Genre, Books.csv.Title] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.Author] --> Books.csv.BookID (pdep 1.0, 0.18000000715255737)
+[Books.csv.DueDate] --> Books.csv.BookID (pdep 1.0, 0.0)
+[Books.csv.DueDate] --> Books.csv.BorrowerID (pdep 1.0, 0.0)
+[Books.csv.BorrowerName, Books.csv.Genre] --> Books.csv.ISBN (pdep 1.0, 0.18000000715255737)
+[Books.csv.Title] --> Books.csv.BorrowerID (pdep 1.0, 0.3199999928474426)
+[Books.csv.BorrowerID, Books.csv.BranchID] --> Books.csv.Author (pdep 1.0, 0.18000000715255737)

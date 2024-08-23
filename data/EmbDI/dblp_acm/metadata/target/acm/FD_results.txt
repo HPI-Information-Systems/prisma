@@ -1,31 +1,31 @@
-[acm.csv.title] --> acm.csv.venue
-[acm.csv.title] --> acm.csv.author_3
-[acm.csv.title] --> acm.csv.author_1
-[acm.csv.author_1] --> acm.csv.title
-[acm.csv.title] --> acm.csv.author_2
-[acm.csv.title] --> acm.csv.year
-[acm.csv.author_3] --> acm.csv.author_4
-[acm.csv.title] --> acm.csv.author_4
-[acm.csv.author_1] --> acm.csv.author_3
-[acm.csv.author_1] --> acm.csv.author_4
-[acm.csv.author_2] --> acm.csv.author_3
-[acm.csv.author_1] --> acm.csv.venue
-[acm.csv.author_1] --> acm.csv.author_2
-[acm.csv.author_2] --> acm.csv.author_4
-[acm.csv.author_2, acm.csv.year] --> acm.csv.title
-[acm.csv.author_2, acm.csv.year] --> acm.csv.author_1
-[acm.csv.author_2, acm.csv.year] --> acm.csv.venue
-[acm.csv.venue, acm.csv.year] --> acm.csv.author_3
-[acm.csv.venue, acm.csv.year] --> acm.csv.author_4
-[acm.csv.year, acm.csv.author_3] --> acm.csv.venue
-[acm.csv.year, acm.csv.author_3] --> acm.csv.author_1
-[acm.csv.author_1] --> acm.csv.year
-[acm.csv.year, acm.csv.author_3] --> acm.csv.title
-[acm.csv.year, acm.csv.author_3] --> acm.csv.author_2
-[acm.csv.author_4, acm.csv.year] --> acm.csv.author_3
-[acm.csv.author_2, acm.csv.venue] --> acm.csv.year
-[acm.csv.venue, acm.csv.year] --> acm.csv.author_2
-[acm.csv.author_2, acm.csv.venue] --> acm.csv.author_1
-[acm.csv.author_2, acm.csv.venue] --> acm.csv.title
-[acm.csv.venue, acm.csv.year] --> acm.csv.title
-[acm.csv.venue, acm.csv.year] --> acm.csv.author_1
+[acm.csv.venue, acm.csv.year] --> acm.csv.title (pdep 0.022934038192033768, 8.944342262111604E-4)
+[acm.csv.title] --> acm.csv.venue (pdep 0.9928799867630005, 0.023881061002612114)
+[acm.csv.author_4, acm.csv.year] --> acm.csv.author_3 (pdep 0.5832277536392212, 0.14794360101222992)
+[acm.csv.venue, acm.csv.year] --> acm.csv.author_2 (pdep 0.08181896805763245, 0.015538210980594158)
+[acm.csv.venue, acm.csv.year] --> acm.csv.author_1 (pdep 0.025033537298440933, 0.0020090611651539803)
+[acm.csv.title] --> acm.csv.year (pdep 0.9640310406684875, 0.0019840183667838573)
+[acm.csv.author_1] --> acm.csv.author_4 (pdep 0.8401267528533936, 0.03647478297352791)
+[acm.csv.author_2, acm.csv.year] --> acm.csv.title (pdep 0.7191083431243896, 0.001514042029157281)
+[acm.csv.year, acm.csv.author_3] --> acm.csv.author_2 (pdep 0.5976986885070801, 0.07704120874404907)
+[acm.csv.author_1] --> acm.csv.author_3 (pdep 0.7368594408035278, 0.05421765148639679)
+[acm.csv.year, acm.csv.author_3] --> acm.csv.author_1 (pdep 0.505256712436676, 0.006805666256695986)
+[acm.csv.author_3] --> acm.csv.author_4 (pdep 0.9005948901176453, 0.19584570825099945)
+[acm.csv.author_1] --> acm.csv.author_2 (pdep 0.6772310733795166, 0.06960953027009964)
+[acm.csv.author_2, acm.csv.year] --> acm.csv.author_1 (pdep 0.728456974029541, 0.010578273795545101)
+[acm.csv.year, acm.csv.author_3] --> acm.csv.title (pdep 0.4981929659843445, 2.474922512192279E-4)
+[acm.csv.author_1] --> acm.csv.venue (pdep 0.7423691749572754, 0.0437508299946785)
+[acm.csv.author_2, acm.csv.venue] --> acm.csv.year (pdep 0.6869235038757324, 0.011284584179520607)
+[acm.csv.author_1] --> acm.csv.year (pdep 0.6458490490913391, 0.014814688824117184)
+[acm.csv.year, acm.csv.author_3] --> acm.csv.venue (pdep 0.634054958820343, 0.0022327934857457876)
+[acm.csv.author_2, acm.csv.year] --> acm.csv.venue (pdep 0.8154362440109253, 0.02253626100718975)
+[acm.csv.author_1] --> acm.csv.title (pdep 0.6015628576278687, 0.01253286562860012)
+[acm.csv.author_2] --> acm.csv.author_4 (pdep 0.8574138879776001, 0.09436412155628204)
+[acm.csv.venue, acm.csv.year] --> acm.csv.author_4 (pdep 0.5392246842384338, 0.00646219402551651)
+[acm.csv.venue, acm.csv.year] --> acm.csv.author_3 (pdep 0.2535814046859741, 0.008779531344771385)
+[acm.csv.author_2, acm.csv.venue] --> acm.csv.title (pdep 0.6415814757347107, 0.0028689750470221043)
+[acm.csv.author_2, acm.csv.venue] --> acm.csv.author_1 (pdep 0.6555107831954956, 0.01643446460366249)
+[acm.csv.author_2] --> acm.csv.author_3 (pdep 0.776606559753418, 0.15959025919437408)
+[acm.csv.title] --> acm.csv.author_4 (pdep 0.9925893545150757, 0.012786350212991238)
+[acm.csv.title] --> acm.csv.author_2 (pdep 0.9851303100585938, 0.02549159526824951)
+[acm.csv.title] --> acm.csv.author_3 (pdep 0.9875278472900391, 0.020172331482172012)
+[acm.csv.title] --> acm.csv.author_1 (pdep 0.9722824096679688, 0.014513513073325157)

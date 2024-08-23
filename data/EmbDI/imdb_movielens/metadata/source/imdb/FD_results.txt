@@ -1,81 +1,81 @@
-[imdb.csv.title] --> imdb.csv.actor_1
-[imdb.csv.title] --> imdb.csv.color
-[imdb.csv.title] --> imdb.csv.vote_average
-[imdb.csv.title] --> imdb.csv.actor_3
-[imdb.csv.title] --> imdb.csv.content_rating
-[imdb.csv.actor_3] --> imdb.csv.title
-[imdb.csv.actor_2] --> imdb.csv.original_language
-[imdb.csv.actor_2] --> imdb.csv.title
-[imdb.csv.actor_2] --> imdb.csv.actor_3
-[imdb.csv.actor_3] --> imdb.csv.content_rating
-[imdb.csv.director] --> imdb.csv.title
-[imdb.csv.actor_3] --> imdb.csv.original_language
-[imdb.csv.actor_3] --> imdb.csv.actor_1
-[imdb.csv.actor_1] --> imdb.csv.title
-[imdb.csv.director] --> imdb.csv.original_language
-[imdb.csv.director] --> imdb.csv.actor_3
-[imdb.csv.title] --> imdb.csv.original_language
-[imdb.csv.actor_2] --> imdb.csv.actor_1
-[imdb.csv.actor_1] --> imdb.csv.actor_3
-[imdb.csv.actor_1] --> imdb.csv.original_language
-[imdb.csv.actor_3] --> imdb.csv.vote_average
-[imdb.csv.actor_2] --> imdb.csv.color
-[imdb.csv.year] --> imdb.csv.original_language
-[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.title
-[imdb.csv.production_countries] --> imdb.csv.original_language
-[imdb.csv.actor_2] --> imdb.csv.content_rating
-[imdb.csv.actor_2] --> imdb.csv.vote_average
-[imdb.csv.actor_3] --> imdb.csv.color
-[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.actor_3
-[imdb.csv.vote_average] --> imdb.csv.original_language
-[imdb.csv.director] --> imdb.csv.actor_1
-[imdb.csv.actor_1] --> imdb.csv.color
-[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.title
-[imdb.csv.director] --> imdb.csv.content_rating
-[imdb.csv.director] --> imdb.csv.vote_average
-[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.actor_3
-[imdb.csv.director] --> imdb.csv.color
-[imdb.csv.color, imdb.csv.content_rating] --> imdb.csv.original_language
-[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.actor_1
-[imdb.csv.year] --> imdb.csv.color
-[imdb.csv.title] --> imdb.csv.director
-[imdb.csv.actor_1] --> imdb.csv.content_rating
-[imdb.csv.year] --> imdb.csv.content_rating
-[imdb.csv.title] --> imdb.csv.year
-[imdb.csv.vote_average] --> imdb.csv.color
-[imdb.csv.actor_3] --> imdb.csv.director
-[imdb.csv.actor_1] --> imdb.csv.vote_average
-[imdb.csv.year] --> imdb.csv.vote_average
-[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.title
-[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.actor_1
-[imdb.csv.content_rating] --> imdb.csv.color
-[imdb.csv.actor_2] --> imdb.csv.director
-[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.actor_3
-[imdb.csv.title] --> imdb.csv.actor_2
-[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.title
-[imdb.csv.title] --> imdb.csv.production_countries
-[imdb.csv.actor_1] --> imdb.csv.director
-[imdb.csv.actor_3] --> imdb.csv.actor_2
-[imdb.csv.actor_3] --> imdb.csv.year
-[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.actor_1
-[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.actor_3
-[imdb.csv.director] --> imdb.csv.actor_2
-[imdb.csv.actor_3] --> imdb.csv.production_countries
-[imdb.csv.actor_2] --> imdb.csv.year
-[imdb.csv.actor_1] --> imdb.csv.actor_2
-[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.director
-[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.actor_1
-[imdb.csv.actor_2] --> imdb.csv.production_countries
-[imdb.csv.actor_1] --> imdb.csv.year
-[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.actor_2
-[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.director
-[imdb.csv.director] --> imdb.csv.year
-[imdb.csv.director] --> imdb.csv.production_countries
-[imdb.csv.year] --> imdb.csv.production_countries
-[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.actor_2
-[imdb.csv.actor_1] --> imdb.csv.production_countries
-[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.actor_2
-[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.director
-[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.actor_2
-[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.director
-[imdb.csv.original_language, imdb.csv.vote_average, imdb.csv.content_rating] --> imdb.csv.production_countries
+[imdb.csv.director] --> imdb.csv.content_rating (pdep 0.7416890263557434, 0.09282465279102325)
+[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.title (pdep 0.10046624392271042, 2.391976977378363E-6)
+[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.director (pdep 0.06993839889764786, -2.86783033516258E-4)
+[imdb.csv.actor_3] --> imdb.csv.vote_average (pdep 0.8013999462127686, 0.013941455632448196)
+[imdb.csv.title] --> imdb.csv.year (pdep 0.999779224395752, 2.0523455168586224E-4)
+[imdb.csv.actor_1] --> imdb.csv.director (pdep 0.4278871715068817, 0.01787717081606388)
+[imdb.csv.year] --> imdb.csv.vote_average (pdep 0.28200316429138184, 0.007519477978348732)
+[imdb.csv.actor_2] --> imdb.csv.production_countries (pdep 0.8993498086929321, 0.05678088590502739)
+[imdb.csv.actor_3] --> imdb.csv.original_language (pdep 0.996504008769989, 0.025595078244805336)
+[imdb.csv.actor_2] --> imdb.csv.color (pdep 0.9767205715179443, 0.007714447099715471)
+[imdb.csv.content_rating] --> imdb.csv.color (pdep 0.9277997016906738, 0.00591608602553606)
+[imdb.csv.actor_2] --> imdb.csv.original_language (pdep 0.9925485253334045, 0.03259628266096115)
+[imdb.csv.actor_2] --> imdb.csv.title (pdep 0.6046367883682251, 8.824258111417294E-5)
+[imdb.csv.year] --> imdb.csv.original_language (pdep 0.9010838866233826, 3.8705201586708426E-4)
+[imdb.csv.vote_average] --> imdb.csv.original_language (pdep 0.9005096554756165, 0.001601669704541564)
+[imdb.csv.actor_3] --> imdb.csv.content_rating (pdep 0.827552080154419, 0.020795509219169617)
+[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.director (pdep 0.1011180728673935, 3.3642922971921507E-6)
+[imdb.csv.original_language, imdb.csv.vote_average, imdb.csv.content_rating] --> imdb.csv.production_countries (pdep 0.6815906167030334, 0.061235878616571426)
+[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.actor_2 (pdep 0.10119235515594482, 3.8188634789548814E-4)
+[imdb.csv.actor_2] --> imdb.csv.vote_average (pdep 0.726913571357727, 0.019505290314555168)
+[imdb.csv.director] --> imdb.csv.color (pdep 0.9623827338218689, 0.003292611101642251)
+[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.actor_1 (pdep 0.10233316570520401, 4.0056149009615183E-4)
+[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.director (pdep 0.06987208873033524, -3.530938702169806E-4)
+[imdb.csv.actor_1] --> imdb.csv.actor_3 (pdep 0.4133094549179077, 0.0036020984407514334)
+[imdb.csv.actor_1] --> imdb.csv.year (pdep 0.43225085735321045, 0.001858122181147337)
+[imdb.csv.actor_1] --> imdb.csv.color (pdep 0.965113639831543, 0.011388162150979042)
+[imdb.csv.actor_1] --> imdb.csv.production_countries (pdep 0.8367082476615906, 0.07175605744123459)
+[imdb.csv.actor_1] --> imdb.csv.actor_2 (pdep 0.4160780906677246, 0.0062677753157913685)
+[imdb.csv.actor_1] --> imdb.csv.original_language (pdep 0.9854572415351868, 0.04524931311607361)
+[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.title (pdep 0.06955578923225403, 3.833046321233269E-6)
+[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.actor_1 (pdep 0.07141822576522827, 3.470465017016977E-4)
+[imdb.csv.actor_1] --> imdb.csv.title (pdep 0.4096103012561798, 2.748474980762694E-5)
+[imdb.csv.title] --> imdb.csv.vote_average (pdep 0.999779224395752, 1.0593626939225942E-4)
+[imdb.csv.title] --> imdb.csv.actor_2 (pdep 0.999779224395752, 2.20629051909782E-4)
+[imdb.csv.title] --> imdb.csv.actor_3 (pdep 0.9995583891868591, -9.32409776055465E-8)
+[imdb.csv.title] --> imdb.csv.actor_1 (pdep 0.999779224395752, 2.2007817460689694E-4)
+[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.actor_3 (pdep 0.069865882396698, 1.1764350347220898E-4)
+[imdb.csv.vote_average] --> imdb.csv.color (pdep 0.9239633679389954, 0.0022008635569363832)
+[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.director (pdep 0.077398382127285, 1.1273942800471559E-4)
+[imdb.csv.year, imdb.csv.content_rating] --> imdb.csv.actor_2 (pdep 0.07003628462553024, 1.2580315524246544E-4)
+[imdb.csv.title] --> imdb.csv.original_language (pdep 0.999779224395752, -1.7607820336706936E-4)
+[imdb.csv.title] --> imdb.csv.production_countries (pdep 0.999779224395752, -4.499689021031372E-5)
+[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.actor_1 (pdep 0.07832843065261841, 2.0321136980783194E-4)
+[imdb.csv.actor_1] --> imdb.csv.vote_average (pdep 0.5924155712127686, 0.029261011630296707)
+[imdb.csv.actor_3] --> imdb.csv.director (pdep 0.72577303647995, 0.012825039215385914)
+[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.actor_2 (pdep 0.07718164473772049, 2.0830368157476187E-4)
+[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.actor_3 (pdep 0.07696555554866791, 1.5323219122365117E-4)
+[imdb.csv.actor_2] --> imdb.csv.year (pdep 0.6238116025924683, 0.005324941128492355)
+[imdb.csv.actor_2] --> imdb.csv.actor_1 (pdep 0.6186102628707886, 0.013416052795946598)
+[imdb.csv.actor_2] --> imdb.csv.actor_3 (pdep 0.6101692318916321, 0.00553726265206933)
+[imdb.csv.actor_1] --> imdb.csv.content_rating (pdep 0.6472266316413879, 0.04440798610448837)
+[imdb.csv.director] --> imdb.csv.production_countries (pdep 0.8821878433227539, 0.08998627215623856)
+[imdb.csv.production_countries, imdb.csv.year] --> imdb.csv.actor_3 (pdep 0.10108741372823715, 4.3380141141824424E-4)
+[imdb.csv.title] --> imdb.csv.color (pdep 1.0, 3.4610708098625764E-5)
+[imdb.csv.actor_2] --> imdb.csv.director (pdep 0.6168538331985474, 0.012019149959087372)
+[imdb.csv.title] --> imdb.csv.content_rating (pdep 0.999779224395752, 7.626978913322091E-5)
+[imdb.csv.actor_3] --> imdb.csv.year (pdep 0.7277129292488098, 0.004847956821322441)
+[imdb.csv.actor_3] --> imdb.csv.production_countries (pdep 0.9317798614501953, 0.04613931477069855)
+[imdb.csv.actor_3] --> imdb.csv.actor_1 (pdep 0.7226908206939697, 0.009481598623096943)
+[imdb.csv.production_countries] --> imdb.csv.original_language (pdep 0.9511503577232361, 0.051146723330020905)
+[imdb.csv.actor_3] --> imdb.csv.actor_2 (pdep 0.7195118069648743, 0.006660959217697382)
+[imdb.csv.actor_3] --> imdb.csv.color (pdep 0.9852327108383179, 0.007746998220682144)
+[imdb.csv.director] --> imdb.csv.actor_1 (pdep 0.5043894648551941, 0.025506621226668358)
+[imdb.csv.title] --> imdb.csv.director (pdep 0.999779224395752, 2.2047969105187804E-4)
+[imdb.csv.actor_3] --> imdb.csv.title (pdep 0.7127401232719421, -5.6030721395927685E-8)
+[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.title (pdep 0.06955381482839584, 1.8535304207034642E-6)
+[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.actor_1 (pdep 0.07137847691774368, 3.0730117578059435E-4)
+[imdb.csv.director] --> imdb.csv.actor_3 (pdep 0.48565566539764404, 0.007514989469200373)
+[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.actor_2 (pdep 0.07009370625019073, 1.8321923562325537E-4)
+[imdb.csv.year] --> imdb.csv.color (pdep 0.9374047517776489, 0.014257816597819328)
+[imdb.csv.original_language, imdb.csv.year, imdb.csv.color] --> imdb.csv.actor_3 (pdep 0.06985612958669662, 1.0789381485665217E-4)
+[imdb.csv.director] --> imdb.csv.actor_2 (pdep 0.48578760027885437, 0.0075558945536613464)
+[imdb.csv.director] --> imdb.csv.original_language (pdep 0.9796743392944336, 0.03253467381000519)
+[imdb.csv.director] --> imdb.csv.title (pdep 0.47814086079597473, 1.1029783490812406E-4)
+[imdb.csv.year] --> imdb.csv.content_rating (pdep 0.37179502844810486, 0.03143693134188652)
+[imdb.csv.year] --> imdb.csv.production_countries (pdep 0.6103698015213013, 7.390340324491262E-4)
+[imdb.csv.vote_average, imdb.csv.year] --> imdb.csv.title (pdep 0.076622873544693, 5.339874405763112E-6)
+[imdb.csv.actor_2] --> imdb.csv.content_rating (pdep 0.7680320739746094, 0.034057412296533585)
+[imdb.csv.director] --> imdb.csv.vote_average (pdep 0.6686652898788452, 0.05486674979329109)
+[imdb.csv.director] --> imdb.csv.year (pdep 0.4827207922935486, -0.01370721124112606)
+[imdb.csv.color, imdb.csv.content_rating] --> imdb.csv.original_language (pdep 0.901401698589325, 0.002113575814291835)
