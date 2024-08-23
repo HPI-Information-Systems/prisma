@@ -1,0 +1,3 @@
+[prospect_vertical_70_ac2_ev.csv.AgID]
+[prospect_vertical_70_ac2_ev.csv.LaNa, prospect_vertical_70_ac2_ev.csv.PosC]
+[prospect_vertical_70_ac2_ev.csv.AddLi1, prospect_vertical_70_ac2_ev.csv.LaNa]

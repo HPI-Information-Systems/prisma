@@ -1,0 +1,5 @@
+[prospect_vertical_70_ac3_ev.csv.gncd]
+[prospect_vertical_70_ac3_ev.csv.frstnm, prospect_vertical_70_ac3_ev.csv.lstnm]
+[prospect_vertical_70_ac3_ev.csv.ddrssln1, prospect_vertical_70_ac3_ev.csv.lstnm]
+[prospect_vertical_70_ac3_ev.csv.frstnm, prospect_vertical_70_ac3_ev.csv.phn]
+[prospect_vertical_70_ac3_ev.csv.ddrssln1, prospect_vertical_70_ac3_ev.csv.frstnm]

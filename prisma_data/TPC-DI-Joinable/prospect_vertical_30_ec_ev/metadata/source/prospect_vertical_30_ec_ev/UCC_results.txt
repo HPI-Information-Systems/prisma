@@ -1,0 +1,7 @@
+[prospect_vertical_30_ec_ev.csv.AgencyID]
+[prospect_vertical_30_ec_ev.csv.FirstName, prospect_vertical_30_ec_ev.csv.LastName]
+[prospect_vertical_30_ec_ev.csv.LastName, prospect_vertical_30_ec_ev.csv.PostalCode]
+[prospect_vertical_30_ec_ev.csv.AddressLine1, prospect_vertical_30_ec_ev.csv.LastName]
+[prospect_vertical_30_ec_ev.csv.FirstName, prospect_vertical_30_ec_ev.csv.Phone]
+[prospect_vertical_30_ec_ev.csv.FirstName, prospect_vertical_30_ec_ev.csv.PostalCode]
+[prospect_vertical_30_ec_ev.csv.AddressLine1, prospect_vertical_30_ec_ev.csv.FirstName]

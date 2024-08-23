@@ -1,0 +1,4 @@
+[prospect_both_50_50_ac2_av.csv.AgID]
+[prospect_both_50_50_ac2_av.csv.FirN, prospect_both_50_50_ac2_av.csv.LaNa]
+[prospect_both_50_50_ac2_av.csv.Em, prospect_both_50_50_ac2_av.csv.LaNa]
+[prospect_both_50_50_ac2_av.csv.FirN, prospect_both_50_50_ac2_av.csv.Pho]

@@ -1,0 +1,6 @@
+[prospect_both_0_30_ac3_ev.csv.AgencyID]
+[prospect_both_0_30_ac3_ev.csv.FirstName, prospect_both_0_30_ac3_ev.csv.LastName]
+[prospect_both_0_30_ac3_ev.csv.LastName, prospect_both_0_30_ac3_ev.csv.PostalCode]
+[prospect_both_0_30_ac3_ev.csv.AddressLine1, prospect_both_0_30_ac3_ev.csv.LastName]
+[prospect_both_0_30_ac3_ev.csv.FirstName, prospect_both_0_30_ac3_ev.csv.PostalCode]
+[prospect_both_0_30_ac3_ev.csv.AddressLine1, prospect_both_0_30_ac3_ev.csv.FirstName]

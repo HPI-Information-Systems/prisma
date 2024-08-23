@@ -1,0 +1,4 @@
+[prospect_both_50_70_ac1_ev.csv.prospect_AgencyID]
+[prospect_both_50_70_ac1_ev.csv.prospect_FirstName, prospect_both_50_70_ac1_ev.csv.prospect_Phone]
+[prospect_both_50_70_ac1_ev.csv.prospect_FirstName, prospect_both_50_70_ac1_ev.csv.prospect_PostalCode]
+[prospect_both_50_70_ac1_ev.csv.prospect_AddressLine1, prospect_both_50_70_ac1_ev.csv.prospect_FirstName]

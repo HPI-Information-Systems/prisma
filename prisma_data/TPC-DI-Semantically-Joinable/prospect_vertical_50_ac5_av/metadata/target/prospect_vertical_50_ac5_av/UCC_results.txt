@@ -1,0 +1,7 @@
+[prospect_vertical_50_ac5_av.csv.prospect_gncd]
+[prospect_vertical_50_ac5_av.csv.prospect_frstnm, prospect_vertical_50_ac5_av.csv.prospect_lstnm]
+[prospect_vertical_50_ac5_av.csv.prospect_lstnm, prospect_vertical_50_ac5_av.csv.prospect_pstlcd]
+[prospect_vertical_50_ac5_av.csv.prospect_ddrssln1, prospect_vertical_50_ac5_av.csv.prospect_lstnm]
+[prospect_vertical_50_ac5_av.csv.prospect_frstnm, prospect_vertical_50_ac5_av.csv.prospect_phn]
+[prospect_vertical_50_ac5_av.csv.prospect_frstnm, prospect_vertical_50_ac5_av.csv.prospect_pstlcd]
+[prospect_vertical_50_ac5_av.csv.prospect_ddrssln1, prospect_vertical_50_ac5_av.csv.prospect_frstnm]
