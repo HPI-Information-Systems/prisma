@@ -1,0 +1,3 @@
+[assays_vertical_30_ec_av.csv.assay_id]
+[assays_vertical_30_ec_av.csv.chembl_id, assays_vertical_30_ec_av.csv.description]
+[assays_vertical_30_ec_av.csv.chembl_id, assays_vertical_30_ec_av.csv.curated_by]

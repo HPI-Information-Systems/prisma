@@ -1,0 +1,2 @@
+[assays_vertical_50_ec_av.csv.assay_id]
+[assays_vertical_50_ec_av.csv.chembl_id]

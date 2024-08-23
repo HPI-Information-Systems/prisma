@@ -1,0 +1,4 @@
+[assays_both_0_50_ac5_av.csv.assay_id]
+[assays_both_0_50_ac5_av.csv.chembl_id, assays_both_0_50_ac5_av.csv.description]
+[assays_both_0_50_ac5_av.csv.chembl_id, assays_both_0_50_ac5_av.csv.doc_id]
+[assays_both_0_50_ac5_av.csv.chembl_id, assays_both_0_50_ac5_av.csv.tid]

@@ -1,0 +1,3 @@
+[assays_both_0_70_ac5_av.csv.assay_id]
+[assays_both_0_70_ac5_av.csv.bao_format, assays_both_0_70_ac5_av.csv.description]
+[assays_both_0_70_ac5_av.csv.description, assays_both_0_70_ac5_av.csv.doc_id]
