@@ -1,2 +1,0 @@
-[category.csv.name] --> category.csv.category_id (pdep 1.0, 0.0)
-[category.csv.category_id] --> category.csv.name (pdep 1.0, 0.0)

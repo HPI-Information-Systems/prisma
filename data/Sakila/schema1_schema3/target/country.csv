@@ -1,110 +1,101 @@
 country_id,country
-1,Afghanistan
-2,Algeria
-3,American Samoa
-4,Angola
-5,Anguilla
-6,Argentina
-7,Armenia
-8,Australia
-9,Austria
-10,Azerbaijan
-11,Bahrain
-12,Bangladesh
-13,Belarus
-14,Bolivia
-15,Brazil
-16,Brunei
-17,Bulgaria
-18,Cambodia
-19,Cameroon
-20,Canada
-21,Chad
-22,Chile
-23,China
-24,Colombia
-25,"Congo, The Democratic Republic of the"
-26,Czech Republic
-27,Dominican Republic
-28,Ecuador
-29,Egypt
-30,Estonia
-31,Ethiopia
-32,Faroe Islands
-33,Finland
-34,France
-35,French Guiana
-36,French Polynesia
-37,Gambia
-38,Germany
-39,Greece
-40,Greenland
-41,Holy See (Vatican City State)
-42,Hong Kong
-43,Hungary
-44,India
-45,Indonesia
-46,Iran
-47,Iraq
-48,Israel
-49,Italy
-50,Japan
-51,Kazakstan
-52,Kenya
-53,Kuwait
-54,Latvia
-55,Liechtenstein
-56,Lithuania
-57,Madagascar
-58,Malawi
-59,Malaysia
-60,Mexico
-61,Moldova
 62,Morocco
-63,Mozambique
-64,Myanmar
-65,Nauru
-66,Nepal
-67,Netherlands
-68,New Zealand
-69,Nigeria
-70,North Korea
-71,Oman
-72,Pakistan
-73,Paraguay
-74,Peru
-75,Philippines
-76,Poland
-77,Puerto Rico
-78,Romania
-79,Réunion
-80,Russian Federation
-81,Saint Vincent and the Grenadines
-82,Saudi Arabia
-83,Senegal
-84,Slovakia
-85,South Africa
-86,South Korea
-87,Spain
-88,Sri Lanka
-89,Sudan
-90,Sweden
-91,Switzerland
-92,Taiwan
-93,Tanzania
-94,Thailand
-95,Tonga
-96,Tunisia
-97,Turkey
-98,Turkmenistan
-99,Tuvalu
-100,Ukraine
-101,United Arab Emirates
-102,United Kingdom
-103,United States
-104,Venezuela
-105,Vietnam
-106,"Virgin Islands, U.S."
-107,Yemen
 108,Yugoslavia
+18,Cambodia
+90,Sweden
+70,North Korea
+14,Bolivia
+64,Myanmar
+6,Argentina
+58,Malawi
+85,South Africa
+2,Algeria
+46,Iran
+99,Tuvalu
+106,"Virgin Islands, U.S."
+65,Nauru
+72,Pakistan
+19,Cameroon
+44,India
+93,Tanzania
 109,Zambia
+61,Moldova
+96,Tunisia
+83,Senegal
+82,Saudi Arabia
+8,Australia
+59,Malaysia
+37,Gambia
+87,Spain
+78,Romania
+73,Paraguay
+22,Chile
+89,Sudan
+107,Yemen
+91,Switzerland
+81,Saint Vincent and the Grenadines
+48,Israel
+84,Slovakia
+68,New Zealand
+25,"Congo, The Democratic Republic of the"
+27,Dominican Republic
+4,Angola
+24,Colombia
+43,Hungary
+15,Brazil
+63,Mozambique
+12,Bangladesh
+92,Taiwan
+53,Kuwait
+31,Ethiopia
+97,Turkey
+54,Latvia
+35,French Guiana
+34,France
+38,Germany
+7,Armenia
+51,Kazakstan
+76,Poland
+86,South Korea
+79,Réunion
+56,Lithuania
+103,United States
+10,Azerbaijan
+21,Chad
+30,Estonia
+47,Iraq
+52,Kenya
+32,Faroe Islands
+66,Nepal
+9,Austria
+5,Anguilla
+67,Netherlands
+50,Japan
+1,Afghanistan
+33,Finland
+13,Belarus
+17,Bulgaria
+102,United Kingdom
+94,Thailand
+100,Ukraine
+39,Greece
+104,Venezuela
+26,Czech Republic
+98,Turkmenistan
+57,Madagascar
+45,Indonesia
+3,American Samoa
+41,Holy See (Vatican City State)
+16,Brunei
+80,Russian Federation
+29,Egypt
+28,Ecuador
+11,Bahrain
+20,Canada
+88,Sri Lanka
+69,Nigeria
+95,Tonga
+105,Vietnam
+23,China
+75,Philippines
+71,Oman

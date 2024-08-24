@@ -1,4 +1,0 @@
-[inventario.csv.inventario_id] --> inventario.csv.film_id (pdep 1.0, 0.0)
-[inventario.csv.inventario_id] --> inventario.csv.negozio_id (pdep 1.0, 0.0)
-[inventario.csv.film_id] --> inventario.csv.inventario_id (pdep 0.23925000429153442, 1.1102230246251565E-15)
-[inventario.csv.film_id] --> inventario.csv.negozio_id (pdep 0.656629741191864, 0.03709949925541878)

@@ -1,0 +1,501 @@
+città_id,città,stato_id
+253,Kakamigahara,50
+177,Garden Grove,103
+494,Southampton,102
+488,Sokoto,69
+207,Hohhot,23
+217,Ife,69
+377,Okinawa,50
+137,Daugavpils,54
+522,Tambaram,44
+135,Dallas,103
+528,Tarlac,75
+413,Poços de Caldas,15
+435,Rockford,103
+69,Benin City,69
+245,Joliet,103
+84,Boa Vista,15
+158,Emmen,67
+388,Ourense (Orense),87
+264,Katihar,44
+578,Xi´angfan,23
+565,Vancouver,20
+536,Tiefa,23
+431,Rio Claro,15
+214,Huánuco,74
+526,Tanshui,92
+271,Kisumu,52
+167,Faaa,36
+561,Valencia,104
+302,Liaocheng,23
+74,Bhilwara,44
+329,Masqat,71
+222,Inegöl,97
+248,Juiz de Fora,15
+425,Rae Bareli,44
+108,Changhwa,92
+334,Merlo,6
+157,Emeishan,23
+139,Daxian,23
+204,Hino,50
+571,Vinh,105
+506,Sumy,100
+240,Jinchang,23
+100,Cam Ranh,105
+467,Shahr-e Kord,46
+550,Udaipur,44
+35,Ashgabat,98
+169,Firozabad,44
+531,Tšeboksary,80
+103,Carmen,60
+259,Kamyšin,80
+557,Usak,97
+414,Portoviejo,28
+587,Yinchuan,23
+495,Southend-on-Sea,102
+350,Mysore,44
+558,Usolje-Sibirskoje,80
+459,Santiago de Compostela,87
+331,Matsue,50
+274,Kolpino,80
+72,Bern,91
+5,Adana,97
+484,Smolensk,80
+206,Hodeida,107
+200,Hamilton,68
+297,Le Mans,34
+525,Tangail,12
+556,Uruapan,60
+463,Sasebo,50
+503,Sullana,74
+76,Bhopal,44
+499,Sterling Heights,103
+418,Purnea (Purnia),44
+569,Vila Velha,15
+454,San Miguel de Tucumán,6
+509,Surakarta,45
+11,Akron,103
+358,Nakhon Sawan,94
+471,Shenzhen,23
+599,Zhoushan,23
+19,Allende,60
+1,A Coruña (La Coruña),87
+252,Kaduna,69
+249,Junan,23
+172,Fukuyama,50
+318,Madiun,45
+384,Osmaniye,97
+391,Ozamis,75
+132,Cumaná,104
+22,Ambattur,44
+363,NDjamna,21
+478,Siliguri (Shiliguri),44
+295,Laredo,103
+115,Chisinau,61
+501,Sucre,14
+433,Roanoke,103
+120,Citrus Heights,103
+584,Yantai,23
+322,Manchester,103
+521,Tama,50
+586,Yerevan,7
+145,Dongying,23
+436,Ruse,17
+474,Shimonoseki,50
+473,Shimoga,44
+126,Compton,103
+534,Tete,63
+263,Karnal,44
+321,Malmö,90
+166,Ezhou,23
+514,Tabriz,46
+515,Tabuk,82
+450,San Felipe de Puerto Plata,27
+451,San Felipe del Progreso,60
+482,Sivas,97
+291,Laiwu,23
+268,Kimchon,86
+146,Donostia-San Sebastián,87
+405,Pereira,24
+288,La Paz,60
+380,Omiya,50
+352,Nabereznyje Tšelny,80
+212,Huejutla de Reyes,60
+553,Uijongbu,86
+83,Blumenau,15
+481,Sirjan,46
+518,Taizz,107
+270,Kirovo-Tšepetsk,80
+181,Gijón,87
+195,Haldia,44
+464,Satna,44
+446,Salinas,103
+185,Grand Prairie,103
+235,Jaroslavl,80
+582,Yamuna Nagar,44
+164,Etawah,44
+20,Almirante Brown,6
+238,Jelets,80
+511,Syrakusa,49
+107,Chandrapur,44
+455,Sanaa,107
+86,Botosani,78
+285,Kurgan,80
+559,Uttarpara-Kotrung,44
+315,Lubumbashi,25
+497,Springs,85
+50,Balikesir,97
+58,Batman,97
+256,Kamakura,50
+512,Székesfehérvár,43
+96,Buenaventura,24
+448,Sambhal,44
+573,Warren,103
+122,Ciudad del Este,73
+490,Sorocaba,15
+598,Zhezqazghan,51
+8,Adoni,44
+117,Cianjur,45
+57,Bat Yam,48
+323,Mandaluyong,75
+46,Baicheng,23
+209,Hsichuh,92
+310,Ljubertsy,80
+67,Benguela,4
+246,José Azueta,60
+92,Brest,34
+280,Kragujevac,108
+570,Vilnius,56
+466,Serpuhov,80
+389,Owo,69
+63,Béchar,2
+151,Ede,67
+434,Ríobamba,28
+197,Halisahar,44
+500,Stockport,102
+232,Jakarta,45
+357,Naju,86
+128,Córdoba,6
+150,Dzerzinsk,80
+296,Lausanne,91
+15,al-Qadarif,89
+183,Goiânia,15
+510,Syktyvkar,80
+365,Nezahualcóyotl,60
+421,Qalyub,29
+412,Pontianak,45
+141,Deba Habe,69
+171,Fontana,103
+483,Skikda,2
+99,Callao,74
+533,Tel Aviv-Jaffa,48
+243,Jodhpur,44
+276,Koriyama,50
+354,Nagaon,44
+233,Jalib al-Shuyukh,53
+47,Baiyin,23
+476,Shubra al-Khayma,29
+45,Bahía Blanca,6
+14,al-Manama,11
+130,Cuautla,60
+269,Kingstown,81
+155,El Monte,103
+101,Cape Coral,103
+458,Santa Rosa,75
+127,Coquimbo,22
+242,Jinzhou,23
+400,Patiala,44
+475,Shivapuri,44
+247,Juazeiro do Norte,15
+12,al-Ayn,101
+567,Vicente López,6
+189,Guarujá,15
+492,Sousse,96
+26,Anápolis,15
+562,Valle de la Pascua,104
+43,Avellaneda,6
+182,Gingoog,75
+353,Nador,62
+136,Datong,23
+305,Lima,74
+460,Santiago de los Caballeros,27
+300,Lethbridge,20
+390,Oyo,69
+452,San Juan Bautista Tuxtepec,60
+537,Tieli,23
+577,Wroclaw,76
+516,Tafuna,3
+486,São Leopoldo,15
+362,Nanyang,23
+415,Probolinggo,45
+174,Fuyu,23
+237,Jedda,82
+597,Zeleznogorsk,80
+594,Zaoyang,23
+304,Lilongwe,58
+590,Yuncheng,23
+156,Elista,80
+37,Asunción,73
+544,Toulouse,34
+428,Rancagua,22
+336,Miraj,44
+184,Gorontalo,45
+491,Soshanguve,85
+595,Zapopan,60
+487,Sogamoso,24
+131,Cuernavaca,60
+368,Novi Sad,108
+327,Mardan,72
+589,York,102
+230,Jaffna,88
+301,Lhokseumawe,45
+399,Pathankot,44
+568,Vijayawada,44
+374,Ogbomosho,69
+32,Arecibo,77
+129,Cuauhtémoc,60
+85,Boksburg,85
+462,Sanya,23
+97,Bydgoszcz,76
+25,Angra dos Reis,15
+541,Torreón,60
+133,Czestochowa,76
+313,London,20
+453,San Lorenzo,73
+105,Cayenne,35
+289,La Plata,6
+59,Batna,2
+210,Huai´an,23
+202,Hidalgo,60
+403,Pemalang,45
+220,Ilorin,69
+393,Pachuca de Soto,60
+328,Maringá,15
+406,Phnom Penh,18
+147,Dos Quebradas,24
+517,Taguig,75
+51,Balurghat,44
+23,Amersfoort,67
+566,Varanasi (Benares),44
+572,Vitória de Santo Antão,15
+580,Xintai,23
+221,Imus,75
+203,Higashiosaka,50
+316,Lungtan,92
+339,Mogiljov,13
+13,al-Hawiya,82
+254,Kaliningrad,80
+540,Tongliao,23
+523,Tanauan,75
+89,Brasília,15
+44,Bagé,15
+496,Southport,102
+409,Plock,76
+284,Kurashiki,50
+94,Brockton,103
+469,Shaoguan,23
+170,Florencia,24
+29,Apeldoorn,67
+532,Tegal,45
+241,Jining,23
+344,Mosul,47
+335,Mexicali,60
+423,Qomsheh,46
+424,Quilmes,6
+308,Lipetsk,80
+524,Tandil,6
+16,al-Qatif,82
+211,Hubli-Dharwad,44
+404,Peoria,103
+123,Clarksville,103
+125,Coatzacoalcos,60
+272,Kitwe,109
+191,Gulbarga,44
+427,Rampur,44
+311,Loja,28
+273,Klerksdorp,85
+213,Huixquilucan,60
+548,Tuguegarao,75
+64,Beira,63
+98,Cabuyao,75
+104,Cavite,75
+485,São Bernardo do Campo,15
+468,Shanwei,23
+401,Patras,39
+61,Baybay,75
+255,Kalisz,76
+307,Linz,9
+442,Saint-Denis,79
+411,Ponce,77
+267,Kimberley,85
+66,Belém,15
+152,Effon-Alaiye,69
+27,Antofagasta,22
+364,Newcastle,85
+372,Nyeri,52
+118,Ciomas,45
+593,Zanzibar,93
+112,Chatsworth,85
+39,Atšinsk,80
+215,Ibirité,15
+34,Ashdod,48
+355,Nagareyama,50
+109,Changzhou,23
+397,Papeete,36
+144,Dhule (Dhulia),44
+382,Onomichi,50
+180,Gaziantep,97
+408,Pjatigorsk,80
+33,Arlington,103
+265,Kermanshah,46
+260,Kanazawa,50
+392,Paarl,85
+547,Tsuyama,50
+447,Salzburg,9
+457,Santa Fé,6
+60,Battambang,18
+251,Kabul,1
+196,Halifax,20
+513,Tabora,93
+529,Tarsus,97
+333,Memphis,103
+507,Sungai Petani,59
+449,San Bernardino,103
+320,Maikop,80
+551,Udine,49
+250,Juárez,60
+49,Balašiha,80
+244,Johannesburg,85
+360,Namibe,4
+319,Mahajanga,57
+429,Ranchi,44
+88,Bradford,102
+402,Pavlodar,51
+236,Jastrzebie-Zdrój,76
+258,Kamjanets-Podilskyi,100
+114,Chiayi,92
+2,Abha,82
+520,Tallahassee,103
+6,Addis Abeba,31
+394,Pak Kret,94
+493,South Hill,5
+398,Parbhani,44
+441,Saint Louis,103
+337,Mit Ghamr,29
+28,Aparecida de Goiânia,15
+102,Caracas,104
+168,Fengshan,92
+4,Acuña,60
+298,Lengshuijiang,23
+477,Siegen,38
+262,Kansas City,103
+381,Ondo,69
+361,Nantou,92
+489,Songkhla,94
+369,Novotšerkassk,80
+208,Hoshiarpur,44
+187,Greensboro,103
+75,Bhimavaram,44
+519,Talavera,75
+113,Cheju,86
+371,Nuuk,40
+176,Gandhinagar,44
+188,Guadalajara,60
+77,Bhusawal,44
+575,Witten,38
+90,Bratislava,84
+293,Laohekou,23
+193,Haining,23
+261,Kanchrapara,44
+17,Alessandria,49
+376,Okayama,50
+257,Kamarhati,44
+52,Bamenda,19
+576,Woodridge,8
+110,Chapra,44
+539,Tonghae,86
+30,Araçatuba,15
+444,Salala,71
+342,Monywa,64
+554,Uluberia,44
+422,Qinhuangdao,23
+82,Bislig,75
+346,Munger (Monghyr),44
+3,Abu Dhabi,101
+80,Binzhou,23
+56,Basel,91
+111,Charlotte Amalie,106
+290,La Romana,27
+286,Kursk,80
+395,Palghat (Palakkad),44
+54,Banjul,37
+317,Luziânia,15
+281,Kütahya,97
+231,Jaipur,44
+106,Celaya,60
+325,Mannheim,38
+461,Santo André,15
+36,Ashqelon,48
+160,Erlangen,38
+216,Idfu,29
+426,Rajkot,44
+581,Xinxiang,23
+163,Eskisehir,97
+396,Pangkal Pinang,45
+306,Lincoln,103
+278,Korolev,80
+348,Mwene-Ditu,25
+198,Halle/Saale,38
+81,Birgunj,66
+149,Dundee,102
+430,Richmond Hill,20
+68,Beni-Mellal,62
+283,Kumbakonam,44
+21,Alvorada,15
+173,Funafuti,99
+55,Barcelona,104
+498,Stara Zagora,17
+10,Akishima,50
+175,Fuzhou,23
+508,Sunnyvale,103
+543,Toulon,34
+70,Bergamo,49
+218,Ikerre,69
+282,Kuching,59
+465,Sawhaj,29
+356,Najafabad,46
+592,Zalantun,23
+223,Ipoh,59
+161,Escobar,6
+407,Pingxiang,23
+359,Nam Dinh,105
+375,Okara,72
+546,Tsaotun,92
+552,Ueda,50
+154,El Fuerte,60
+563,Valle de Santiago,60
+312,London,102
+138,Davao,75
+410,Poá,15
+591,Yuzhou,23
+379,Omdurman,89
+545,Tórshavn,32
+527,Tanza,75
+124,Coacalco de Berriozábal,60
+373,Ocumare del Tuy,104
+42,Aurora,103
+162,Esfahan,46
+7,Aden,107
+416,Pudukkottai,44
+542,Touliu,92
+18,Allappuzha (Alleppey),44
+65,Bellevue,103
+294,Lapu-Lapu,75
+555,Urawa,50
+229,Izumisano,50
+148,Duisburg,38
+194,Haiphong,105
+345,Mukatševe,100
+192,Hagonoy,75
+432,Rizhao,23
+330,Matamoros,60
