@@ -33,7 +33,7 @@ public class PRISMAMatcher extends TablePairMatcher {
     public Boolean thresholdMatches = true;
     @Getter
     @Setter
-    public String gdepThreshold="0.0";
+    public String gDepFiltering="0.0";
 
     final private Integer serverPort = 5004;
 
@@ -54,19 +54,19 @@ public class PRISMAMatcher extends TablePairMatcher {
         MetaNodesDatabaseGraph sourceGraph = null;
         MetaNodesDatabaseGraph targetGraph = null;
         for(MetaNodesDatabaseGraph graph : source.getGraphs()){
-            if(Objects.equals(graph.getGDepThreshold(), this.gdepThreshold)){
+            if(Objects.equals(graph.getGDepThreshold(), this.gDepFiltering)){
                 sourceGraph = graph;
                 break;
             }
         }
         for(MetaNodesDatabaseGraph graph : target.getGraphs()){
-            if(Objects.equals(graph.getGDepThreshold(), this.gdepThreshold)){
+            if(Objects.equals(graph.getGDepThreshold(), this.gDepFiltering)){
                 targetGraph = graph;
                 break;
             }
         }
         if(sourceGraph == null || targetGraph == null){
-            getLogger().error("No graphs built for threshold " + gdepThreshold);
+            getLogger().error("No graphs built for threshold " + gDepFiltering);
             return tablePair.getEmptySimMatrix();
         }
         float[][] alignment_matrix;

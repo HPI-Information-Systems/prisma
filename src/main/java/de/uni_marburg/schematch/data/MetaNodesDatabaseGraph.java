@@ -72,7 +72,20 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
         }
 
 
-        int maxFdSize = countMaxAFDsSourceTargetAboveThreshold(database.getScenario(), Double.parseDouble(this.gDepThreshold));
+
+        //int maxFdSize = Math.min(countMaxAFDsSourceTargetAboveThreshold(database.getScenario(), Double.parseDouble(this.gDepThreshold)), 5000);
+        int maxFdSize = 0;
+        if(this.gDepThreshold.startsWith("absolute_")){
+            String numberPart = this.gDepThreshold.substring(9);
+            maxFdSize = Integer.parseInt(numberPart);
+        } else  if(this.gDepThreshold.startsWith("col_scale_")){
+            String numberPart = this.gDepThreshold.substring(10);
+            maxFdSize = (int) Math.min(database.getNumColumns() * Double.parseDouble(numberPart), 5000);
+        }else if (this.gDepThreshold.startsWith("gdep_threshold_")){
+            String numberPart = this.gDepThreshold.substring(15);
+            maxFdSize =  Math.min(countMaxAFDsSourceTargetAboveThreshold(database.getScenario(), Double.parseDouble(numberPart)), 5000);
+        }
+
         logger.info("Building graph for " + database.getName() + "using "  + maxFdSize + " FDs @ gDepThreshold " + this.gDepThreshold);
 
         List<FunctionalDependency> fds = database.getMetadata().getFds().stream()
