@@ -22,7 +22,7 @@ class TokenizedLabelSimilarityMatcherTest {
             SimilarityMeasure<Set<String>> similarityMeasure
     ) throws Exception {
         TestUtils.TestData testData = TestUtils.getTestData();
-        Scenario scenario = new Scenario(testData.getScenarios().get("test1").getPath());
+        Scenario scenario = new Scenario(testData.getDataset(), testData.getScenarios().get("test1").getPath());
         Table sourceTable = scenario.getSourceDatabase().getTableByName("authors");
         Table targetTable = scenario.getTargetDatabase().getTableByName("authors");
         TablePair tp = new TablePair(sourceTable, targetTable);

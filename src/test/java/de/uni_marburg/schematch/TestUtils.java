@@ -34,7 +34,7 @@ public class TestUtils {
         Dataset d = new Dataset(dsConfig);
         HashMap<String, Scenario> s = new HashMap<>();
         for (String sName : d.getScenarioNames()) {
-            s.put(sName, new Scenario(d.getPath() + File.separator + sName));
+            s.put(sName, new Scenario(d, d.getPath() + File.separator + sName));
         }
         return new TestData(d, s);
     }
