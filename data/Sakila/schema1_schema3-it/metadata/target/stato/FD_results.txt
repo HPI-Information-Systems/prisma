@@ -1,0 +1,2 @@
+[stato.csv.stato_id] --> stato.csv.stato (pdep 1.0, 0.0)
+[stato.csv.stato] --> stato.csv.stato_id (pdep 1.0, 0.0)

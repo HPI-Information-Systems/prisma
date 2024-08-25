@@ -1,0 +1,8 @@
+[citt.csv.città_id] --> citt.csv.città (pdep 1.0, 0.0)
+[citt.csv.stato] --> citt.csv.stato_id (pdep 1.0, 0.7761570020040081)
+[citt.csv.città_id] --> citt.csv.stato_id (pdep 1.0, 0.0)
+[citt.csv.città_id] --> citt.csv.stato (pdep 1.0, 0.0)
+[citt.csv.città] --> citt.csv.città_id (pdep 0.998, 0.0)
+[citt.csv.città] --> citt.csv.stato (pdep 0.998, -7.40521042084108E-5)
+[citt.csv.stato_id] --> citt.csv.stato (pdep 1.0, 0.7761570020040081)
+[citt.csv.città] --> citt.csv.stato_id (pdep 0.998, -7.40521042084108E-5)

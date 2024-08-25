@@ -1,0 +1,2 @@
+[citt.csv.città_id]
+[citt.csv.città, citt.csv.stato_id]

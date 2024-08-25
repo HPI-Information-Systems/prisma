@@ -1,0 +1,4 @@
+[city.csv.city_id] --> city.csv.country_id (pdep 1.0, 0.0)
+[city.csv.city] --> city.csv.city_id (pdep 0.998, 0.0)
+[city.csv.city] --> city.csv.country_id (pdep 0.998, -7.209619238479625E-5)
+[city.csv.city_id] --> city.csv.city (pdep 1.0, 0.0)
