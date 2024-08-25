@@ -210,8 +210,8 @@ public class InputReader {
                 //    fd.setPdepTuple(MetadataUtils.getPdep(fd));
                 //}
                 Collection<UniqueColumnCombination> datasetUCCs = readUCCFile(uccFilePath, table, uccMap);
-                if(datasetUCCs.isEmpty())
-                    datasetUCCs = Metanome.executeUCC(List.of(table));
+                //if(datasetUCCs.isEmpty())
+                //    datasetUCCs = Metanome.executeUCC(List.of(table));
                 fds.addAll(datasetFDs);
                 uccs.addAll(datasetUCCs);
             }
