@@ -30,7 +30,7 @@ public class Scenario {
         this.name = StringUtils.getFolderName(path);
         this.sourceDatabase = new Database(this, this.path + File.separator + Configuration.getInstance().getDefaultSourceDatabaseDir());
         this.targetDatabase = new Database(this, this.path + File.separator + Configuration.getInstance().getDefaultTargetDatabaseDir());
-        List<String> gdepTresholds = Arrays.asList("absolute_1", "absolute_2", "absolute_4", "absolute_8", "absolute_16", "absolute_32", "absolute_64", "absolute_128", "absolute_256", "absolute_512", "absolute_1024", "col_scale_0.1", "col_scale_0.2", "col_scale_0.3", "col_scale_0.4", "col_scale_0.5", "col_scale_0.75", "col_scale_1.0", "col_scale_1.5", "col_scale_2", "col_scale_4", "col_scale_8", "col_scale_16", "col_scale_32", "gdep_threshold_0.00", "gdep_threshold_0.01", "gdep_threshold_0.02", "gdep_threshold_0.03", "gdep_threshold_0.04", "gdep_threshold_0.05", "gdep_threshold_0.06", "gdep_threshold_0.07", "gdep_threshold_0.1", "gdep_threshold_0.12", "gdep_threshold_0.14", "gdep_threshold_0.15", "gdep_threshold_0.2", "gdep_threshold_0.25", "gdep_threshold_0.3", "gdep_threshold_0.4", "gdep_threshold_0.5");
+        List<String> gdepTresholds = Arrays.asList("col_scale_0.2", "col_scale_0.4", "col_scale_0.6","col_scale_0.8", "gdep_threshold_0.1", "gdep_threshold_0.2", "gdep_threshold_0.3", "gdep_threshold_0.4", "gdep_threshold_0.5");
         for (String gdepTreshold : gdepTresholds) {
             this.sourceDatabase.getGraphs().add(new MetaNodesDatabaseGraph(this.sourceDatabase, gdepTreshold));
             this.targetDatabase.getGraphs().add(new MetaNodesDatabaseGraph(this.targetDatabase, gdepTreshold));
