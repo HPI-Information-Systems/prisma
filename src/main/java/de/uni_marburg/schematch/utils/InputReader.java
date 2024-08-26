@@ -265,7 +265,7 @@ public class InputReader {
             Pattern p = Pattern.compile("(\\[.*]) --> ([^(]+) ?(\\(pdep (-?\\d\\.\\d+(E-\\d+)?), (-?\\d\\.\\d+(E-\\d+)?)\\))?");
             java.util.regex.Matcher matcher = p.matcher(line);
             if (!matcher.find()) {
-                throw new RuntimeException("Parsing of FD failed");
+                throw new RuntimeException("Parsing of FD failed. Line : " + line);
             }
             PdepTuple pdep = null;
             if (matcher.group(3) != null) {
