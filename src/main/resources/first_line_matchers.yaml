@@ -12,11 +12,11 @@ name: "PRISMAMatcher"
 packageName: "metadata"
 active: true
 params:
-  postprocessing: [true, false]
-  thresholdMatches: [false, true]  # false -> writes 1s instead of actual similarities, true -> writes similarities
-  GammaStrucAttr: [1.0, 0.995, 0.5, 0.0]
-  kindOfFeature: ["Distribution", "Entropy"]
-  gdepThreshold: ["0.00", "0.01", "0.02", "0.04", "0.06", "0.08", "0.10", "0.15", "0.20", "0.30", "0.40", "0.50", "1.00"]
+  postprocessing: [true]
+  thresholdMatches: [true]  # false -> writes 1s instead of actual similarities, true -> writes similarities
+  GammaStrucAttr: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  kindOfFeature: ["Distribution"]
+  gDepFiltering: ["col_scale_0.2", "col_scale_0.4", "col_scale_0.6","col_scale_0.8", "gdep_threshold_0.1", "gdep_threshold_0.2", "gdep_threshold_0.3", "gdep_threshold_0.4", "gdep_threshold_0.5"]
   # ^ these also need to be set in Scenario.java
 # Similarity matchers
 ---
