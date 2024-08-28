@@ -144,8 +144,8 @@ def compute_similarity(graph, rep_method, vec1, vec2, node_attributes = None, no
         # as we use real world values, we instead use the euclidean distance, as also proposed in the REGAL paper
         # prev: attr_dist = np.sum(graph.node_attributes[node_indices[0]] != graph.node_attributes[node_indices[1]])
         attr_dist = 0
-        if node_indices[1] in column_id:
-            attr_dist += graph.node_attributes[node_indices[0]][column_id[node_indices[1]]]
+        if node_indices[1] in column_id and node_indices[0] in column_id:
+            attr_dist += graph.node_attributes[column_id[node_indices[0]]][column_id[node_indices[1]]]
         dist += rep_method.gammaattr * attr_dist
     return np.exp(-dist) #convert distances (weighted by coefficients on structure and attributes) to similarities
 
@@ -179,6 +179,7 @@ def get_representations(graph, rep_method, verbose = True):
         if extract_node_type(node) == "COLUMN":
             column_id[i] = counter
             counter += 1
+    print(column_id, file=sys.stderr)
 
     #Node identity extraction
     feature_matrix = get_features(graph, rep_method, verbose)

@@ -235,7 +235,7 @@ def match(
             "../../../../" + features_dir + "/target.json",
             config["kind_of_feature"]
         )
-        graphA.normalize_features(graphB)  # normalizes both graph's features
+        #graphA.normalize_features(graphB)  # normalizes both graph's features
 
         representationCache: RepresentationCache = get_embeddings(
             graphA,

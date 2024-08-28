@@ -1,5 +1,4 @@
 # Copied from https://github.com/GemsLab/REGAL/blob/master/alignments.py
-
 import numpy as np
 import scipy.io as sio
 import sklearn.metrics.pairwise
@@ -11,7 +10,23 @@ from scipy.optimize import linear_sum_assignment
 import matching
 import matching.games
 
-def get_embedding_similarities(embed, embed2 = None, sim_measure = "euclidean"):
+
+def shuffle_sm(sm):
+    num_columns = sm.shape[1]
+    original_indices = np.arange(num_columns)
+
+    shuffled_indices = np.random.default_rng(seed=42).permutation(original_indices)
+    shuffled_sm = sm[:, shuffled_indices]
+
+    return shuffled_sm, shuffled_indices
+
+def unshuffle_sm(shuffled_sm, shuffled_indices):
+    unshuffled_indices = np.argsort(shuffled_indices)
+    unshuffled_sm = shuffled_sm[:, unshuffled_indices]
+    return unshuffled_sm
+
+
+def get_embedding_similarities(embed, embed2 = None, sim_measure = "cosine"):
     if embed2 is None:
         embed2 = embed
 
@@ -22,7 +37,7 @@ def get_embedding_similarities(embed, embed2 = None, sim_measure = "euclidean"):
     else:
         similarity_matrix = sklearn.metrics.pairwise.euclidean_distances(embed, embed2)
         similarity_matrix = np.exp(-similarity_matrix)
-
+    similarity_matrix, shuffle_indices = shuffle_sm(similarity_matrix)
     dissimilarity_matrix = 1 - similarity_matrix
     row_indices, col_indices = linear_sum_assignment(dissimilarity_matrix)
     optimal_matching = list(zip(row_indices, col_indices))
@@ -30,6 +45,7 @@ def get_embedding_similarities(embed, embed2 = None, sim_measure = "euclidean"):
     for x, y in optimal_matching:
         filter_matrix[x][y] = 1
     similarity_matrix = np.minimum(similarity_matrix, filter_matrix)
+    similarity_matrix = unshuffle_sm(similarity_matrix, shuffle_indices)
         #row_players = {
         #    i: matching.Player(i) for i in range(similarity_matrix.shape[0])
         #}
