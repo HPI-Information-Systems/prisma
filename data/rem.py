@@ -17,6 +17,6 @@ def clear_fd_results(directory):
 
 if __name__ == "__main__":
     # Replace 'your_directory' with the path to your directory
-    directory = 'Sakila_denormalized'
+    directory = 'Sakila_shuffled'
     clear_fd_results(directory)
 

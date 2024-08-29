@@ -1,2 +1,0 @@
-[language.csv.language_id] --> language.csv.name (pdep 1.0, 0.0)
-[language.csv.name] --> language.csv.language_id (pdep 1.0, 0.0)

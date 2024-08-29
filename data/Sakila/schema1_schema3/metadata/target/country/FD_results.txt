@@ -1,2 +1,0 @@
-[country.csv.country_id] --> country.csv.country (pdep 1.0, 0.0)
-[country.csv.country] --> country.csv.country_id (pdep 1.0, 0.0)

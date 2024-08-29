@@ -1,2 +1,0 @@
-[film_attore.csv.film_id] --> film_attore.csv.attore_id (pdep 0.199, -0.003996571794358833)
-[film_attore.csv.attore_id] --> film_attore.csv.film_id (pdep 0.03999999999999925, -9.542004400887663E-4)

@@ -1,6 +1,0 @@
-[store.csv.store_id] --> store.csv.manager_staff_id (pdep 1.0, 0.0)
-[store.csv.address_id] --> store.csv.store_id (pdep 1.0, 0.0)
-[store.csv.manager_staff_id] --> store.csv.store_id (pdep 1.0, 0.0)
-[store.csv.store_id] --> store.csv.address_id (pdep 1.0, 0.0)
-[store.csv.manager_staff_id] --> store.csv.address_id (pdep 1.0, 0.0)
-[store.csv.address_id] --> store.csv.manager_staff_id (pdep 1.0, 0.0)
