@@ -6,7 +6,7 @@ from pathlib import Path
 
 CUR_DIR = os.path.dirname(os.path.realpath(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+DATA_DIR = os.path.join(BASE_DIR, "prisma_data")
 
 class DatasetEncryptor:
     def __init__(self, dataset: str):
