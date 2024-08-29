@@ -23,10 +23,10 @@ def extract_score(csv_path, performance, benchmark_dict):
 
 def import_benchmark(root_path, performance_definitions):
     benchmarks = {}
-    for performance_filename, performance_name in performance_definitions.items():
-        performance_csv = os.path.join(root_path, "_performances", performance_filename,
-                                       "performance_overview_line1.csv")
-        extract_score(performance_csv, performance_name, benchmarks)
+    #for performance_filename, performance_name in performance_definitions.items():
+    #    performance_csv = os.path.join(root_path, "_performances", performance_filename,
+    #                                   "performance_overview_line1.csv")
+    #    extract_score(performance_csv, performance_name, benchmarks)
     for dataset in os.listdir(root_path):
         dataset_path = os.path.join(root_path, dataset)
         if os.path.isdir(dataset_path) and dataset != "_performances":
