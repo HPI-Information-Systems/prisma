@@ -1,2 +1,0 @@
-[prospect_both_0_50_ec_ev.csv.AgencyID]
-[prospect_both_0_50_ec_ev.csv.FirstName]

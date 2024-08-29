@@ -1,3 +1,0 @@
-[prospect_both_50_30_ac1_av.csv.prospect_AgencyID]
-[prospect_both_50_30_ac1_av.csv.prospect_FirstName, prospect_both_50_30_ac1_av.csv.prospect_LastName]
-[prospect_both_50_30_ac1_av.csv.prospect_Employer, prospect_both_50_30_ac1_av.csv.prospect_LastName]

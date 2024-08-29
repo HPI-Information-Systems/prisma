@@ -1,2 +1,0 @@
-[prospect_both_50_30_ac5_av.csv.prospect_gncd]
-[prospect_both_50_30_ac5_av.csv.prospect_frstnm, prospect_both_50_30_ac5_av.csv.prospect_phn]

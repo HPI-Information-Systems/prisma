@@ -1,7 +1,0 @@
-[prospect_both_50_50_ac4_ev.csv.AgencyID]
-[prospect_both_50_50_ac4_ev.csv.FirstName, prospect_both_50_50_ac4_ev.csv.LastName]
-[prospect_both_50_50_ac4_ev.csv.LastName, prospect_both_50_50_ac4_ev.csv.PostalCode]
-[prospect_both_50_50_ac4_ev.csv.AddressLine1, prospect_both_50_50_ac4_ev.csv.LastName]
-[prospect_both_50_50_ac4_ev.csv.FirstName, prospect_both_50_50_ac4_ev.csv.Phone]
-[prospect_both_50_50_ac4_ev.csv.FirstName, prospect_both_50_50_ac4_ev.csv.PostalCode]
-[prospect_both_50_50_ac4_ev.csv.AddressLine1, prospect_both_50_50_ac4_ev.csv.FirstName]

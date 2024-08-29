@@ -1,2 +1,0 @@
-[assays_both_50_30_ac3_ev.csv.ss_d]
-[assays_both_50_30_ac3_ev.csv.chmbl_d]

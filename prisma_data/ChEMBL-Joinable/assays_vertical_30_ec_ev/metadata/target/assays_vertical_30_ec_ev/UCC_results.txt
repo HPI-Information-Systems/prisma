@@ -1,2 +1,0 @@
-[assays_vertical_30_ec_ev.csv.assay_id]
-[assays_vertical_30_ec_ev.csv.chembl_id]

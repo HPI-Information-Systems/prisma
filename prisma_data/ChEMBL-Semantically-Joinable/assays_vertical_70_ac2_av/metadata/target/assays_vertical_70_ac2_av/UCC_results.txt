@@ -1,2 +1,0 @@
-[assays_vertical_70_ac2_av.csv.ASI]
-[assays_vertical_70_ac2_av.csv.CHI]

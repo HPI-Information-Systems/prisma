@@ -1,8 +1,0 @@
-[prospect_both_50_70_ac5_av.csv.prospect_gncd]
-[prospect_both_50_70_ac5_av.csv.prospect_frstnm, prospect_both_50_70_ac5_av.csv.prospect_lstnm]
-[prospect_both_50_70_ac5_av.csv.prospect_lstnm, prospect_both_50_70_ac5_av.csv.prospect_pstlcd]
-[prospect_both_50_70_ac5_av.csv.prospect_ddrssln1, prospect_both_50_70_ac5_av.csv.prospect_lstnm]
-[prospect_both_50_70_ac5_av.csv.prospect_lstnm, prospect_both_50_70_ac5_av.csv.prospect_mplr]
-[prospect_both_50_70_ac5_av.csv.prospect_frstnm, prospect_both_50_70_ac5_av.csv.prospect_phn]
-[prospect_both_50_70_ac5_av.csv.prospect_frstnm, prospect_both_50_70_ac5_av.csv.prospect_pstlcd]
-[prospect_both_50_70_ac5_av.csv.prospect_ddrssln1, prospect_both_50_70_ac5_av.csv.prospect_frstnm]

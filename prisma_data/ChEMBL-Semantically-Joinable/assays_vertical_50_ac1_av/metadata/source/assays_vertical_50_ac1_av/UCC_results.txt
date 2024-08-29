@@ -1,3 +1,0 @@
-[assays_vertical_50_ac1_av.csv.assay_id]
-[assays_vertical_50_ac1_av.csv.description, assays_vertical_50_ac1_av.csv.doc_id]
-[assays_vertical_50_ac1_av.csv.description, assays_vertical_50_ac1_av.csv.tid]

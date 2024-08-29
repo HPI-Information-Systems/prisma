@@ -1,2 +1,0 @@
-[assays_vertical_30_ac5_ev.csv.assays_ss_d]
-[assays_vertical_30_ac5_ev.csv.assays_chmbl_d]

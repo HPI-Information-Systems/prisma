@@ -1,4 +1,0 @@
-[prospect_both_50_70_ac5_ev.csv.prospect_gncd]
-[prospect_both_50_70_ac5_ev.csv.prospect_frstnm, prospect_both_50_70_ac5_ev.csv.prospect_lstnm]
-[prospect_both_50_70_ac5_ev.csv.prospect_lstnm, prospect_both_50_70_ac5_ev.csv.prospect_mplr]
-[prospect_both_50_70_ac5_ev.csv.prospect_frstnm, prospect_both_50_70_ac5_ev.csv.prospect_phn]

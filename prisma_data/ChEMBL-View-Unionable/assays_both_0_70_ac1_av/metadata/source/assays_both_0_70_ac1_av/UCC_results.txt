@@ -1,5 +1,0 @@
-[assays_both_0_70_ac1_av.csv.assay_id]
-[assays_both_0_70_ac1_av.csv.chembl_id, assays_both_0_70_ac1_av.csv.description]
-[assays_both_0_70_ac1_av.csv.bao_format, assays_both_0_70_ac1_av.csv.chembl_id]
-[assays_both_0_70_ac1_av.csv.chembl_id, assays_both_0_70_ac1_av.csv.doc_id]
-[assays_both_0_70_ac1_av.csv.chembl_id, assays_both_0_70_ac1_av.csv.tid]

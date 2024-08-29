@@ -1,3 +1,0 @@
-[musicians_viewunion_source.csv.musician]
-[musicians_viewunion_source.csv.birthDate, musicians_viewunion_source.csv.familyNameLabel, musicians_viewunion_source.csv.givenNameLabel, musicians_viewunion_source.csv.recordLabelLabel, musicians_viewunion_source.csv.websiteLabel]
-[musicians_viewunion_source.csv.birthDate, musicians_viewunion_source.csv.familyNameLabel, musicians_viewunion_source.csv.givenNameLabel, musicians_viewunion_source.csv.recordLabelLabel, musicians_viewunion_source.csv.twitterNameLabel]

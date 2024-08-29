@@ -1,6 +1,0 @@
-[prospect_both_50_50_ac2_ev.csv.AgeID]
-[prospect_both_50_50_ac2_ev.csv.FirN, prospect_both_50_50_ac2_ev.csv.LN]
-[prospect_both_50_50_ac2_ev.csv.AddLi1, prospect_both_50_50_ac2_ev.csv.LN]
-[prospect_both_50_50_ac2_ev.csv.Em, prospect_both_50_50_ac2_ev.csv.LN]
-[prospect_both_50_50_ac2_ev.csv.FirN, prospect_both_50_50_ac2_ev.csv.Ph]
-[prospect_both_50_50_ac2_ev.csv.AddLi1, prospect_both_50_50_ac2_ev.csv.FirN]

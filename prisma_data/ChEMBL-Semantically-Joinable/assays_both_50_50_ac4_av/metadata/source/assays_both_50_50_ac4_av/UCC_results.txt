@@ -1,7 +1,0 @@
-[assays_both_50_50_ac4_av.csv.assay_id]
-[assays_both_50_50_ac4_av.csv.chembl_id, assays_both_50_50_ac4_av.csv.description]
-[assays_both_50_50_ac4_av.csv.bao_format, assays_both_50_50_ac4_av.csv.chembl_id]
-[assays_both_50_50_ac4_av.csv.chembl_id, assays_both_50_50_ac4_av.csv.doc_id]
-[assays_both_50_50_ac4_av.csv.chembl_id, assays_both_50_50_ac4_av.csv.tid]
-[assays_both_50_50_ac4_av.csv.assay_organism, assays_both_50_50_ac4_av.csv.chembl_id]
-[assays_both_50_50_ac4_av.csv.assay_tax_id, assays_both_50_50_ac4_av.csv.chembl_id]

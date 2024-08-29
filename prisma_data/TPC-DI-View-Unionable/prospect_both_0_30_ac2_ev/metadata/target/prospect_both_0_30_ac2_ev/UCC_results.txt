@@ -1,2 +1,0 @@
-[prospect_both_0_30_ac2_ev.csv.AgeID]
-[prospect_both_0_30_ac2_ev.csv.FiNa]

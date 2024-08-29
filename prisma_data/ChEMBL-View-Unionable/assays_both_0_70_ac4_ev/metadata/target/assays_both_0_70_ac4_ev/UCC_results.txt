@@ -1,2 +1,0 @@
-[assays_both_0_70_ac4_ev.csv.assays_ASI]
-[assays_both_0_70_ac4_ev.csv.assays_CHEI]

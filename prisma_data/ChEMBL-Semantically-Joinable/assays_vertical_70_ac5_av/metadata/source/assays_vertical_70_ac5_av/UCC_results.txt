@@ -1,3 +1,0 @@
-[assays_vertical_70_ac5_av.csv.assay_id]
-[assays_vertical_70_ac5_av.csv.curated_by, assays_vertical_70_ac5_av.csv.description]
-[assays_vertical_70_ac5_av.csv.description, assays_vertical_70_ac5_av.csv.doc_id]

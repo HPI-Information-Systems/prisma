@@ -1,2 +1,0 @@
-[assays_vertical_30_ac4_ev.csv.assays_ASI]
-[assays_vertical_30_ac4_ev.csv.assays_CHI]

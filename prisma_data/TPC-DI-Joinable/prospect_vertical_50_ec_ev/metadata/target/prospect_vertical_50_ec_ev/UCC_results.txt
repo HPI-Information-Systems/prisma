@@ -1,3 +1,0 @@
-[prospect_vertical_50_ec_ev.csv.AgencyID]
-[prospect_vertical_50_ec_ev.csv.FirstName, prospect_vertical_50_ec_ev.csv.LastName]
-[prospect_vertical_50_ec_ev.csv.FirstName, prospect_vertical_50_ec_ev.csv.Phone]
