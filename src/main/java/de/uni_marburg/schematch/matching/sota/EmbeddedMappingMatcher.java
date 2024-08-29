@@ -9,7 +9,12 @@ import de.uni_marburg.schematch.similarity.list.ProbabilityMassFunction;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.ArrayUtils;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
@@ -39,6 +44,17 @@ public class EmbeddedMappingMatcher extends Matcher {
                 similarityByColumn[i][j] = similarityMeasure.compare(t1.getColumnByIndex(i).getValues(), t2.getColumnByIndex(j).getValues());
             }
         }
+
+        // randomization
+        long seed = 42;
+        List<Integer> rowMapping = IntStream.range(0, t1.getNumColumns()).boxed().collect(Collectors.toList());
+        Collections.shuffle(rowMapping, new Random(seed));
+        double[][] shuffledSimilarityByColumn = new double[t1.getNumColumns()][t2.getNumColumns()];
+        for (int i = 0; i < t1.getNumColumns(); i++) {
+            shuffledSimilarityByColumn[i] = similarityByColumn[rowMapping.get(i)];
+        }
+        similarityByColumn = shuffledSimilarityByColumn;
+
         getLogger().debug("Successfully created similarity Matrix based on the probability mass function for scenario '{}'.",
                 scenario.getName());
         int maxColumns = Integer.max(similarityByColumn.length, similarityByColumn[0].length);
@@ -67,7 +83,6 @@ public class EmbeddedMappingMatcher extends Matcher {
                     getLogger().debug("EmbeddedMappingMatcher improve match by switching: '{}' x '{}'", outer, inner);
                     bestMatch = newMatch;
                     disBestMatch = disNewMatch;
-//                    furtherImprovement = true;
                 }
             }
         }
@@ -81,7 +96,21 @@ public class EmbeddedMappingMatcher extends Matcher {
                 finalResultAsPrimitiveFloat[i][j] = bestMatch[i][j] ? 1.0f : 0.0f;
             }
         }
-        return finalResultAsPrimitiveFloat;
+
+        // undo randomization
+        ArrayList<float[]> finale = new ArrayList<>(Arrays.stream(finalResultAsPrimitiveFloat).toList());
+        unshuffle(finale, rowMapping);
+        return finale.toArray(new float[0][0]);
+    }
+
+    private static void unshuffle(ArrayList<float[]> list, List<Integer> rowMapping) {
+        ArrayList<float[]> unshuffledList = new ArrayList<>(Collections.nCopies(list.size(), null));
+        for(int i  = 0 ; i < list.size(); ++i){
+            unshuffledList.set(rowMapping.get(i), list.get(i));
+        }
+        for (int i = 0; i < list.size(); i++) {
+            list.set(i, unshuffledList.get(i));
+        }
     }
 
     // 1 0 x    0 0 1      1 x 0    0 1 0
