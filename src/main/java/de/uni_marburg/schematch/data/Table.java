@@ -37,6 +37,8 @@ public class Table {
     }
 
     public Column getColumnByName(String name) {
-        return this.columns.stream().filter(column -> column.getLabel().equals(name)).findFirst().orElseThrow();
+        return this.columns.stream().filter(column -> column.getLabel().equals(name)).findFirst()
+                .orElseThrow(() -> new IllegalArgumentException(
+                        "Column '" + name + "' not found in table '" + path + "'"));
     }
 }
