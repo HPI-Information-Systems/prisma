@@ -78,6 +78,9 @@ public class Evaluator {
                 String[] originalParts = parts[1].split("\\.");
 
                 Table denormalizedTable = database.getTableByName(denormalizedParts[0]);
+                if(denormalizedTable == null){
+                    throw new RuntimeException("table " + denormalizedParts[0] + " could not be resolved!");
+                }
                 Column denormalizedColumn = denormalizedTable.getColumnByName(denormalizedParts[1]);
                 int gtOffset = denormalizedTable.getOffset() + denormalizedTable.getColumns().indexOf(denormalizedColumn);
 
