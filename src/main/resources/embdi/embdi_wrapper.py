@@ -210,9 +210,9 @@ def update_params(scenario_path, params):
 
 def import_database(database_folder):
     dfs = []
-    for file in os.listdir(database_folder):
-        if file.endswith(".csv"):
-            dfs.append(read_csv(os.path.join(database_folder, file)))
+    files = sorted([file for file in os.listdir(database_folder) if file.endswith(".csv")])
+    for file in files:
+        dfs.append(read_csv(os.path.join(database_folder, file)))
     concat = pd.concat(dfs, axis=1)
     concat.columns = [str(id).zfill(5) + c for id, c in enumerate(concat.columns)]
     return concat
