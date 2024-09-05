@@ -1,3 +1,5 @@
+
+
 from output_helper import *
 
 
@@ -8,17 +10,18 @@ PERFORMANCES = {
     "Recall": "Recall"
 }
 
+PERFORMANCE = "Precision"
 FILTER_CONFIGS = [{"postprocessing" : "true", "kindOfFeature": "Distribution", "thresholdMatches": "true"}]
 
-benchmark = import_benchmark("../prisma/results/result-folder", PERFORMANCES)
+benchmark = import_benchmark("../prisma/results/high-res-grid", PERFORMANCES)
 
 gen_benchmark = generalize_benchmark_matchers(benchmark)
 
 
 for dataset_name, dataset_perf in gen_benchmark.items():
     dataset_perf = dataset_perf["_performances"]
-    labels = ["EmbeddedMappingMatcher", "KangEtNaughton"]
-    f1s = [dataset_perf["EmbeddedMappingMatcher"][0]["F1"], dataset_perf["KangEtNaughton"][0]["F1"]]
+    labels = ["EmbeddedMappingMatcher" , "KangEtNaughton"]
+    f1s = [dataset_perf["EmbeddedMappingMatcher"][0][PERFORMANCE], dataset_perf["KangEtNaughton"][0][PERFORMANCE]]
 
     filtered_prisma_perfs = [perf for perf in dataset_perf["PRISMAMatcher"] if perf["props"]["postprocessing"] == "true" and perf["props"]["kindOfFeature"] == "Distribution" and perf["props"]["thresholdMatches"] == "true"]
     filtered_prisma_perfs = sorted(
@@ -28,10 +31,10 @@ for dataset_name, dataset_perf in gen_benchmark.items():
     )
     for prisma_perf in filtered_prisma_perfs:
         labels.append(prisma_perf["props"])
-        f1s.append(prisma_perf["Precision"])
+        f1s.append(prisma_perf[PERFORMANCE])
 
     # print(labels)
-    # print(dataset_name)
+    print(dataset_name)
     print(f1s)
 # gen_benchmark = gen_benchmark["_performances"]["EmbedAlignMatcher"]
 
