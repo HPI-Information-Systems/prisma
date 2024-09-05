@@ -1,8 +1,8 @@
-[dblp.csv.title] --> dblp.csv.authors
-[dblp.csv.authors] --> dblp.csv.title
-[dblp.csv.title] --> dblp.csv.year
-[dblp.csv.title] --> dblp.csv.venue
-[dblp.csv.year, dblp.csv.venue] --> dblp.csv.title
-[dblp.csv.authors] --> dblp.csv.year
-[dblp.csv.authors] --> dblp.csv.venue
-[dblp.csv.year, dblp.csv.venue] --> dblp.csv.authors
+[dblp.csv.year, dblp.csv.venue] --> dblp.csv.authors (pdep 0.09837339073419571, 0.06814146041870117)
+[dblp.csv.title] --> dblp.csv.authors (pdep 0.9905198812484741, 0.0318915881216526)
+[dblp.csv.year, dblp.csv.venue] --> dblp.csv.title (pdep 0.0253745187073946, 0.001818046672269702)
+[dblp.csv.authors] --> dblp.csv.title (pdep 0.8142091631889343, 0.01714123599231243)
+[dblp.csv.title] --> dblp.csv.venue (pdep 0.9916921257972717, 0.02341136708855629)
+[dblp.csv.authors] --> dblp.csv.venue (pdep 0.9189691543579102, 0.0734911859035492)
+[dblp.csv.authors] --> dblp.csv.year (pdep 0.8308795690536499, 0.01309672649949789)
+[dblp.csv.title] --> dblp.csv.year (pdep 0.9642879366874695, 0.0016921936767175794)

@@ -4,7 +4,7 @@ from leapme_transfer_predict import GloveEmbeddingsCalculator, predict
 
 PREDICTION_USED_INFO_TYPES = ["values", "names", "both"]
 PREDICTION_FEATURES = ["embeddings", "no-embeddings", "both"]
-DATA_DIRECTORY_MOUNT = '/leapme/data/'
+DATA_DIRECTORY_MOUNT = "/leapme/data"
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

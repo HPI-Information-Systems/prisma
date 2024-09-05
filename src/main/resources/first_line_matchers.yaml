@@ -12,11 +12,25 @@ name: "PRISMAMatcher"
 packageName: "metadata"
 active: true
 params:
-  xNetMFGammaStrucAttr: [0.5]
-  topKRow: [-1, 0, 1, 2, 3]
-  topKCol: [-1, 0, 1, 2, 3]
-  topKByUnion: [false, true]
+  postprocessing: [true]
+  thresholdMatches: [true]  # false -> writes 1s instead of actual similarities, true -> writes similarities
+  GammaStrucAttr: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  kindOfFeature: ["Distribution"]
+  gDepFiltering: ["gdep_threshold_0.0", "gdep_threshold_0.05", "gdep_threshold_0.1", "gdep_threshold_0.15", "gdep_threshold_0.2", "gdep_threshold_0.25", "gdep_threshold_0.3", "gdep_threshold_0.35","gdep_threshold_0.4","gdep_threshold_0.45", "gdep_threshold_0.5"]
+  # ^ these also need to be set in Scenario.java
 # Similarity matchers
+---
+name: "LeapmeMatcher"
+packageName: "sota"
+active: false
+params:
+  serverPort: 5000
+  information: "names" # ["values", "names", "both"]
+  features: "embeddings" # ["embeddings", "no-embeddings", "both"]
+---
+name: "EmbeddedMappingMatcher"
+packageName: "sota"
+active: true
 ---
 name: "LevenshteinMatcher"
 packageName: "similarity.label"

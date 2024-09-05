@@ -29,10 +29,22 @@ public class Main {
     public static void main(String[] args) throws Exception {
         log.info("Starting Schematch");
 
-        log.info("Please give this run a name");
-        BufferedReader stdinReader = new BufferedReader(new InputStreamReader(System.in));
-        String runName = stdinReader.readLine();
-        stdinReader.close();
+        boolean noNameFlag = false;
+
+        // Check if --no_name flag is present in the arguments
+        for (String arg : args) {
+            if ("--no_name".equals(arg)) {
+                noNameFlag = true;
+                break;
+            }
+        }
+        String runName = "";
+        if(!noNameFlag){
+            log.info("Please give this run a name");
+            BufferedReader stdinReader = new BufferedReader(new InputStreamReader(System.in));
+            runName = stdinReader.readLine();
+            stdinReader.close();
+        }
         log.info("Using '{}' as run name.", runName);
         ResultsUtils.setRunName(runName);
 

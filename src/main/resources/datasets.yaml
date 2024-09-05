@@ -1,21 +1,43 @@
 # ---- Original Datasets ----
+---
+name: "Valentine-Wikidata-Unionable"
+path: "Valentine-Wikidata-Unionable"
+---
+name: "Magellan-Unionable"
+path: "Magellan-Unionable"
+---
+name: "ORIG_MTSN"
+path: "ORIG_MTSN"
+---
+name: "TPC-DI-Unionable"
+path: "TPC-DI-Unionable"
+---
+name: "ORIG_MTDN"
+path: "ORIG_MTDN"
+---
+name: "ChEMBL-Unionable"
+path: "ChEMBL-Unionable"
+---
+name: "ORIG_MTSN_denormalized"
+path: "ORIG_MTSN_denormalized"
+---
+name: "ORIG_MTDN_denormalized"
+path: "ORIG_MTDN_denormalized"
 
 #---
 #name: "ORIG_all"
 #path: "ORIG_all"
 
-#---
-#name: "ORIG_MTDN"
-#path: "ORIG_MTDN"
+
 
 #---
-#name: "ORIG_MTSN"
-#path: "ORIG_MTSN"
+#name: "ORIG_MTDN_no_denormalization"
+#path: "ORIG_MTDN_no_denormalization"
 
 #---
 #name: "ORIG_STSDD"
 #path: "ORIG_STSDD"
-
+#
 #---
 #name: "ORIG_STSSD"
 #path: "ORIG_STSSD"
@@ -26,19 +48,96 @@
 #name: "ENC_all"
 #path: "ENC_all"
 
+##---
+##name: "ENC_MTDN_no_denormalization"
+##path: "ENC_MTDN_no_denormalization"
+##
+##---
+##name: "ORIG_MTDN_no_denormalization"
+##path: "ORIG_MTDN_no_denormalization"
+##
+#---
+#name: "ORIG_MTDN"
+#path: "ORIG_MTDN"
+
 #---
 #name: "ENC_MTDN"
 #path: "ENC_MTDN"
+#
+#---
+#name: "ChEMBL-Joinable"
+#path: "ChEMBL-Joinable"
+#---
+#name: "ChEMBL-Semantically-Joinable"
+#path: "ChEMBL-Semantically-Joinable"
+#---
+#name: "ChEMBL-Unionable"
+#path: "ChEMBL-Unionable"
+#---
+#name: "ChEMBL-View-Unionable"
+#path: "ChEMBL-View-Unionable"
+
+##---
+##name: "ChEMBL-Joinable_md5_encrypted"
+##path: "ChEMBL-Joinable_md5_encrypted"
+##---
+##name: "ChEMBL-Semantically-Joinable_md5_encrypted"
+##path: "ChEMBL-Semantically-Joinable_md5_encrypted"
+##---
+##name: "ChEMBL-Unionable_md5_encrypted"
+##path: "ChEMBL-Unionable_md5_encrypted"
+##---
+##name: "ChEMBL-View-Unionable_md5_encrypted"
+##path: "ChEMBL-View-Unionable_md5_encrypted"
+##
+#---
+#name: "Valentine-Wikidata"
+#path: "Valentine-Wikidata"
+#
+#---
+#name: "TPC-DI-Joinable"
+#path: "TPC-DI-Joinable"
+#---
+#name: "TPC-DI-Semantically-Joinable"
+#path: "TPC-DI-Semantically-Joinable"
+#---
+#name: "TPC-DI-Unionable"
+#path: "TPC-DI-Unionable"
+#---
+#name: "TPC-DI-View-Unionable"
+#path: "TPC-DI-View-Unionable"
+
+#---
+#name: "ENC_MTSN_no_denormalization"
+#path: "ENC_MTSN_no_denormalization"
+
+#---
+#name: "ORIG_MTSN_no_denormalization"
+#path: "ORIG_MTSN_no_denormalization"
 
 #---
 #name: "ENC_MTSN"
 #path: "ENC_MTSN"
 
+
 #---
 #name: "ENC_STSDD"
 #path: "ENC_STSDD"
-
+#
 #---
 #name: "ENC_STSSD"
 #path: "ENC_STSSD"
 
+
+#---
+#name: "Open_Data-Unionable"
+#path: "Open_Data-Unionable"
+#---
+#name: "Open_Data-Joinable"
+#path: "Open_Data-Joinable"
+#---
+#name: "Open_Data-Semantically-Joinable"
+#path: "Open_Data-Semantically-Joinable"
+#---
+#name: "Open_Data-View-Unionable"
+#path: "Open_Data-View-Unionable"

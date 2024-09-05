@@ -1,5 +1,4 @@
 # Copied from https://github.com/GemsLab/REGAL/blob/master/alignments.py
-
 import numpy as np
 import scipy.io as sio
 import sklearn.metrics.pairwise
@@ -7,20 +6,30 @@ from scipy.sparse import csr_matrix, coo_matrix
 from sklearn.neighbors import KDTree
 import scipy.sparse as sp
 from scipy.spatial.distance import cosine
+from scipy.optimize import linear_sum_assignment
 import matching
 import matching.games
 
-def get_embedding_similarities(embed, embed2 = None, sim_measure = "euclidean", top_k_row = None, top_k_col=None, top_k_by_union=True):
+
+def shuffle_sm(sm):
+    num_columns = sm.shape[1]
+    original_indices = np.arange(num_columns)
+
+    shuffled_indices = np.random.default_rng(seed=42).permutation(original_indices)
+    shuffled_sm = sm[:, shuffled_indices]
+
+    return shuffled_sm, shuffled_indices
+
+def unshuffle_sm(shuffled_sm, shuffled_indices):
+    unshuffled_indices = np.argsort(shuffled_indices)
+    unshuffled_sm = shuffled_sm[:, unshuffled_indices]
+    return unshuffled_sm
+
+
+def get_embedding_similarities(embed, embed2 = None, sim_measure = "cosine"):
     if embed2 is None:
         embed2 = embed
 
-    if top_k_row != -1 and top_k_col != -1: #KD tree with only top similarities computed
-        kd_sim_source_target = kd_align(embed, embed2, distance_metric=sim_measure, num_top=top_k_row if top_k_row is not None else 0)
-        kd_sim_target_source = kd_align(embed2, embed, distance_metric=sim_measure, num_top=top_k_col if top_k_col is not None else 0)
-        if top_k_by_union:
-            return kd_sim_target_source.transpose().maximum(kd_sim_source_target)
-        else:
-            return kd_sim_target_source.transpose().minimum(kd_sim_source_target)
 
     #All pairwise distance computation
     if sim_measure == "cosine":
@@ -28,42 +37,49 @@ def get_embedding_similarities(embed, embed2 = None, sim_measure = "euclidean", 
     else:
         similarity_matrix = sklearn.metrics.pairwise.euclidean_distances(embed, embed2)
         similarity_matrix = np.exp(-similarity_matrix)
-
-    if top_k_row is not None or top_k_col is not None:
-        row_players = {
-            i: matching.Player(i) for i in range(similarity_matrix.shape[0])
-        }
-        column_players = {
-            i: matching.Player(i) for i in range(similarity_matrix.shape[1])
-        }
-        for i, row in enumerate(similarity_matrix):
-            preferences = np.flip(np.argsort(row))
-            row_players[i].prefs = [
-                column_players[p] for p in preferences
-            ]
-
-        for i in range(similarity_matrix.shape[1]):
-            column = similarity_matrix[:, i]
-            preferences = np.flip(np.argsort(column))
-            column_players[i].prefs = [
-                row_players[p] for p in preferences
-            ]
-
-        row_players = list(row_players.values())
-        column_players = list(column_players.values())
-
-        fill_up_players(row_players, column_players)
-
-        marriage_problem = matching.games.StableMarriage(row_players, column_players)
-        player_matching = marriage_problem.solve("suitors" if len(row_players) < len(column_players) else "reviewers")
-
-        filter_matrix = np.zeros(similarity_matrix.shape)
-        for row_player in player_matching:
-            # Filter out dummy players
-            if row_player.name >= 1_000_000 or row_player.matching.name >= 1_000_000:
-                continue
-            filter_matrix[row_player.name][row_player.matching.name] = 1
-        similarity_matrix = np.minimum(similarity_matrix, filter_matrix)
+    similarity_matrix, shuffle_indices = shuffle_sm(similarity_matrix)
+    dissimilarity_matrix = 1 - similarity_matrix
+    row_indices, col_indices = linear_sum_assignment(dissimilarity_matrix)
+    optimal_matching = list(zip(row_indices, col_indices))
+    filter_matrix = np.zeros(similarity_matrix.shape)
+    for x, y in optimal_matching:
+        filter_matrix[x][y] = 1
+    similarity_matrix = np.minimum(similarity_matrix, filter_matrix)
+    similarity_matrix = unshuffle_sm(similarity_matrix, shuffle_indices)
+        #row_players = {
+        #    i: matching.Player(i) for i in range(similarity_matrix.shape[0])
+        #}
+        #column_players = {
+        #    i: matching.Player(i) for i in range(similarity_matrix.shape[1])
+        #}
+        #for i, row in enumerate(similarity_matrix):
+        #    preferences = np.flip(np.argsort(row))
+        #    row_players[i].prefs = [
+        #        column_players[p] for p in preferences
+        #    ]
+#
+        #for i in range(similarity_matrix.shape[1]):
+        #    column = similarity_matrix[:, i]
+        #    preferences = np.flip(np.argsort(column))
+        #    column_players[i].prefs = [
+        #        row_players[p] for p in preferences
+        #    ]
+#
+        #row_players = list(row_players.values())
+        #column_players = list(column_players.values())
+#
+        #fill_up_players(row_players, column_players)
+#
+        #marriage_problem = matching.games.StableMarriage(row_players, column_players)
+        #player_matching = marriage_problem.solve("suitors" if len(row_players) < len(column_players) else "reviewers")
+#
+        #filter_matrix = np.zeros(similarity_matrix.shape)
+        #for row_player in player_matching:
+        #    # Filter out dummy players
+        #    if row_player.name >= 1_000_000 or row_player.matching.name >= 1_000_000:
+        #        continue
+        #    filter_matrix[row_player.name][row_player.matching.name] = 1
+        #similarity_matrix = np.minimum(similarity_matrix, filter_matrix)
 
     return csr_matrix(similarity_matrix)
 

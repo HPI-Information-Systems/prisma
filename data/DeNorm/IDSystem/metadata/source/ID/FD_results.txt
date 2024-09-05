@@ -1,15 +1,15 @@
-[ID.csv.IDA] --> ID.csv.IDB
-[ID.csv.IDA] --> ID.csv.IDC
-[ID.csv.IDA] --> ID.csv.IDD
-[ID.csv.IDA] --> ID.csv.IDE
-[ID.csv.IDA] --> ID.csv.IDF
-[ID.csv.IDB] --> ID.csv.IDC
-[ID.csv.IDB] --> ID.csv.IDD
-[ID.csv.IDB] --> ID.csv.IDE
-[ID.csv.IDB] --> ID.csv.IDF
-[ID.csv.IDC] --> ID.csv.IDD
-[ID.csv.IDC] --> ID.csv.IDE
-[ID.csv.IDC] --> ID.csv.IDF
-[ID.csv.IDD] --> ID.csv.IDE
-[ID.csv.IDD] --> ID.csv.IDF
-[ID.csv.IDE] --> ID.csv.IDF
+[ID.csv.IDA] --> ID.csv.IDF (pdep 1.0, 0.12345679104328156)
+[ID.csv.IDA] --> ID.csv.IDE (pdep 1.0, 0.14814814925193787)
+[ID.csv.IDB] --> ID.csv.IDF (pdep 1.0, 0.18518517911434174)
+[ID.csv.IDA] --> ID.csv.IDD (pdep 1.0, 0.1666666716337204)
+[ID.csv.IDB] --> ID.csv.IDE (pdep 1.0, 0.2222222238779068)
+[ID.csv.IDC] --> ID.csv.IDF (pdep 1.0, 0.2469135820865631)
+[ID.csv.IDA] --> ID.csv.IDC (pdep 1.0, 0.18518517911434174)
+[ID.csv.IDB] --> ID.csv.IDD (pdep 1.0, 0.25)
+[ID.csv.IDC] --> ID.csv.IDE (pdep 1.0, 0.29629629850387573)
+[ID.csv.IDD] --> ID.csv.IDF (pdep 1.0, 0.3086419701576233)
+[ID.csv.IDA] --> ID.csv.IDB (pdep 1.0, 0.1975308656692505)
+[ID.csv.IDB] --> ID.csv.IDC (pdep 1.0, 0.2777777910232544)
+[ID.csv.IDC] --> ID.csv.IDD (pdep 1.0, 0.3333333432674408)
+[ID.csv.IDD] --> ID.csv.IDE (pdep 1.0, 0.37037035822868347)
+[ID.csv.IDE] --> ID.csv.IDF (pdep 1.0, 0.37037035822868347)

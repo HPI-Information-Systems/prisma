@@ -210,8 +210,8 @@ public class InputReader {
                 //    fd.setPdepTuple(MetadataUtils.getPdep(fd));
                 //}
                 Collection<UniqueColumnCombination> datasetUCCs = readUCCFile(uccFilePath, table, uccMap);
-                if(datasetUCCs.isEmpty())
-                    datasetUCCs = Metanome.executeUCC(List.of(table));
+                //if(datasetUCCs.isEmpty())
+                //    datasetUCCs = Metanome.executeUCC(List.of(table));
                 fds.addAll(datasetFDs);
                 uccs.addAll(datasetUCCs);
             }
@@ -265,7 +265,7 @@ public class InputReader {
             Pattern p = Pattern.compile("(\\[.*]) --> ([^(]+) ?(\\(pdep (-?\\d\\.\\d+(E-\\d+)?), (-?\\d\\.\\d+(E-\\d+)?)\\))?");
             java.util.regex.Matcher matcher = p.matcher(line);
             if (!matcher.find()) {
-                throw new RuntimeException("Parsing of FD failed");
+                throw new RuntimeException("Parsing of FD failed. Line : " + line);
             }
             PdepTuple pdep = null;
             if (matcher.group(3) != null) {

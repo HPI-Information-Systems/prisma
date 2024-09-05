@@ -17,8 +17,8 @@ EMBEDDING_GENERATION = "XNET"  # "N2V" "XNET"
 
 
 def embed_xnetmf(graph, features, xNetMFGammaAttrStruc):
-    repmethod = REGAL_config.RepMethod(gammastruc=xNetMFGammaAttrStruc, gammaattr=1-xNetMFGammaAttrStruc)
-    graph = REGAL_config.Graph(adj=nx.adjacency_matrix(graph), node_attributes=features)
+    repmethod = REGAL_config.RepMethod(gammastruc=xNetMFGammaAttrStruc, gammaattr=1-xNetMFGammaAttrStruc, k=10)
+    graph = REGAL_config.Graph(adj=nx.adjacency_matrix(graph), node_attributes=features, node_labels=list(graph.nodes))
     return REGAL_xnetmf.get_representations(graph, repmethod)
 
 
@@ -162,8 +162,6 @@ def get_embeddings(
     source_graph_file,
     graphB: EmbedGraph,
     target_graph_file,
-    dropColumns,
-    dropConstraints,
     xNetMFGammaAttrStruc,
 ):
     if EMBEDDING_GENERATION == "N2V":
@@ -206,8 +204,6 @@ def get_embeddings(
         embeddings_source,
         graphB,
         embeddings_target,
-        dropColumns,
-        dropConstraints,
         xNetMFGammaAttrStruc
     )
 
@@ -223,9 +219,8 @@ def match(
     key = (
         source_graph_file,
         target_graph_file,
-        config["dropColumns"],
-        config["dropConstraints"],
-        float(config["xNetMFGammaStrucAttr"])
+        config["kind_of_feature"],
+        float(config["xNetMFGammaStrucAttr"]),
     )
     if key in EMBEDDINGS_CACHE:
         representationCache: RepresentationCache = EMBEDDINGS_CACHE[key]
@@ -233,31 +228,29 @@ def match(
         graphA = EmbedGraph(
             nx.read_graphml(source_graph_file, node_type=str),
             "../../../../" + features_dir + "/source.json",
+            config["kind_of_feature"]
         )
         graphB = EmbedGraph(
             nx.read_graphml(target_graph_file, node_type=str),
             "../../../../" + features_dir + "/target.json",
+            config["kind_of_feature"]
         )
-        graphA.normalize_features(graphB)  # normalizes both graph's features
-        graphA.remove_random_ics(float(config["dropConstraints"]))
-        graphA.remove_random_columns(float(config["dropColumns"]))
+        #graphA.normalize_features(graphB)  # normalizes both graph's features
 
         representationCache: RepresentationCache = get_embeddings(
             graphA,
             source_graph_file,
             graphB,
             target_graph_file,
-            config["dropColumns"],
-            config["dropConstraints"],
             float(config["xNetMFGammaStrucAttr"])
         )
         EMBEDDINGS_CACHE[key] = representationCache
 
-    top_k_row, top_k_col = int(config["top_k_row"]), int(config["top_k_col"])
-    if top_k_row == 0 and top_k_col == 0:
+
+    if config["postprocessing"] == "false":
         alignment_matrix = get_sm(source_table, target_table, representationCache)
     else:
-        alignment_matrix = representationCache.get_filtered_sm(source_table, target_table, top_k_row=top_k_row, top_k_col=top_k_col, top_k_by_union=(True if config["top_k_by_union"] == "true" else False))
+        alignment_matrix = representationCache.get_filtered_sm(source_table, target_table, config["thresholdMatches"])
 
     print(alignment_matrix)
     return "\n".join([" ".join([str(x) for x in row]) for row in alignment_matrix])

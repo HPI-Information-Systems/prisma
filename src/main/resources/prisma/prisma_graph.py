@@ -20,20 +20,22 @@ def extract_table(node_label):
     return node_label.split("|")[3]
 
 
-def load_feature_dict(path):
+def load_feature_dict(path, kind_of_feature):
     with open(path, "r") as fp:
         dict = json.loads(json.load(fp))
+    dict = dict[kind_of_feature]
     dict = {table: {column: np.asarray(features) for column, features in columns.items()} for table, columns in dict.items()}
     return dict
 
 
 class EmbedGraph:
-    def __init__(self, graph: nx.Graph, feature_json_path: str):
+    def __init__(self, graph: nx.Graph, feature_json_path: str, kind_of_feature : str):
         self.graph = graph
         self.original_mappings = self.get_mappings()
         self.mappings = self.get_mappings()
         self.feature_json_path = feature_json_path
-        self.feature_dict = load_feature_dict(feature_json_path)
+        self.feature_dict = load_feature_dict(feature_json_path, kind_of_feature)
+        self.kind_of_feature = kind_of_feature
         self.default_feature_vector_length_dict = (
             self.get_default_feature_vector_length_dict()
         )
@@ -93,23 +95,24 @@ class EmbedGraph:
                 return features.shape
 
     def get_features(self):
-        lookup = {}
-        empty_dict_feature_list = np.asarray([
-            0.0 for _ in range(self.default_feature_vector_length_dict)
-        ])
-        for i, k in enumerate(NODE_TYPES):
-            feature = [0.0 for _ in range(len(NODE_TYPES))]
-            feature[i] = 1.0
-            lookup[k] = np.asarray(feature)
+        #lookup = {}
+        #empty_dict_feature_list = np.asarray([
+        #    0.0 for _ in range(self.default_feature_vector_length_dict)
+        #])
+        #for i, k in enumerate(NODE_TYPES):
+        #    feature = [0.0 for _ in range(len(NODE_TYPES))]
+        #    feature[i] = 1.0
+        #    lookup[k] = np.asarray(feature)
         encodings = []
         for node in self.graph.nodes:
-            type_one_hot_encodings = lookup[extract_node_type(node)]
-
+            #type_one_hot_encodings = lookup[extract_node_type(node)]
+#
             if extract_node_type(node) == "COLUMN":
                 features = self.feature_dict[extract_table(node)][extract_column(node)]
-            else:
-                features = empty_dict_feature_list
-            encodings.append(np.concatenate((type_one_hot_encodings, features)))
+                encodings.append(np.asarray(features))
+
+            #else:
+            #    features = empty_dict_feature_list
 
         return np.asarray(encodings)
 

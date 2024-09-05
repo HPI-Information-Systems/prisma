@@ -1,2 +1,0 @@
-[language.csv.language_id] --> language.csv.name
-[language.csv.name] --> language.csv.language_id

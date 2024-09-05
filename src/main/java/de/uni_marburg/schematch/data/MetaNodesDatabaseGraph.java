@@ -17,8 +17,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Collection;
-import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.function.Function;
 
@@ -26,25 +25,24 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private static Integer globalGraphCounter = 1;
 
-    private final Integer MAX_UCC_SIZE = 3;
-    private final Integer MAX_FD_SIZE = 3;
 
     private final Database database;
     private final SimpleDirectedGraph<String, DefaultEdge> graph = new SimpleDirectedGraph<>(DefaultEdge.class);
     @Getter
     private final Integer graphId; // in order to ensure that two graphs won't have identically named nodes
+    @Getter
+    private final String gDepThreshold;
     private Integer uccCounter = 1;
     private Integer fdCounter = 1;
-    private Integer antiDirectionalityNodeCounter = 1;
 
     private List<String> columnsToExclude = List.of(
 //          "phone",
 //          "ptmxztdd" // author_fname
     );
 
-    public MetaNodesDatabaseGraph(final Database database) {
-        logger.info("Building graph");
+    public MetaNodesDatabaseGraph(final Database database, String gDepThreshold) {
         this.database = database;
+        this.gDepThreshold = gDepThreshold;
         this.graphId = globalGraphCounter;
         globalGraphCounter++;
 
@@ -57,8 +55,6 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
 
     private void buildFor(final Database database) {
         graph.addVertex(graphRoot());
-//        graph.addVertex(uccMetaNode());
-//        graph.addVertex(fdMetaNode());
 
         for (Table table : database.getTables()) {
             graph.addVertex(tableNode(table));
@@ -75,26 +71,31 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
             }
         }
 
-        int maxConstraintsSize = graph.vertexSet().size() * 100;
 
-//        int maxUccSize = MAX_UCC_SIZE;
-//        Collection<UniqueColumnCombination> uccs;
-//        do {
-//            uccs = database.getMetadata().getUniqueColumnCombinations(maxUccSize);
-//            maxUccSize--;
-//        } while (uccs.size() > maxConstraintsSize && maxUccSize >= 1);
-//        uccs.forEach(this::addUcc);
 
-        int maxFdSize = MAX_FD_SIZE;
-        Collection<FunctionalDependency> fds;
-        fds = database.getMetadata().getMeaningfulFunctionalDependencies(maxFdSize, maxConstraintsSize, new HashSet<>());
-//        fds = fds.stream()
-//                .sorted(Comparator.comparingDouble((FunctionalDependency fd) -> fd.getPdepTuple().gpdep).reversed())
-//                .limit(fds.size() / 2)
-//                .filter(fd -> fd.getPdepTuple().gpdep > 0)
-//                .toList();
-        fds.forEach(this::addFd);
-//        fds.stream().map(database.getMetadata()::subsumeFunctionalDependencyViaInclusionDependency).forEach(this::addFd);
+        //int maxFdSize = Math.min(countMaxAFDsSourceTargetAboveThreshold(database.getScenario(), Double.parseDouble(this.gDepThreshold)), 5000);
+        int maxFdSize = 0;
+        if(this.gDepThreshold.startsWith("absolute_")){
+            String numberPart = this.gDepThreshold.substring(9);
+            maxFdSize = Integer.parseInt(numberPart);
+        } else  if(this.gDepThreshold.startsWith("col_scale_")){
+            String numberPart = this.gDepThreshold.substring(10);
+            maxFdSize = (int) Math.min(database.getNumColumns() * Double.parseDouble(numberPart), 5000);
+        }else if (this.gDepThreshold.startsWith("gdep_threshold_")){
+            String numberPart = this.gDepThreshold.substring(15);
+            maxFdSize =  Math.min(countMaxAFDsSourceTargetAboveThreshold(database.getScenario(), Double.parseDouble(numberPart)), 5000);
+        }
+
+        logger.info("Building graph for " + database.getName() + "using "  + maxFdSize + " FDs @ gDepThreshold " + this.gDepThreshold);
+
+        List<FunctionalDependency> fds = database.getMetadata().getFds().stream()
+                .sorted((FunctionalDependency l, FunctionalDependency r) -> Double.compare(r.getPdepTuple().gpdep, l.getPdepTuple().gpdep))
+                .toList();
+
+        Iterator<FunctionalDependency> iterator = fds.iterator();
+        for (int i = 0; i < Math.min(maxFdSize, fds.size()) && iterator.hasNext(); i++) {
+            this.addFd(iterator.next());
+        }
 
         // We might have computed some new pdep scores and want to save those.
         if (Metanome.SAVE) {
@@ -111,7 +112,7 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
         return Path.of("target/graphs")
                 .resolve(database.getScenario().getDataset().getName())
                 .resolve(database.getScenario().getName())
-                .resolve(database.getName() + ".gml");
+                .resolve(this.gDepThreshold + "_" + database.getName() + ".gml");
     }
 
     private void exportGraph() {
@@ -126,6 +127,37 @@ public class MetaNodesDatabaseGraph extends DatabaseGraph {
         }
     }
 
+    private Integer countMaxStrictFDsSourceTarget(Scenario scenario){
+        Integer sourceFDs = 0;
+        Integer targetFDs = 0;
+        for(FunctionalDependency fd : scenario.getSourceDatabase().getMetadata().getFds()){
+            if(fd.getPdepTuple().pdep == 1.0){
+                sourceFDs++;
+            }
+        }
+        for(FunctionalDependency fd : scenario.getTargetDatabase().getMetadata().getFds()){
+            if(fd.getPdepTuple().pdep == 1.0){
+                targetFDs++;
+            }
+        }
+        return Math.max(sourceFDs, targetFDs);
+    }
+
+    private Integer countMaxAFDsSourceTargetAboveThreshold(Scenario scenario, double threshold){
+        Integer sourceFDs = 0;
+        Integer targetFDs = 0;
+        for(FunctionalDependency fd : scenario.getSourceDatabase().getMetadata().getFds()){
+            if(fd.getPdepTuple().gpdep >= threshold){
+                sourceFDs++;
+            }
+        }
+        for(FunctionalDependency fd : scenario.getTargetDatabase().getMetadata().getFds()){
+            if(fd.getPdepTuple().gpdep >= threshold){
+                targetFDs++;
+            }
+        }
+        return Math.max(sourceFDs, targetFDs);
+    }
     private void addUcc(UniqueColumnCombination ucc) {
         String thisUccNode = vertexName("UCC", String.valueOf(uccCounter));
         graph.addVertex(thisUccNode);

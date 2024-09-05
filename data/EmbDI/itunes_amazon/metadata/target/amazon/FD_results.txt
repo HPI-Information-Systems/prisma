@@ -1,49 +1,49 @@
-[amazon.csv.song_name] --> amazon.csv.album_name
-[amazon.csv.song_name] --> amazon.csv.price
-[amazon.csv.album_name] --> amazon.csv.genre
-[amazon.csv.album_name] --> amazon.csv.artist_name
-[amazon.csv.song_name] --> amazon.csv.time
-[amazon.csv.album_name] --> amazon.csv.song_name
-[amazon.csv.album_name] --> amazon.csv.copyright
-[amazon.csv.album_name] --> amazon.csv.released
-[amazon.csv.copyright] --> amazon.csv.album_name
-[amazon.csv.song_name] --> amazon.csv.genre
-[amazon.csv.song_name] --> amazon.csv.artist_name
-[amazon.csv.album_name] --> amazon.csv.price
-[amazon.csv.song_name] --> amazon.csv.copyright
-[amazon.csv.song_name] --> amazon.csv.released
-[amazon.csv.album_name] --> amazon.csv.time
-[amazon.csv.copyright] --> amazon.csv.song_name
-[amazon.csv.copyright] --> amazon.csv.price
-[amazon.csv.artist_name] --> amazon.csv.song_name
-[amazon.csv.artist_name] --> amazon.csv.album_name
-[amazon.csv.time] --> amazon.csv.song_name
-[amazon.csv.time] --> amazon.csv.album_name
-[amazon.csv.copyright] --> amazon.csv.artist_name
-[amazon.csv.copyright] --> amazon.csv.time
-[amazon.csv.copyright] --> amazon.csv.genre
-[amazon.csv.artist_name] --> amazon.csv.copyright
-[amazon.csv.copyright] --> amazon.csv.released
-[amazon.csv.artist_name] --> amazon.csv.price
-[amazon.csv.artist_name] --> amazon.csv.time
-[amazon.csv.time] --> amazon.csv.artist_name
-[amazon.csv.released] --> amazon.csv.album_name
-[amazon.csv.time] --> amazon.csv.copyright
-[amazon.csv.released] --> amazon.csv.artist_name
-[amazon.csv.released] --> amazon.csv.copyright
-[amazon.csv.artist_name] --> amazon.csv.released
-[amazon.csv.artist_name] --> amazon.csv.genre
-[amazon.csv.time] --> amazon.csv.price
-[amazon.csv.released] --> amazon.csv.song_name
-[amazon.csv.time] --> amazon.csv.genre
-[amazon.csv.price, amazon.csv.genre] --> amazon.csv.album_name
-[amazon.csv.released] --> amazon.csv.price
-[amazon.csv.genre] --> amazon.csv.price
-[amazon.csv.price, amazon.csv.genre] --> amazon.csv.artist_name
-[amazon.csv.released] --> amazon.csv.genre
-[amazon.csv.price, amazon.csv.genre] --> amazon.csv.copyright
-[amazon.csv.released] --> amazon.csv.time
-[amazon.csv.time] --> amazon.csv.released
-[amazon.csv.price, amazon.csv.genre] --> amazon.csv.song_name
-[amazon.csv.price, amazon.csv.genre] --> amazon.csv.released
-[amazon.csv.price, amazon.csv.genre] --> amazon.csv.time
+[amazon.csv.time] --> amazon.csv.copyright (pdep 0.023603757843375206, 0.011103725992143154)
+[amazon.csv.released] --> amazon.csv.song_name (pdep 0.040453702211380005, 0.00505788205191493)
+[amazon.csv.copyright] --> amazon.csv.artist_name (pdep 0.7203660607337952, 0.684496283531189)
+[amazon.csv.price, amazon.csv.genre] --> amazon.csv.album_name (pdep 0.14247681200504303, 0.13213768601417542)
+[amazon.csv.copyright] --> amazon.csv.time (pdep 0.06150585040450096, 0.026640186086297035)
+[amazon.csv.artist_name] --> amazon.csv.genre (pdep 0.7235707640647888, 0.8409351110458374)
+[amazon.csv.released] --> amazon.csv.copyright (pdep 0.4848257899284363, 0.4527817964553833)
+[amazon.csv.copyright] --> amazon.csv.album_name (pdep 0.5832813382148743, 0.5390950441360474)
+[amazon.csv.time] --> amazon.csv.album_name (pdep 0.02104947529733181, 0.006448122672736645)
+[amazon.csv.album_name] --> amazon.csv.artist_name (pdep 0.9899392127990723, 0.9089266657829285)
+[amazon.csv.album_name] --> amazon.csv.song_name (pdep 0.09987582266330719, 0.009717452339828014)
+[amazon.csv.song_name] --> amazon.csv.copyright (pdep 0.8211966753005981, 0.13784846663475037)
+[amazon.csv.album_name] --> amazon.csv.time (pdep 0.10937424004077911, 0.029318762943148613)
+[amazon.csv.artist_name] --> amazon.csv.song_name (pdep 0.03829206898808479, 0.006795085500925779)
+[amazon.csv.price, amazon.csv.genre] --> amazon.csv.time (pdep 0.01958117075264454, 0.018892675638198853)
+[amazon.csv.price, amazon.csv.genre] --> amazon.csv.artist_name (pdep 0.23316049575805664, 0.23143236339092255)
+[amazon.csv.song_name] --> amazon.csv.album_name (pdep 0.7804835438728333, 0.09646157175302505)
+[amazon.csv.artist_name] --> amazon.csv.time (pdep 0.04599669203162193, 0.02525397390127182)
+[amazon.csv.price, amazon.csv.genre] --> amazon.csv.song_name (pdep 0.013891063630580902, 0.0022280653938651085)
+[amazon.csv.released] --> amazon.csv.artist_name (pdep 0.5025501251220703, 0.47685062885284424)
+[amazon.csv.artist_name] --> amazon.csv.released (pdep 0.3930109143257141, 0.4057512879371643)
+[amazon.csv.artist_name] --> amazon.csv.album_name (pdep 0.3439928889274597, 0.31379321217536926)
+[amazon.csv.song_name] --> amazon.csv.artist_name (pdep 0.8782471418380737, 0.1969744861125946)
+[amazon.csv.time] --> amazon.csv.price (pdep 0.4736388027667999, 1.622562050819397)
+[amazon.csv.album_name] --> amazon.csv.genre (pdep 0.9908679723739624, 1.0405545234680176)
+[amazon.csv.released] --> amazon.csv.time (pdep 0.047914810478687286, 0.023229964077472687)
+[amazon.csv.time] --> amazon.csv.released (pdep 0.04133625328540802, 0.07036559283733368)
+[amazon.csv.copyright] --> amazon.csv.price (pdep 0.7946345806121826, 1.8790401220321655)
+[amazon.csv.album_name] --> amazon.csv.released (pdep 0.9895923137664795, 0.9409918785095215)
+[amazon.csv.song_name] --> amazon.csv.price (pdep 0.9464771747589111, 0.6355510354042053)
+[amazon.csv.song_name] --> amazon.csv.time (pdep 0.8898677825927734, 0.20892702043056488)
+[amazon.csv.artist_name] --> amazon.csv.copyright (pdep 0.4248197078704834, 0.3966880738735199)
+[amazon.csv.released] --> amazon.csv.price (pdep 0.7360479235649109, 1.8424409627914429)
+[amazon.csv.price, amazon.csv.genre] --> amazon.csv.copyright (pdep 0.16480189561843872, 0.15657317638397217)
+[amazon.csv.genre] --> amazon.csv.price (pdep 0.5746409893035889, 1.741919755935669)
+[amazon.csv.copyright] --> amazon.csv.song_name (pdep 0.053283486515283585, 0.007818653248250484)
+[amazon.csv.time] --> amazon.csv.song_name (pdep 0.023985788226127625, 0.008066263049840927)
+[amazon.csv.album_name] --> amazon.csv.copyright (pdep 0.9925795793533325, 0.9055827260017395)
+[amazon.csv.time] --> amazon.csv.artist_name (pdep 0.029675453901290894, 0.023648006841540337)
+[amazon.csv.artist_name] --> amazon.csv.price (pdep 0.7381057143211365, 1.8530125617980957)
+[amazon.csv.copyright] --> amazon.csv.released (pdep 0.6455342769622803, 0.6436687707901001)
+[amazon.csv.price, amazon.csv.genre] --> amazon.csv.released (pdep 0.17536561191082, 0.20884589850902557)
+[amazon.csv.copyright] --> amazon.csv.genre (pdep 0.7457898855209351, 0.847039520740509)
+[amazon.csv.song_name] --> amazon.csv.released (pdep 0.836743175983429, 0.16671180725097656)
+[amazon.csv.album_name] --> amazon.csv.price (pdep 0.9217536449432373, 1.9085625410079956)
+[amazon.csv.released] --> amazon.csv.album_name (pdep 0.44904664158821106, 0.4149429202079773)
+[amazon.csv.time] --> amazon.csv.genre (pdep 0.09826703369617462, 0.23360316455364227)
+[amazon.csv.song_name] --> amazon.csv.genre (pdep 0.8742696046829224, 0.23832657933235168)
+[amazon.csv.released] --> amazon.csv.genre (pdep 0.5394136905670166, 0.6522799730300903)

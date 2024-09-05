@@ -32,11 +32,13 @@ public class Table {
     }
 
     public String pathRelativeToDataDirectory() {
-        String[] splitPath = path.split("/data");
+        String[] splitPath = path.split("/prisma_data");
         return splitPath[splitPath.length-1];
     }
 
     public Column getColumnByName(String name) {
-        return this.columns.stream().filter(column -> column.getLabel().equals(name)).findFirst().orElseThrow();
+        return this.columns.stream().filter(column -> column.getLabel().equals(name)).findFirst()
+                .orElseThrow(() -> new IllegalArgumentException(
+                        "Column '" + name + "' not found in table '" + path + "'"));
     }
 }

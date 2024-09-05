@@ -9,7 +9,7 @@ services:
       - "glove"
     volumes:
       - type: bind
-        source: ./data
+        source: ./prisma_data
         target: /leapme/data
   embdi:
     image: schematch/embdi
@@ -21,8 +21,8 @@ services:
         source: ./data
         target: /embdi/data
       - type: bind
-        source: ./cosma_data
-        target: /embdi/cosma_data
+        source: ./prisma_data
+        target: /embdi/prisma_data
       - type: bind
         source: ./target/embdi_cache
         target: /embdi/cache

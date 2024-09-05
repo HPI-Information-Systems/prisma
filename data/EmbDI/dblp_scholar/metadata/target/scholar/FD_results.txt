@@ -1,8 +1,8 @@
-[scholar.csv.title] --> scholar.csv.authors
-[scholar.csv.authors] --> scholar.csv.title
-[scholar.csv.authors] --> scholar.csv.venue
-[scholar.csv.authors] --> scholar.csv.year
-[scholar.csv.title] --> scholar.csv.venue
-[scholar.csv.title] --> scholar.csv.year
-[scholar.csv.year, scholar.csv.venue] --> scholar.csv.title
-[scholar.csv.year, scholar.csv.venue] --> scholar.csv.authors
+[scholar.csv.title] --> scholar.csv.year (pdep 0.9843170046806335, 0.23221254348754883)
+[scholar.csv.year, scholar.csv.venue] --> scholar.csv.authors (pdep 0.22453315556049347, 0.003982325084507465)
+[scholar.csv.authors] --> scholar.csv.year (pdep 0.9292137026786804, 1.1057865619659424)
+[scholar.csv.year, scholar.csv.venue] --> scholar.csv.title (pdep 0.2218257337808609, 0.0010543089592829347)
+[scholar.csv.title] --> scholar.csv.authors (pdep 0.9721947908401489, 0.0012224833481013775)
+[scholar.csv.title] --> scholar.csv.venue (pdep 0.9802499413490295, 0.05147680640220642)
+[scholar.csv.authors] --> scholar.csv.title (pdep 0.8633126020431519, 0.0010460810735821724)
+[scholar.csv.authors] --> scholar.csv.venue (pdep 0.910750687122345, 0.24881070852279663)

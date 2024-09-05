@@ -3,6 +3,8 @@ package de.uni_marburg.schematch.data;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.uni_marburg.schematch.data.metadata.Datatype;
+import de.uni_marburg.schematch.similarity.list.EuclideanDistance;
+import de.uni_marburg.schematch.similarity.list.ProbabilityMassFunction;
 import lombok.Data;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +20,7 @@ public class DatabaseFeatures {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     // private Map<Table, Map<Column, List<Double>>>
-    private Map<String, Map<String, List<Double>>> features = new HashMap<>();
+    private Map<String, Map<String, Map<String, List<Double>>>> features = new HashMap<>();
 
     private Database database;
     private double getAverageLength(final List<String> values){
@@ -65,22 +67,47 @@ public class DatabaseFeatures {
 
     public DatabaseFeatures(final Database database){
         this.database = database;
-        for (Table table : database.getTables()){
-            for(Column column: table.getColumns()){
-                double avgLength = getAverageLength(column.getValues());
-                double entropy = getEntropy(column.getValues());
-                List<Double> featureVector = new ArrayList<>();
-                featureVector.add(avgLength);
-                featureVector.add(entropy);
-                featureVector.addAll(getDatatypeEncoded(column));
-                if(features.containsKey(table.getName())){
-                    Map<String, List<Double>> column_map = features.get(table.getName());
-                    column_map.put(column.getLabel(), featureVector);
-                } else {
-                    Map<String, List<Double>> columnMap = new HashMap<>();
-                    columnMap.put(column.getLabel(), featureVector);
-                    features.put(table.getName(), columnMap);
+        List<Table> sourceTables = database.getScenario().getSourceDatabase().getTables();
+        List<Table> targetTables = database.getScenario().getTargetDatabase().getTables();
+
+        String[] kindsOfFeatures = new String[] {"Distribution", "Entropy"};
+        List<Table>[] tablesArray = new List[]{sourceTables, targetTables};
+        List<Double> entropies = new ArrayList<>();
+        for(List<Table> tables: tablesArray){
+            for(Table t : tables){
+                for(Column c : t.getColumns()){
+                    entropies.add(getEntropy(c.getValues()));
                 }
+            }
+        }
+
+        for(String kindOfFeature : kindsOfFeatures){
+            Map<String, Map<String, List<Double>>> featuresMap = new HashMap<>();
+            this.features.put(kindOfFeature, featuresMap);
+        }
+
+        for (Table table : database.getTables()){
+            for(String kindOfFeature : kindsOfFeatures){
+                Map<String, List<Double>> tableMap = new HashMap<>();
+                this.features.get(kindOfFeature).put(table.getName(), tableMap);
+            }
+            for(Column column: table.getColumns()){
+                List<Double> distributionFeatureVector = new ArrayList<>();
+                List<Double> entropyFeatureVector = new ArrayList<>();
+
+                ProbabilityMassFunction<String> similarityMeasure = new EuclideanDistance<>();
+                int count = 0;
+                for(List<Table> tables: tablesArray){
+                    for(Table t : tables){
+                        for(Column c : t.getColumns()){
+                            distributionFeatureVector.add((double) similarityMeasure.compare(column.getValues(), c.getValues()));
+                            entropyFeatureVector.add(Math.abs(getEntropy(column.getValues()) - entropies.get(count)));
+                            count++;
+                        }
+                    }
+                }
+                features.get("Distribution").get(table.getName()).put(column.getLabel(), distributionFeatureVector);
+                features.get("Entropy").get(table.getName()).put(column.getLabel(), entropyFeatureVector);
             }
         }
     }

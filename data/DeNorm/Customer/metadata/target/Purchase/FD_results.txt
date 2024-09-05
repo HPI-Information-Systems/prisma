@@ -1,33 +1,33 @@
-[Purchase.csv.Price] --> Purchase.csv.CID
-[Purchase.csv.Price] --> Purchase.csv.CName
-[Purchase.csv.Price] --> Purchase.csv.A
-[Purchase.csv.Price] --> Purchase.csv.PID
-[Purchase.csv.Price] --> Purchase.csv.ProductName
-[Purchase.csv.Price] --> Purchase.csv.M
-[Purchase.csv.Price] --> Purchase.csv.Category
-[Purchase.csv.CID] --> Purchase.csv.CName
-[Purchase.csv.CID] --> Purchase.csv.A
-[Purchase.csv.CID, Purchase.csv.PID] --> Purchase.csv.Price
-[Purchase.csv.CID, Purchase.csv.PID] --> Purchase.csv.M
-[Purchase.csv.CID, Purchase.csv.ProductName] --> Purchase.csv.Price
-[Purchase.csv.CID, Purchase.csv.ProductName] --> Purchase.csv.M
-[Purchase.csv.CID, Purchase.csv.Category] --> Purchase.csv.M
-[Purchase.csv.CName] --> Purchase.csv.CID
-[Purchase.csv.CName] --> Purchase.csv.A
-[Purchase.csv.CName, Purchase.csv.PID] --> Purchase.csv.Price
-[Purchase.csv.CName, Purchase.csv.PID] --> Purchase.csv.M
-[Purchase.csv.CName, Purchase.csv.ProductName] --> Purchase.csv.Price
-[Purchase.csv.CName, Purchase.csv.ProductName] --> Purchase.csv.M
-[Purchase.csv.CName, Purchase.csv.Category] --> Purchase.csv.M
-[Purchase.csv.A] --> Purchase.csv.CID
-[Purchase.csv.A] --> Purchase.csv.CName
-[Purchase.csv.A, Purchase.csv.PID] --> Purchase.csv.Price
-[Purchase.csv.A, Purchase.csv.PID] --> Purchase.csv.M
-[Purchase.csv.A, Purchase.csv.ProductName] --> Purchase.csv.Price
-[Purchase.csv.A, Purchase.csv.ProductName] --> Purchase.csv.M
-[Purchase.csv.A, Purchase.csv.Category] --> Purchase.csv.M
-[Purchase.csv.PID] --> Purchase.csv.ProductName
-[Purchase.csv.PID] --> Purchase.csv.Category
-[Purchase.csv.ProductName] --> Purchase.csv.PID
-[Purchase.csv.ProductName] --> Purchase.csv.Category
-[Purchase.csv.M] --> Purchase.csv.Category
+[Purchase.csv.Price] --> Purchase.csv.A (pdep 1.0, 0.0)
+[Purchase.csv.CID] --> Purchase.csv.A (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.Price] --> Purchase.csv.Category (pdep 1.0, 0.0)
+[Purchase.csv.A] --> Purchase.csv.CID (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.ProductName] --> Purchase.csv.PID (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.PID] --> Purchase.csv.ProductName (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.Price] --> Purchase.csv.CID (pdep 1.0, 0.0)
+[Purchase.csv.M] --> Purchase.csv.Category (pdep 1.0, 0.190476194024086)
+[Purchase.csv.A, Purchase.csv.ProductName] --> Purchase.csv.M (pdep 1.0, 0.0)
+[Purchase.csv.A, Purchase.csv.PID] --> Purchase.csv.M (pdep 1.0, 0.0)
+[Purchase.csv.CID] --> Purchase.csv.CName (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.A, Purchase.csv.Category] --> Purchase.csv.M (pdep 1.0, 0.12244898080825806)
+[Purchase.csv.A, Purchase.csv.ProductName] --> Purchase.csv.Price (pdep 1.0, 0.0)
+[Purchase.csv.CName] --> Purchase.csv.CID (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.CName] --> Purchase.csv.A (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.A, Purchase.csv.PID] --> Purchase.csv.Price (pdep 1.0, 0.0)
+[Purchase.csv.CName, Purchase.csv.Category] --> Purchase.csv.M (pdep 1.0, 0.12244898080825806)
+[Purchase.csv.CName, Purchase.csv.ProductName] --> Purchase.csv.M (pdep 1.0, 0.0)
+[Purchase.csv.Price] --> Purchase.csv.CName (pdep 1.0, 0.0)
+[Purchase.csv.CID, Purchase.csv.PID] --> Purchase.csv.M (pdep 1.0, 0.0)
+[Purchase.csv.CName, Purchase.csv.ProductName] --> Purchase.csv.Price (pdep 1.0, 0.0)
+[Purchase.csv.Price] --> Purchase.csv.ProductName (pdep 1.0, 0.0)
+[Purchase.csv.CName, Purchase.csv.PID] --> Purchase.csv.M (pdep 1.0, 0.0)
+[Purchase.csv.CID, Purchase.csv.ProductName] --> Purchase.csv.Price (pdep 1.0, 0.0)
+[Purchase.csv.CName, Purchase.csv.PID] --> Purchase.csv.Price (pdep 1.0, 0.0)
+[Purchase.csv.CID, Purchase.csv.ProductName] --> Purchase.csv.M (pdep 1.0, 0.0)
+[Purchase.csv.PID] --> Purchase.csv.Category (pdep 1.0, 0.190476194024086)
+[Purchase.csv.Price] --> Purchase.csv.PID (pdep 1.0, 0.0)
+[Purchase.csv.A] --> Purchase.csv.CName (pdep 1.0, 0.25850340723991394)
+[Purchase.csv.ProductName] --> Purchase.csv.Category (pdep 1.0, 0.190476194024086)
+[Purchase.csv.CID, Purchase.csv.Category] --> Purchase.csv.M (pdep 1.0, 0.12244898080825806)
+[Purchase.csv.CID, Purchase.csv.PID] --> Purchase.csv.Price (pdep 1.0, 0.0)
+[Purchase.csv.Price] --> Purchase.csv.M (pdep 1.0, 0.0)

@@ -1,2 +1,0 @@
-[attore.csv.attore_id] --> attore.csv.nome
-[attore.csv.attore_id] --> attore.csv.cognome

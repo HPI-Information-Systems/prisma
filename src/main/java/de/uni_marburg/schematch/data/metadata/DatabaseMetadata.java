@@ -91,7 +91,7 @@ public class DatabaseMetadata {
             Collection<FunctionalDependency> newFDs = fds.stream()
                     .filter(fd -> fd.getDeterminant().size() == finalCurrDeterminantSize
                             && !uccLookup.contains(new UniqueColumnCombination(fd.getDeterminant()))
-                            && fd.getPdepTuple().pdep >= 0.9
+                            && fd.getPdepTuple().pdep >= 0.9 // 1.0 , 0.95, 0.85, 0.8
                     ).toList();
             if (meaningfulFDs.size() + newFDs.size() > maxNumberOfFDs) {
                 if (currDeterminantSize == 1) {

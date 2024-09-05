@@ -1,20 +1,20 @@
-[fodors.csv.addr] --> fodors.csv.city
-[fodors.csv.class] --> fodors.csv.type
-[fodors.csv.class] --> fodors.csv.name
-[fodors.csv.class] --> fodors.csv.addr
-[fodors.csv.name] --> fodors.csv.class
-[fodors.csv.class] --> fodors.csv.phone
-[fodors.csv.class] --> fodors.csv.city
-[fodors.csv.phone] --> fodors.csv.addr
-[fodors.csv.phone] --> fodors.csv.name
-[fodors.csv.phone] --> fodors.csv.city
-[fodors.csv.name] --> fodors.csv.type
-[fodors.csv.name] --> fodors.csv.addr
-[fodors.csv.addr] --> fodors.csv.name
-[fodors.csv.name] --> fodors.csv.city
-[fodors.csv.phone] --> fodors.csv.type
-[fodors.csv.addr] --> fodors.csv.type
-[fodors.csv.phone] --> fodors.csv.class
-[fodors.csv.name] --> fodors.csv.phone
-[fodors.csv.addr] --> fodors.csv.class
-[fodors.csv.addr] --> fodors.csv.phone
+[fodors.csv.phone] --> fodors.csv.type (pdep 0.9906191229820251, -0.0011787447147071362)
+[fodors.csv.addr] --> fodors.csv.name (pdep 0.9737336039543152, -9.263220022148744E-7)
+[fodors.csv.addr] --> fodors.csv.phone (pdep 0.9819887280464172, 0.008254232816398144)
+[fodors.csv.addr] --> fodors.csv.city (pdep 1.0, 0.018744681030511856)
+[fodors.csv.addr] --> fodors.csv.class (pdep 0.9737336039543152, 0.0)
+[fodors.csv.name] --> fodors.csv.type (pdep 1.0, 0.00820211786776781)
+[fodors.csv.name] --> fodors.csv.addr (pdep 0.9906191229820251, -1.389483031744021E-6)
+[fodors.csv.phone] --> fodors.csv.addr (pdep 1.0, 0.009379473514854908)
+[fodors.csv.class] --> fodors.csv.phone (pdep 1.0, 0.0)
+[fodors.csv.addr] --> fodors.csv.type (pdep 0.976860523223877, -1.7353099246975034E-4)
+[fodors.csv.name] --> fodors.csv.city (pdep 0.9906191229820251, -0.00268633384257555)
+[fodors.csv.class] --> fodors.csv.type (pdep 1.0, 0.0)
+[fodors.csv.name] --> fodors.csv.class (pdep 0.9906191229820251, 0.0)
+[fodors.csv.phone] --> fodors.csv.class (pdep 0.9906191229820251, 0.0)
+[fodors.csv.phone] --> fodors.csv.name (pdep 0.9906191229820251, -3.308292946258007E-7)
+[fodors.csv.phone] --> fodors.csv.city (pdep 1.0, 0.006694529205560684)
+[fodors.csv.class] --> fodors.csv.city (pdep 1.0, 0.0)
+[fodors.csv.class] --> fodors.csv.name (pdep 1.0, 0.0)
+[fodors.csv.class] --> fodors.csv.addr (pdep 1.0, 0.0)
+[fodors.csv.name] --> fodors.csv.phone (pdep 0.9906191229820251, -3.308292946258007E-7)

@@ -1,16 +1,16 @@
-[amazon.csv.title] --> amazon.csv.price
-[amazon.csv.title] --> amazon.csv.category
-[amazon.csv.title] --> amazon.csv.brand
-[amazon.csv.title] --> amazon.csv.modelno
-[amazon.csv.brand] --> amazon.csv.title
-[amazon.csv.brand] --> amazon.csv.modelno
-[amazon.csv.category] --> amazon.csv.title
-[amazon.csv.category] --> amazon.csv.brand
-[amazon.csv.brand] --> amazon.csv.category
-[amazon.csv.brand] --> amazon.csv.price
-[amazon.csv.price] --> amazon.csv.brand
-[amazon.csv.category] --> amazon.csv.modelno
-[amazon.csv.price] --> amazon.csv.title
-[amazon.csv.price] --> amazon.csv.modelno
-[amazon.csv.category] --> amazon.csv.price
-[amazon.csv.price] --> amazon.csv.category
+[amazon.csv.brand] --> amazon.csv.modelno (pdep 0.25878188014030457, 0.09843725711107254)
+[amazon.csv.title] --> amazon.csv.brand (pdep 0.99904865026474, 0.00747898081317544)
+[amazon.csv.price] --> amazon.csv.title (pdep 0.13073529303073883, 2.1900028514210135E-4)
+[amazon.csv.title] --> amazon.csv.price (pdep 0.9933406114578247, 0.001654327381402254)
+[amazon.csv.title] --> amazon.csv.category (pdep 0.9947676062583923, 0.003126817522570491)
+[amazon.csv.category] --> amazon.csv.modelno (pdep 0.18694230914115906, 0.07607486844062805)
+[amazon.csv.price] --> amazon.csv.modelno (pdep 0.21619769930839539, 0.014864863827824593)
+[amazon.csv.category] --> amazon.csv.title (pdep 0.032161835581064224, 1.323684846283868E-4)
+[amazon.csv.title] --> amazon.csv.modelno (pdep 0.995009183883667, 0.0027907337062060833)
+[amazon.csv.category] --> amazon.csv.price (pdep 0.06825504451990128, 0.018200527876615524)
+[amazon.csv.category] --> amazon.csv.brand (pdep 0.1347724050283432, 0.09803862869739532)
+[amazon.csv.brand] --> amazon.csv.category (pdep 0.28408339619636536, 0.18607427179813385)
+[amazon.csv.brand] --> amazon.csv.title (pdep 0.08689922839403152, 0.0010055312886834145)
+[amazon.csv.price] --> amazon.csv.brand (pdep 0.14660030603408813, 0.011858344078063965)
+[amazon.csv.price] --> amazon.csv.category (pdep 0.15711621940135956, 0.015075916424393654)
+[amazon.csv.brand] --> amazon.csv.price (pdep 0.13024500012397766, 0.027329280972480774)

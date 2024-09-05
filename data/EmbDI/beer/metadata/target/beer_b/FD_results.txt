@@ -1,9 +1,9 @@
-[beer_b.csv.beer_name] --> beer_b.csv.style
-[beer_b.csv.beer_name] --> beer_b.csv.abv
-[beer_b.csv.brew_factory_name] --> beer_b.csv.beer_name
-[beer_b.csv.beer_name] --> beer_b.csv.brew_factory_name
-[beer_b.csv.abv, beer_b.csv.style] --> beer_b.csv.beer_name
-[beer_b.csv.abv] --> beer_b.csv.style
-[beer_b.csv.brew_factory_name] --> beer_b.csv.style
-[beer_b.csv.brew_factory_name] --> beer_b.csv.abv
-[beer_b.csv.abv, beer_b.csv.style] --> beer_b.csv.brew_factory_name
+[beer_b.csv.abv, beer_b.csv.style] --> beer_b.csv.beer_name (pdep 0.2409999966621399, -2.220446049250313E-15)
+[beer_b.csv.abv] --> beer_b.csv.style (pdep 0.3830065429210663, 0.10412202775478363)
+[beer_b.csv.abv, beer_b.csv.style] --> beer_b.csv.brew_factory_name (pdep 0.24363593757152557, 0.002309124218299985)
+[beer_b.csv.brew_factory_name] --> beer_b.csv.beer_name (pdep 0.6913333535194397, -2.3314683517128287E-15)
+[beer_b.csv.brew_factory_name] --> beer_b.csv.abv (pdep 0.7238128185272217, 0.019905220717191696)
+[beer_b.csv.beer_name] --> beer_b.csv.brew_factory_name (pdep 1.0, 0.0)
+[beer_b.csv.beer_name] --> beer_b.csv.abv (pdep 1.0, 0.0)
+[beer_b.csv.brew_factory_name] --> beer_b.csv.style (pdep 0.7658847570419312, -0.0027386422734707594)
+[beer_b.csv.beer_name] --> beer_b.csv.style (pdep 1.0, 0.0)

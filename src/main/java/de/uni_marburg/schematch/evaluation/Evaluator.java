@@ -78,6 +78,9 @@ public class Evaluator {
                 String[] originalParts = parts[1].split("\\.");
 
                 Table denormalizedTable = database.getTableByName(denormalizedParts[0]);
+                if(denormalizedTable == null){
+                    throw new RuntimeException("table " + denormalizedParts[0] + " could not be resolved!");
+                }
                 Column denormalizedColumn = denormalizedTable.getColumnByName(denormalizedParts[1]);
                 int gtOffset = denormalizedTable.getOffset() + denormalizedTable.getColumns().indexOf(denormalizedColumn);
 
@@ -257,8 +260,8 @@ public class Evaluator {
         Optional<Metric> graphBuildingRuntimeMetric =
                 this.metrics.stream().filter(GraphBuildingRuntime.class::isInstance).findFirst();
         graphBuildingRuntimeMetric.ifPresent(metric -> matchTask.setPerformanceForMatcher(metric, matchStep, matcher, new Performance(
-                matchTask.getScenario().getSourceDatabase().getGraph().getGraphBuildingTime()
-                + matchTask.getScenario().getTargetDatabase().getGraph().getGraphBuildingTime()
+                matchTask.getScenario().getSourceDatabase().getGraphs().get(0).getGraphBuildingTime()
+                + matchTask.getScenario().getTargetDatabase().getGraphs().get(0).getGraphBuildingTime()
         )));
 
         return methodResult.getLeft();

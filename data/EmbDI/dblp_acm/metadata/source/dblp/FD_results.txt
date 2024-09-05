@@ -1,32 +1,32 @@
-[dblp.csv.title] --> dblp.csv.author_1
-[dblp.csv.title] --> dblp.csv.year
-[dblp.csv.title] --> dblp.csv.venue
-[dblp.csv.title] --> dblp.csv.author_3
-[dblp.csv.title] --> dblp.csv.author_2
-[dblp.csv.author_1] --> dblp.csv.title
-[dblp.csv.author_3] --> dblp.csv.author_4
-[dblp.csv.title] --> dblp.csv.author_4
-[dblp.csv.author_1] --> dblp.csv.year
-[dblp.csv.author_1] --> dblp.csv.author_3
-[dblp.csv.author_1] --> dblp.csv.venue
-[dblp.csv.author_1] --> dblp.csv.author_4
-[dblp.csv.year, dblp.csv.author_2] --> dblp.csv.venue
-[dblp.csv.venue, dblp.csv.author_2] --> dblp.csv.year
-[dblp.csv.author_2] --> dblp.csv.author_4
-[dblp.csv.year, dblp.csv.author_2] --> dblp.csv.title
-[dblp.csv.author_1] --> dblp.csv.author_2
-[dblp.csv.venue, dblp.csv.author_2] --> dblp.csv.title
-[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.venue
-[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.author_2
-[dblp.csv.year, dblp.csv.venue] --> dblp.csv.title
-[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_4
-[dblp.csv.author_2] --> dblp.csv.author_3
-[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_3
-[dblp.csv.year, dblp.csv.author_2] --> dblp.csv.author_1
-[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.title
-[dblp.csv.author_4, dblp.csv.year] --> dblp.csv.venue
-[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_2
-[dblp.csv.venue, dblp.csv.author_2] --> dblp.csv.author_1
-[dblp.csv.author_4, dblp.csv.year] --> dblp.csv.author_3
-[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_1
-[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.author_1
+[dblp.csv.venue, dblp.csv.author_2] --> dblp.csv.author_1 (pdep 0.6919813752174377, 0.1439455896615982)
+[dblp.csv.author_1] --> dblp.csv.author_4 (pdep 0.8641072511672974, 0.06044549122452736)
+[dblp.csv.author_1] --> dblp.csv.author_3 (pdep 0.7911316156387329, 0.11916450411081314)
+[dblp.csv.author_3] --> dblp.csv.author_4 (pdep 0.928062915802002, 0.2138369381427765)
+[dblp.csv.author_1] --> dblp.csv.author_2 (pdep 0.7626936435699463, 0.18298400938510895)
+[dblp.csv.year, dblp.csv.author_2] --> dblp.csv.title (pdep 0.7370875477790833, 0.11769429594278336)
+[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_1 (pdep 0.14392857253551483, 0.10834430903196335)
+[dblp.csv.year, dblp.csv.author_2] --> dblp.csv.venue (pdep 0.8418092131614685, 0.14497241377830505)
+[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_2 (pdep 0.1963525265455246, 0.08505543321371078)
+[dblp.csv.author_1] --> dblp.csv.title (pdep 0.665617048740387, 0.12264631688594818)
+[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_3 (pdep 0.3475770354270935, 0.04120176285505295)
+[dblp.csv.author_1] --> dblp.csv.venue (pdep 0.790753185749054, 0.15478894114494324)
+[dblp.csv.year, dblp.csv.venue] --> dblp.csv.author_4 (pdep 0.6008049845695496, 0.015961645171046257)
+[dblp.csv.year, dblp.csv.author_2] --> dblp.csv.author_1 (pdep 0.755401611328125, 0.1352318972349167)
+[dblp.csv.title] --> dblp.csv.year (pdep 0.9764798879623413, 0.11490435898303986)
+[dblp.csv.author_4, dblp.csv.year] --> dblp.csv.venue (pdep 0.5451666116714478, 0.14669521152973175)
+[dblp.csv.author_4, dblp.csv.year] --> dblp.csv.author_3 (pdep 0.634965181350708, 0.17700305581092834)
+[dblp.csv.author_2] --> dblp.csv.author_4 (pdep 0.8917367458343506, 0.1327120065689087)
+[dblp.csv.author_2] --> dblp.csv.author_3 (pdep 0.8339477181434631, 0.23655812442302704)
+[dblp.csv.venue, dblp.csv.author_2] --> dblp.csv.year (pdep 0.7131668329238892, 0.1305217742919922)
+[dblp.csv.author_1] --> dblp.csv.year (pdep 0.7022080421447754, 0.12337921559810638)
+[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.title (pdep 0.5507346987724304, 0.11468015611171722)
+[dblp.csv.year, dblp.csv.venue] --> dblp.csv.title (pdep 0.14190711081027985, 0.10829432308673859)
+[dblp.csv.title] --> dblp.csv.venue (pdep 0.9929918646812439, 0.11263786256313324)
+[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.author_1 (pdep 0.5607680082321167, 0.1235629990696907)
+[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.venue (pdep 0.6895025968551636, 0.13869990408420563)
+[dblp.csv.year, dblp.csv.author_3] --> dblp.csv.author_2 (pdep 0.6469910144805908, 0.16560301184654236)
+[dblp.csv.title] --> dblp.csv.author_4 (pdep 0.9984709620475769, 0.06300055980682373)
+[dblp.csv.title] --> dblp.csv.author_3 (pdep 0.9955857992172241, 0.1033988893032074)
+[dblp.csv.title] --> dblp.csv.author_2 (pdep 0.994152307510376, 0.13228724896907806)
+[dblp.csv.title] --> dblp.csv.author_1 (pdep 0.9900684356689453, 0.1399717777967453)
+[dblp.csv.venue, dblp.csv.author_2] --> dblp.csv.title (pdep 0.6638969779014587, 0.11678510904312134)

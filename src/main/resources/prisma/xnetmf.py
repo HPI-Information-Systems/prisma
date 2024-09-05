@@ -3,6 +3,7 @@
 import numpy as np, scipy as sp, networkx as nx
 import math, time, os, sys
 from config import *
+from prisma_graph import extract_node_type
 
 #Input: graph, RepMethod
 #Output: dictionary of dictionaries: for each node, dictionary containing {node : {layer_num : [list of neighbors]}}
@@ -136,22 +137,26 @@ def get_features(graph, rep_method, verbose = True):
 #Input: two vectors of the same length
 #Optional: tuple of (same length) vectors of node attributes for corresponding nodes
 #Output: number between 0 and 1 representing their similarity
-def compute_similarity(graph, rep_method, vec1, vec2, node_attributes = None, node_indices = None):
+def compute_similarity(graph, rep_method, vec1, vec2, node_attributes = None, node_indices = None, column_id={}):
     dist = rep_method.gammastruc * np.linalg.norm(vec1 - vec2) #compare distances between structural identities
     if graph.node_attributes is not None:
         # previousle (in REGAL), distance is number of disagreeing attributes
         # as we use real world values, we instead use the euclidean distance, as also proposed in the REGAL paper
         # prev: attr_dist = np.sum(graph.node_attributes[node_indices[0]] != graph.node_attributes[node_indices[1]])
-        attr_dist = np.sqrt(np.sum((graph.node_attributes[node_indices[0]] - graph.node_attributes[node_indices[1]])**2))
+        attr_dist = 0
+        if node_indices[1] in column_id and node_indices[0] in column_id:
+            attr_dist += graph.node_attributes[column_id[node_indices[0]]][column_id[node_indices[1]]]
         dist += rep_method.gammaattr * attr_dist
     return np.exp(-dist) #convert distances (weighted by coefficients on structure and attributes) to similarities
 
 #Sample landmark nodes (to compute all pairwise similarities to in Nystrom approx)
 #Input: graph (just need graph size here), RepMethod (just need dimensionality here)
 #Output: np array of node IDs
-def get_sample_nodes(graph, rep_method, verbose = True):
-    #Sample uniformly at random
-    sample = np.random.RandomState(seed=42).permutation((np.arange(graph.N)))[:rep_method.p]
+def get_sample_nodes(graph, rep_method, verbose = True, already_sampled_nodes=[]):
+    all_nodes = np.arange(graph.N)
+    available_nodes = np.setdiff1d(all_nodes, already_sampled_nodes)
+    # Sample uniformly at random from available nodes
+    sample = np.random.RandomState(seed=42).permutation(available_nodes)[:rep_method.p]
     return sample
 
 #Get dimensionality of learned representations
@@ -167,17 +172,31 @@ def get_feature_dimensionality(graph, rep_method, verbose = True):
 
 #xNetMF pipeline
 def get_representations(graph, rep_method, verbose = True):
+    # give column nodes its ids starting with source_col1 = 0 .. source_coln = n - 1, target_col1 = n ... target_coln = n + m - 1
+    column_id = {}
+    counter = 0
+    for i, node in enumerate(graph.node_labels):
+        if extract_node_type(node) == "COLUMN":
+            column_id[i] = counter
+            counter += 1
+    print(column_id, file=sys.stderr)
+
     #Node identity extraction
     feature_matrix = get_features(graph, rep_method, verbose)
 
     #Efficient similarity-based representation
+
+    # Add all Column nodes to landmarks for higher precision and more stable results
+    landmarks = [i for i, node in enumerate(graph.node_labels) if extract_node_type(node) == "COLUMN"]
     #Get landmark nodes
     if rep_method.p is None:
-        rep_method.p = get_feature_dimensionality(graph, rep_method, verbose = verbose) #k*log(n), where k = 10
-    elif rep_method.p > graph.N:
+        rep_method.p = len(landmarks) + get_feature_dimensionality(graph, rep_method, verbose = verbose) #k*log(n), where k = 10
+    if rep_method.p > graph.N:
         print("Warning: dimensionality greater than number of nodes. Reducing to n")
         rep_method.p = graph.N
-    landmarks = get_sample_nodes(graph, rep_method, verbose = verbose)
+
+    landmarks = np.concatenate((np.array(landmarks), get_sample_nodes(graph, rep_method, verbose = verbose, already_sampled_nodes=landmarks)))
+
 
     #Explicitly compute similarities of all nodes to these landmarks
     before_computesim = time.time()
@@ -190,7 +209,8 @@ def get_representations(graph, rep_method, verbose = True):
                                                               feature_matrix[node_index],
                                                               feature_matrix[landmarks[landmark_index]],
                                                               graph.node_attributes,
-                                                              (node_index, landmarks[landmark_index]))
+                                                              (node_index, landmarks[landmark_index]),
+                                                              column_id)
 
     before_computerep = time.time()
 
