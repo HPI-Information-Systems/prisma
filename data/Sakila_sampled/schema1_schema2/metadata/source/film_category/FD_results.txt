@@ -1,0 +1,4 @@
+[film_category.csv.film_id] --> film_category.csv.category_name (pdep 1.0, 0.0)
+[film_category.csv.film_id] --> film_category.csv.category_id (pdep 1.0, 0.0)
+[film_category.csv.category_id] --> film_category.csv.category_name (pdep 1.0, 0.8758554458618164)
+[film_category.csv.category_name] --> film_category.csv.category_id (pdep 1.0, 0.8758554458618164)

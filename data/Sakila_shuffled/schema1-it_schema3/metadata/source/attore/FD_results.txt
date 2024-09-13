@@ -1,0 +1,6 @@
+[attore.csv.nome] --> attore.csv.attore_id (pdep 0.6399999856948853, -3.3306690738754696E-16)
+[attore.csv.nome] --> attore.csv.cognome (pdep 0.6449999809265137, 0.003046231111511588)
+[attore.csv.cognome] --> attore.csv.attore_id (pdep 0.6050000190734863, -3.3306690738754696E-16)
+[attore.csv.cognome] --> attore.csv.nome (pdep 0.6083333492279053, 0.0014476549113169312)
+[attore.csv.attore_id] --> attore.csv.nome (pdep 1.0, 0.0)
+[attore.csv.attore_id] --> attore.csv.cognome (pdep 1.0, 0.0)

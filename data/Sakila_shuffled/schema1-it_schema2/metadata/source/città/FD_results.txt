@@ -1,0 +1,8 @@
+[città.csv.città] --> città.csv.città_id (pdep 1.0, 0.0)
+[città.csv.città_id] --> città.csv.stato (pdep 1.0, 0.0)
+[città.csv.città] --> città.csv.stato (pdep 1.0, 0.0)
+[città.csv.stato_id] --> città.csv.stato (pdep 1.0, 0.7169498205184937)
+[città.csv.città_id] --> città.csv.stato_id (pdep 1.0, 0.0)
+[città.csv.città_id] --> città.csv.città (pdep 1.0, 0.0)
+[città.csv.città] --> città.csv.stato_id (pdep 1.0, 0.0)
+[città.csv.stato] --> città.csv.stato_id (pdep 1.0, 0.7169498205184937)
