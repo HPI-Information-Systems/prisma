@@ -17,5 +17,5 @@ def clear_fd_results(directory):
 
 if __name__ == "__main__":
     # Replace 'your_directory' with the path to your directory
-    directory = 'Valentine-Wikidata'
+    directory = 'ChEMBL-Unionable_md5_encrypted'
     clear_fd_results(directory)
