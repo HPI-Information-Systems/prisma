@@ -6,7 +6,7 @@ active: true
 ---
 name: "EmbdiMatcher"
 packageName: "sota"
-active: false
+active: true
 ---
 name: "PRISMAMatcher"
 packageName: "metadata"
@@ -22,7 +22,7 @@ params:
 ---
 name: "LeapmeMatcher"
 packageName: "sota"
-active: false
+active: true
 params:
   serverPort: 5000
   information: "names" # ["values", "names", "both"]
@@ -62,7 +62,7 @@ active: false
 ---
 name: "OverlapInstanceMatcher"
 packageName: "similarity.tokenizedinstance"
-active: false
+active: true
 ---
 name: "SetCosineInstanceMatcher"
 packageName: "similarity.tokenizedinstance"
