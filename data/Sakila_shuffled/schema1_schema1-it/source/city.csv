@@ -1,301 +1,301 @@
-city_id,city,country_id,country
-251,Kabul,1,Afghanistan
-59,Batna,2,Algeria
-63,Bchar,2,Algeria
-483,Skikda,2,Algeria
-516,Tafuna,3,American Samoa
-67,Benguela,4,Angola
-360,Namibe,4,Angola
-493,South Hill,5,Anguilla
-20,Almirante Brown,6,Argentina
-43,Avellaneda,6,Argentina
-45,Baha Blanca,6,Argentina
-128,Crdoba,6,Argentina
-161,Escobar,6,Argentina
-165,Ezeiza,6,Argentina
-289,La Plata,6,Argentina
-334,Merlo,6,Argentina
-424,Quilmes,6,Argentina
-454,San Miguel de Tucumn,6,Argentina
-457,Santa F,6,Argentina
-524,Tandil,6,Argentina
-567,Vicente Lpez,6,Argentina
-586,Yerevan,7,Armenia
-576,Woodridge,8,Australia
-186,Graz,9,Austria
-307,Linz,9,Austria
-447,Salzburg,9,Austria
-48,Baku,10,Azerbaijan
-505,Sumqayit,10,Azerbaijan
-14,al-Manama,11,Bahrain
-143,Dhaka,12,Bangladesh
-234,Jamalpur,12,Bangladesh
-525,Tangail,12,Bangladesh
-339,Mogiljov,13,Belarus
-340,Molodetno,13,Belarus
-153,El Alto,14,Bolivia
-501,Sucre,14,Bolivia
-21,Alvorada,15,Brazil
-25,Angra dos Reis,15,Brazil
-26,Anpolis,15,Brazil
-28,Aparecida de Goinia,15,Brazil
-30,Araatuba,15,Brazil
-44,Bag,15,Brazil
-66,Belm,15,Brazil
-83,Blumenau,15,Brazil
-84,Boa Vista,15,Brazil
-89,Braslia,15,Brazil
-183,Goinia,15,Brazil
-189,Guaruj,15,Brazil
-190,guas Lindas de Gois,15,Brazil
-215,Ibirit,15,Brazil
-247,Juazeiro do Norte,15,Brazil
-248,Juiz de Fora,15,Brazil
-317,Luzinia,15,Brazil
-328,Maring,15,Brazil
-410,Po,15,Brazil
-413,Poos de Caldas,15,Brazil
-431,Rio Claro,15,Brazil
-456,Santa Brbara dOeste,15,Brazil
-461,Santo Andr,15,Brazil
-485,So Bernardo do Campo,15,Brazil
-486,So Leopoldo,15,Brazil
-490,Sorocaba,15,Brazil
-569,Vila Velha,15,Brazil
-572,Vitria de Santo Anto,15,Brazil
-53,Bandar Seri Begawan,16,Brunei
-436,Ruse,17,Bulgaria
-498,Stara Zagora,17,Bulgaria
-60,Battambang,18,Cambodia
-406,Phnom Penh,18,Cambodia
-52,Bamenda,19,Cameroon
-585,Yaound,19,Cameroon
-179,Gatineau,20,Canada
-196,Halifax,20,Canada
-300,Lethbridge,20,Canada
-313,London,20,Canada
-383,Oshawa,20,Canada
-430,Richmond Hill,20,Canada
-565,Vancouver,20,Canada
-363,NDjamna,21,Chad
-27,Antofagasta,22,Chile
-127,Coquimbo,22,Chile
-428,Rancagua,22,Chile
-46,Baicheng,23,China
-47,Baiyin,23,China
-80,Binzhou,23,China
-109,Changzhou,23,China
-136,Datong,23,China
-139,Daxian,23,China
-145,Dongying,23,China
-157,Emeishan,23,China
-159,Enshi,23,China
-166,Ezhou,23,China
-174,Fuyu,23,China
-175,Fuzhou,23,China
-193,Haining,23,China
-199,Hami,23,China
-207,Hohhot,23,China
-210,Huaian,23,China
-240,Jinchang,23,China
-241,Jining,23,China
-242,Jinzhou,23,China
-249,Junan,23,China
-277,Korla,23,China
-291,Laiwu,23,China
-293,Laohekou,23,China
-298,Lengshuijiang,23,China
-299,Leshan,23,China
-302,Liaocheng,23,China
-332,Meixian,23,China
-362,Nanyang,23,China
-407,Pingxiang,23,China
-422,Qinhuangdao,23,China
-432,Rizhao,23,China
-462,Sanya,23,China
-468,Shanwei,23,China
-469,Shaoguan,23,China
-471,Shenzhen,23,China
-502,Suihua,23,China
-535,Tianjin,23,China
-536,Tiefa,23,China
-537,Tieli,23,China
-540,Tongliao,23,China
-574,Weifang,23,China
-578,Xiangfan,23,China
-579,Xiangtan,23,China
-580,Xintai,23,China
-581,Xinxiang,23,China
-584,Yantai,23,China
-587,Yinchuan,23,China
-588,Yingkou,23,China
-590,Yuncheng,23,China
-591,Yuzhou,23,China
-592,Zalantun,23,China
-594,Zaoyang,23,China
-599,Zhoushan,23,China
-96,Buenaventura,24,Colombia
-147,Dos Quebradas,24,Colombia
-170,Florencia,24,Colombia
-405,Pereira,24,Colombia
-480,Sincelejo,24,Colombia
-487,Sogamoso,24,Colombia
-315,Lubumbashi,25,"Congo, The Democratic Republic of the"
-348,Mwene-Ditu,25,"Congo, The Democratic Republic of the"
-378,Olomouc,26,Czech Republic
-290,La Romana,27,Dominican Republic
-450,San Felipe de Puerto Plata,27,Dominican Republic
-460,Santiago de los Caballeros,27,Dominican Republic
-311,Loja,28,Ecuador
-414,Portoviejo,28,Ecuador
-434,Robamba,28,Ecuador
-79,Bilbays,29,Egypt
-216,Idfu,29,Egypt
-337,Mit Ghamr,29,Egypt
-421,Qalyub,29,Egypt
-465,Sawhaj,29,Egypt
-476,Shubra al-Khayma,29,Egypt
-530,Tartu,30,Estonia
-6,Addis Abeba,31,Ethiopia
-545,Trshavn,32,Faroe Islands
-387,Oulu,33,Finland
-92,Brest,34,France
-297,Le Mans,34,France
-543,Toulon,34,France
-544,Toulouse,34,France
-105,Cayenne,35,French Guiana
-167,Faaa,36,French Polynesia
-397,Papeete,36,French Polynesia
-54,Banjul,37,Gambia
-148,Duisburg,38,Germany
-160,Erlangen,38,Germany
-198,Halle/Saale,38,Germany
-325,Mannheim,38,Germany
-439,Saarbrcken,38,Germany
-477,Siegen,38,Germany
-575,Witten,38,Germany
-38,Athenai,39,Greece
-401,Patras,39,Greece
-371,Nuuk,40,Greenland
-121,Citt del Vaticano,41,Holy See (Vatican City State)
-279,Kowloon and New Kowloon,42,Hong Kong
-512,Szkesfehrvr,43,Hungary
-8,Adoni,44,India
-9,Ahmadnagar,44,India
-18,Allappuzha (Alleppey),44,India
-22,Ambattur,44,India
-24,Amroha,44,India
-51,Balurghat,44,India
-71,Berhampore (Baharampur),44,India
-73,Bhavnagar,44,India
-74,Bhilwara,44,India
-75,Bhimavaram,44,India
-76,Bhopal,44,India
-77,Bhusawal,44,India
-78,Bijapur,44,India
-107,Chandrapur,44,India
-110,Chapra,44,India
-144,Dhule (Dhulia),44,India
-164,Etawah,44,India
-169,Firozabad,44,India
-176,Gandhinagar,44,India
-191,Gulbarga,44,India
-195,Haldia,44,India
-197,Halisahar,44,India
-208,Hoshiarpur,44,India
-211,Hubli-Dharwad,44,India
-231,Jaipur,44,India
-239,Jhansi,44,India
-243,Jodhpur,44,India
-257,Kamarhati,44,India
-261,Kanchrapara,44,India
-263,Karnal,44,India
-264,Katihar,44,India
-283,Kumbakonam,44,India
-336,Miraj,44,India
-346,Munger (Monghyr),44,India
-350,Mysore,44,India
-354,Nagaon,44,India
-395,Palghat (Palakkad),44,India
-398,Parbhani,44,India
-399,Pathankot,44,India
-400,Patiala,44,India
-416,Pudukkottai,44,India
-417,Pune,44,India
-418,Purnea (Purnia),44,India
-425,Rae Bareli,44,India
-426,Rajkot,44,India
-427,Rampur,44,India
-429,Ranchi,44,India
-448,Sambhal,44,India
-464,Satna,44,India
-473,Shimoga,44,India
-475,Shivapuri,44,India
-478,Siliguri (Shiliguri),44,India
-522,Tambaram,44,India
-550,Udaipur,44,India
-554,Uluberia,44,India
-559,Uttarpara-Kotrung,44,India
-564,Valparai,44,India
-566,Varanasi (Benares),44,India
-568,Vijayawada,44,India
-582,Yamuna Nagar,44,India
-117,Cianjur,45,Indonesia
-118,Ciomas,45,Indonesia
-119,Ciparay,45,Indonesia
-184,Gorontalo,45,Indonesia
-232,Jakarta,45,Indonesia
-301,Lhokseumawe,45,Indonesia
-318,Madiun,45,Indonesia
-396,Pangkal Pinang,45,Indonesia
-403,Pemalang,45,Indonesia
-412,Pontianak,45,Indonesia
-415,Probolinggo,45,Indonesia
-419,Purwakarta,45,Indonesia
-509,Surakarta,45,Indonesia
-532,Tegal,45,Indonesia
-31,Arak,46,Iran
-162,Esfahan,46,Iran
-265,Kermanshah,46,Iran
-356,Najafabad,46,Iran
-423,Qomsheh,46,Iran
-467,Shahr-e Kord,46,Iran
-481,Sirjan,46,Iran
-514,Tabriz,46,Iran
-344,Mosul,47,Iraq
-34,Ashdod,48,Israel
-36,Ashqelon,48,Israel
-57,Bat Yam,48,Israel
-533,Tel Aviv-Jaffa,48,Israel
-17,Alessandria,49,Italy
-70,Bergamo,49,Italy
-91,Brescia,49,Italy
-93,Brindisi,49,Italy
-309,Livorno,49,Italy
-511,Syrakusa,49,Italy
-551,Udine,49,Italy
-10,Akishima,50,Japan
-172,Fukuyama,50,Japan
-203,Higashiosaka,50,Japan
-204,Hino,50,Japan
-205,Hiroshima,50,Japan
-224,Isesaki,50,Japan
-226,Iwaki,50,Japan
-227,Iwakuni,50,Japan
-228,Iwatsuki,50,Japan
-229,Izumisano,50,Japan
-253,Kakamigahara,50,Japan
-256,Kamakura,50,Japan
-260,Kanazawa,50,Japan
-276,Koriyama,50,Japan
-284,Kurashiki,50,Japan
-287,Kuwana,50,Japan
-331,Matsue,50,Japan
-338,Miyakonojo,50,Japan
-355,Nagareyama,50,Japan
-376,Okayama,50,Japan
-377,Okinawa,50,Japan
-380,Omiya,50,Japan
-382,Onomichi,50,Japan
-386,Otsu,50,Japan
-440,Sagamihara,50,Japan
+country,country_id,city,city_id
+Afghanistan,1,Kabul,251
+Algeria,2,Batna,59
+Algeria,2,Bchar,63
+Algeria,2,Skikda,483
+American Samoa,3,Tafuna,516
+Angola,4,Benguela,67
+Angola,4,Namibe,360
+Anguilla,5,South Hill,493
+Argentina,6,Almirante Brown,20
+Argentina,6,Avellaneda,43
+Argentina,6,Baha Blanca,45
+Argentina,6,Crdoba,128
+Argentina,6,Escobar,161
+Argentina,6,Ezeiza,165
+Argentina,6,La Plata,289
+Argentina,6,Merlo,334
+Argentina,6,Quilmes,424
+Argentina,6,San Miguel de Tucumn,454
+Argentina,6,Santa F,457
+Argentina,6,Tandil,524
+Argentina,6,Vicente Lpez,567
+Armenia,7,Yerevan,586
+Australia,8,Woodridge,576
+Austria,9,Graz,186
+Austria,9,Linz,307
+Austria,9,Salzburg,447
+Azerbaijan,10,Baku,48
+Azerbaijan,10,Sumqayit,505
+Bahrain,11,al-Manama,14
+Bangladesh,12,Dhaka,143
+Bangladesh,12,Jamalpur,234
+Bangladesh,12,Tangail,525
+Belarus,13,Mogiljov,339
+Belarus,13,Molodetno,340
+Bolivia,14,El Alto,153
+Bolivia,14,Sucre,501
+Brazil,15,Alvorada,21
+Brazil,15,Angra dos Reis,25
+Brazil,15,Anpolis,26
+Brazil,15,Aparecida de Goinia,28
+Brazil,15,Araatuba,30
+Brazil,15,Bag,44
+Brazil,15,Belm,66
+Brazil,15,Blumenau,83
+Brazil,15,Boa Vista,84
+Brazil,15,Braslia,89
+Brazil,15,Goinia,183
+Brazil,15,Guaruj,189
+Brazil,15,guas Lindas de Gois,190
+Brazil,15,Ibirit,215
+Brazil,15,Juazeiro do Norte,247
+Brazil,15,Juiz de Fora,248
+Brazil,15,Luzinia,317
+Brazil,15,Maring,328
+Brazil,15,Po,410
+Brazil,15,Poos de Caldas,413
+Brazil,15,Rio Claro,431
+Brazil,15,Santa Brbara dOeste,456
+Brazil,15,Santo Andr,461
+Brazil,15,So Bernardo do Campo,485
+Brazil,15,So Leopoldo,486
+Brazil,15,Sorocaba,490
+Brazil,15,Vila Velha,569
+Brazil,15,Vitria de Santo Anto,572
+Brunei,16,Bandar Seri Begawan,53
+Bulgaria,17,Ruse,436
+Bulgaria,17,Stara Zagora,498
+Cambodia,18,Battambang,60
+Cambodia,18,Phnom Penh,406
+Cameroon,19,Bamenda,52
+Cameroon,19,Yaound,585
+Canada,20,Gatineau,179
+Canada,20,Halifax,196
+Canada,20,Lethbridge,300
+Canada,20,London,313
+Canada,20,Oshawa,383
+Canada,20,Richmond Hill,430
+Canada,20,Vancouver,565
+Chad,21,NDjamna,363
+Chile,22,Antofagasta,27
+Chile,22,Coquimbo,127
+Chile,22,Rancagua,428
+China,23,Baicheng,46
+China,23,Baiyin,47
+China,23,Binzhou,80
+China,23,Changzhou,109
+China,23,Datong,136
+China,23,Daxian,139
+China,23,Dongying,145
+China,23,Emeishan,157
+China,23,Enshi,159
+China,23,Ezhou,166
+China,23,Fuyu,174
+China,23,Fuzhou,175
+China,23,Haining,193
+China,23,Hami,199
+China,23,Hohhot,207
+China,23,Huaian,210
+China,23,Jinchang,240
+China,23,Jining,241
+China,23,Jinzhou,242
+China,23,Junan,249
+China,23,Korla,277
+China,23,Laiwu,291
+China,23,Laohekou,293
+China,23,Lengshuijiang,298
+China,23,Leshan,299
+China,23,Liaocheng,302
+China,23,Meixian,332
+China,23,Nanyang,362
+China,23,Pingxiang,407
+China,23,Qinhuangdao,422
+China,23,Rizhao,432
+China,23,Sanya,462
+China,23,Shanwei,468
+China,23,Shaoguan,469
+China,23,Shenzhen,471
+China,23,Suihua,502
+China,23,Tianjin,535
+China,23,Tiefa,536
+China,23,Tieli,537
+China,23,Tongliao,540
+China,23,Weifang,574
+China,23,Xiangfan,578
+China,23,Xiangtan,579
+China,23,Xintai,580
+China,23,Xinxiang,581
+China,23,Yantai,584
+China,23,Yinchuan,587
+China,23,Yingkou,588
+China,23,Yuncheng,590
+China,23,Yuzhou,591
+China,23,Zalantun,592
+China,23,Zaoyang,594
+China,23,Zhoushan,599
+Colombia,24,Buenaventura,96
+Colombia,24,Dos Quebradas,147
+Colombia,24,Florencia,170
+Colombia,24,Pereira,405
+Colombia,24,Sincelejo,480
+Colombia,24,Sogamoso,487
+"Congo, The Democratic Republic of the",25,Lubumbashi,315
+"Congo, The Democratic Republic of the",25,Mwene-Ditu,348
+Czech Republic,26,Olomouc,378
+Dominican Republic,27,La Romana,290
+Dominican Republic,27,San Felipe de Puerto Plata,450
+Dominican Republic,27,Santiago de los Caballeros,460
+Ecuador,28,Loja,311
+Ecuador,28,Portoviejo,414
+Ecuador,28,Robamba,434
+Egypt,29,Bilbays,79
+Egypt,29,Idfu,216
+Egypt,29,Mit Ghamr,337
+Egypt,29,Qalyub,421
+Egypt,29,Sawhaj,465
+Egypt,29,Shubra al-Khayma,476
+Estonia,30,Tartu,530
+Ethiopia,31,Addis Abeba,6
+Faroe Islands,32,Trshavn,545
+Finland,33,Oulu,387
+France,34,Brest,92
+France,34,Le Mans,297
+France,34,Toulon,543
+France,34,Toulouse,544
+French Guiana,35,Cayenne,105
+French Polynesia,36,Faaa,167
+French Polynesia,36,Papeete,397
+Gambia,37,Banjul,54
+Germany,38,Duisburg,148
+Germany,38,Erlangen,160
+Germany,38,Halle/Saale,198
+Germany,38,Mannheim,325
+Germany,38,Saarbrcken,439
+Germany,38,Siegen,477
+Germany,38,Witten,575
+Greece,39,Athenai,38
+Greece,39,Patras,401
+Greenland,40,Nuuk,371
+Holy See (Vatican City State),41,Citt del Vaticano,121
+Hong Kong,42,Kowloon and New Kowloon,279
+Hungary,43,Szkesfehrvr,512
+India,44,Adoni,8
+India,44,Ahmadnagar,9
+India,44,Allappuzha (Alleppey),18
+India,44,Ambattur,22
+India,44,Amroha,24
+India,44,Balurghat,51
+India,44,Berhampore (Baharampur),71
+India,44,Bhavnagar,73
+India,44,Bhilwara,74
+India,44,Bhimavaram,75
+India,44,Bhopal,76
+India,44,Bhusawal,77
+India,44,Bijapur,78
+India,44,Chandrapur,107
+India,44,Chapra,110
+India,44,Dhule (Dhulia),144
+India,44,Etawah,164
+India,44,Firozabad,169
+India,44,Gandhinagar,176
+India,44,Gulbarga,191
+India,44,Haldia,195
+India,44,Halisahar,197
+India,44,Hoshiarpur,208
+India,44,Hubli-Dharwad,211
+India,44,Jaipur,231
+India,44,Jhansi,239
+India,44,Jodhpur,243
+India,44,Kamarhati,257
+India,44,Kanchrapara,261
+India,44,Karnal,263
+India,44,Katihar,264
+India,44,Kumbakonam,283
+India,44,Miraj,336
+India,44,Munger (Monghyr),346
+India,44,Mysore,350
+India,44,Nagaon,354
+India,44,Palghat (Palakkad),395
+India,44,Parbhani,398
+India,44,Pathankot,399
+India,44,Patiala,400
+India,44,Pudukkottai,416
+India,44,Pune,417
+India,44,Purnea (Purnia),418
+India,44,Rae Bareli,425
+India,44,Rajkot,426
+India,44,Rampur,427
+India,44,Ranchi,429
+India,44,Sambhal,448
+India,44,Satna,464
+India,44,Shimoga,473
+India,44,Shivapuri,475
+India,44,Siliguri (Shiliguri),478
+India,44,Tambaram,522
+India,44,Udaipur,550
+India,44,Uluberia,554
+India,44,Uttarpara-Kotrung,559
+India,44,Valparai,564
+India,44,Varanasi (Benares),566
+India,44,Vijayawada,568
+India,44,Yamuna Nagar,582
+Indonesia,45,Cianjur,117
+Indonesia,45,Ciomas,118
+Indonesia,45,Ciparay,119
+Indonesia,45,Gorontalo,184
+Indonesia,45,Jakarta,232
+Indonesia,45,Lhokseumawe,301
+Indonesia,45,Madiun,318
+Indonesia,45,Pangkal Pinang,396
+Indonesia,45,Pemalang,403
+Indonesia,45,Pontianak,412
+Indonesia,45,Probolinggo,415
+Indonesia,45,Purwakarta,419
+Indonesia,45,Surakarta,509
+Indonesia,45,Tegal,532
+Iran,46,Arak,31
+Iran,46,Esfahan,162
+Iran,46,Kermanshah,265
+Iran,46,Najafabad,356
+Iran,46,Qomsheh,423
+Iran,46,Shahr-e Kord,467
+Iran,46,Sirjan,481
+Iran,46,Tabriz,514
+Iraq,47,Mosul,344
+Israel,48,Ashdod,34
+Israel,48,Ashqelon,36
+Israel,48,Bat Yam,57
+Israel,48,Tel Aviv-Jaffa,533
+Italy,49,Alessandria,17
+Italy,49,Bergamo,70
+Italy,49,Brescia,91
+Italy,49,Brindisi,93
+Italy,49,Livorno,309
+Italy,49,Syrakusa,511
+Italy,49,Udine,551
+Japan,50,Akishima,10
+Japan,50,Fukuyama,172
+Japan,50,Higashiosaka,203
+Japan,50,Hino,204
+Japan,50,Hiroshima,205
+Japan,50,Isesaki,224
+Japan,50,Iwaki,226
+Japan,50,Iwakuni,227
+Japan,50,Iwatsuki,228
+Japan,50,Izumisano,229
+Japan,50,Kakamigahara,253
+Japan,50,Kamakura,256
+Japan,50,Kanazawa,260
+Japan,50,Koriyama,276
+Japan,50,Kurashiki,284
+Japan,50,Kuwana,287
+Japan,50,Matsue,331
+Japan,50,Miyakonojo,338
+Japan,50,Nagareyama,355
+Japan,50,Okayama,376
+Japan,50,Okinawa,377
+Japan,50,Omiya,380
+Japan,50,Onomichi,382
+Japan,50,Otsu,386
+Japan,50,Sagamihara,440

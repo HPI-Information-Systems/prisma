@@ -1,110 +1,110 @@
-stato_id,stato
-1,Afghanistan
-2,Algeria
-3,American Samoa
-4,Angola
-5,Anguilla
-6,Argentina
-7,Armenia
-8,Australia
-9,Austria
-10,Azerbaijan
-11,Bahrain
-12,Bangladesh
-13,Belarus
-14,Bolivia
-15,Brazil
-16,Brunei
-17,Bulgaria
-18,Cambodia
-19,Cameroon
-20,Canada
-21,Chad
-22,Chile
-23,China
-24,Colombia
-25,"Congo, The Democratic Republic of the"
-26,Czech Republic
-27,Dominican Republic
-28,Ecuador
-29,Egypt
-30,Estonia
-31,Ethiopia
-32,Faroe Islands
-33,Finland
-34,France
-35,French Guiana
-36,French Polynesia
-37,Gambia
-38,Germany
-39,Greece
-40,Greenland
-41,Holy See (Vatican City State)
-42,Hong Kong
-43,Hungary
-44,India
-45,Indonesia
-46,Iran
-47,Iraq
-48,Israel
-49,Italy
-50,Japan
-51,Kazakstan
-52,Kenya
-53,Kuwait
-54,Latvia
-55,Liechtenstein
-56,Lithuania
-57,Madagascar
-58,Malawi
-59,Malaysia
-60,Mexico
-61,Moldova
-62,Morocco
-63,Mozambique
-64,Myanmar
-65,Nauru
-66,Nepal
-67,Netherlands
-68,New Zealand
-69,Nigeria
-70,North Korea
-71,Oman
-72,Pakistan
-73,Paraguay
-74,Peru
-75,Philippines
-76,Poland
-77,Puerto Rico
-78,Romania
-79,Réunion
-80,Russian Federation
-81,Saint Vincent and the Grenadines
-82,Saudi Arabia
-83,Senegal
-84,Slovakia
-85,South Africa
-86,South Korea
-87,Spain
-88,Sri Lanka
-89,Sudan
-90,Sweden
-91,Switzerland
-92,Taiwan
-93,Tanzania
-94,Thailand
-95,Tonga
-96,Tunisia
-97,Turkey
-98,Turkmenistan
-99,Tuvalu
-100,Ukraine
-101,United Arab Emirates
-102,United Kingdom
-103,United States
-104,Venezuela
-105,Vietnam
-106,"Virgin Islands, U.S."
-107,Yemen
-108,Yugoslavia
-109,Zambia
+stato,stato_id
+Afghanistan,1
+Algeria,2
+American Samoa,3
+Angola,4
+Anguilla,5
+Argentina,6
+Armenia,7
+Australia,8
+Austria,9
+Azerbaijan,10
+Bahrain,11
+Bangladesh,12
+Belarus,13
+Bolivia,14
+Brazil,15
+Brunei,16
+Bulgaria,17
+Cambodia,18
+Cameroon,19
+Canada,20
+Chad,21
+Chile,22
+China,23
+Colombia,24
+"Congo, The Democratic Republic of the",25
+Czech Republic,26
+Dominican Republic,27
+Ecuador,28
+Egypt,29
+Estonia,30
+Ethiopia,31
+Faroe Islands,32
+Finland,33
+France,34
+French Guiana,35
+French Polynesia,36
+Gambia,37
+Germany,38
+Greece,39
+Greenland,40
+Holy See (Vatican City State),41
+Hong Kong,42
+Hungary,43
+India,44
+Indonesia,45
+Iran,46
+Iraq,47
+Israel,48
+Italy,49
+Japan,50
+Kazakstan,51
+Kenya,52
+Kuwait,53
+Latvia,54
+Liechtenstein,55
+Lithuania,56
+Madagascar,57
+Malawi,58
+Malaysia,59
+Mexico,60
+Moldova,61
+Morocco,62
+Mozambique,63
+Myanmar,64
+Nauru,65
+Nepal,66
+Netherlands,67
+New Zealand,68
+Nigeria,69
+North Korea,70
+Oman,71
+Pakistan,72
+Paraguay,73
+Peru,74
+Philippines,75
+Poland,76
+Puerto Rico,77
+Romania,78
+Réunion,79
+Russian Federation,80
+Saint Vincent and the Grenadines,81
+Saudi Arabia,82
+Senegal,83
+Slovakia,84
+South Africa,85
+South Korea,86
+Spain,87
+Sri Lanka,88
+Sudan,89
+Sweden,90
+Switzerland,91
+Taiwan,92
+Tanzania,93
+Thailand,94
+Tonga,95
+Tunisia,96
+Turkey,97
+Turkmenistan,98
+Tuvalu,99
+Ukraine,100
+United Arab Emirates,101
+United Kingdom,102
+United States,103
+Venezuela,104
+Vietnam,105
+"Virgin Islands, U.S.",106
+Yemen,107
+Yugoslavia,108
+Zambia,109
