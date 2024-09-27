@@ -46,14 +46,14 @@ public class EmbeddedMappingMatcher extends Matcher {
         }
 
         // randomization
-        long seed = 42;
-        List<Integer> rowMapping = IntStream.range(0, t1.getNumColumns()).boxed().collect(Collectors.toList());
-        Collections.shuffle(rowMapping, new Random(seed));
-        double[][] shuffledSimilarityByColumn = new double[t1.getNumColumns()][t2.getNumColumns()];
-        for (int i = 0; i < t1.getNumColumns(); i++) {
-            shuffledSimilarityByColumn[i] = similarityByColumn[rowMapping.get(i)];
-        }
-        similarityByColumn = shuffledSimilarityByColumn;
+        // long seed = 42;
+        // List<Integer> rowMapping = IntStream.range(0, t1.getNumColumns()).boxed().collect(Collectors.toList());
+        // Collections.shuffle(rowMapping, new Random(seed));
+        // double[][] shuffledSimilarityByColumn = new double[t1.getNumColumns()][t2.getNumColumns()];
+        // for (int i = 0; i < t1.getNumColumns(); i++) {
+        //     shuffledSimilarityByColumn[i] = similarityByColumn[rowMapping.get(i)];
+        // }
+        // similarityByColumn = shuffledSimilarityByColumn;
 
         getLogger().debug("Successfully created similarity Matrix based on the probability mass function for scenario '{}'.",
                 scenario.getName());
@@ -99,7 +99,7 @@ public class EmbeddedMappingMatcher extends Matcher {
 
         // undo randomization
         ArrayList<float[]> finale = new ArrayList<>(Arrays.stream(finalResultAsPrimitiveFloat).toList());
-        unshuffle(finale, rowMapping);
+        //unshuffle(finale, rowMapping);
         return finale.toArray(new float[0][0]);
     }
 

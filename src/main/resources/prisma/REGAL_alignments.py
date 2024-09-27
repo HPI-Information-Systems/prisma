@@ -37,7 +37,7 @@ def get_embedding_similarities(embed, embed2 = None, sim_measure = "cosine"):
     else:
         similarity_matrix = sklearn.metrics.pairwise.euclidean_distances(embed, embed2)
         similarity_matrix = np.exp(-similarity_matrix)
-    similarity_matrix, shuffle_indices = shuffle_sm(similarity_matrix)
+    #similarity_matrix, shuffle_indices = shuffle_sm(similarity_matrix)
     dissimilarity_matrix = 1 - similarity_matrix
     row_indices, col_indices = linear_sum_assignment(dissimilarity_matrix)
     optimal_matching = list(zip(row_indices, col_indices))
@@ -45,7 +45,7 @@ def get_embedding_similarities(embed, embed2 = None, sim_measure = "cosine"):
     for x, y in optimal_matching:
         filter_matrix[x][y] = 1
     similarity_matrix = np.minimum(similarity_matrix, filter_matrix)
-    similarity_matrix = unshuffle_sm(similarity_matrix, shuffle_indices)
+    #similarity_matrix = unshuffle_sm(similarity_matrix, shuffle_indices)
         #row_players = {
         #    i: matching.Player(i) for i in range(similarity_matrix.shape[0])
         #}
