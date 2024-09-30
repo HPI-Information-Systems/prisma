@@ -3,7 +3,6 @@ import csv
 import re
 
 
-
 def extract_properties(matcher_string):
     matcher_name = matcher_string[:matcher_string.find("(")]
     pattern = r'(\w+)\s*=\s*([^\s:]+)'
@@ -12,18 +11,30 @@ def extract_properties(matcher_string):
     return matcher_name, dict(matches)
 
 
+def preprocess(csv_row):
+    # Replace commas within parentheses with semicolons
+    modified_row = re.sub(
+        r"\(([^()]*)\)", lambda x: x.group(0).replace(",", ";"), csv_row
+    )
+    return modified_row
+
+
 def extract_score(csv_path, performance, benchmark_dict):
     with open(csv_path) as fd:
-        csvreader = csv.reader(fd)
-        row1, row2 = list(csvreader)[:2]
+        first_two_lines = fd.readlines()[:2]
+        first_two_lines = [preprocess(row) for row in first_two_lines]
+        csvreader = csv.reader(first_two_lines)
+        row1, row2 = list(csvreader)
         for i, matcher in enumerate(row1):
-            if i == 0: # skip row labels
+            if i == 0:  # Skip row labels
                 continue
-            benchmark_dict.setdefault("_performances", {}).setdefault(matcher, {})[performance] = float(row2[i])
+            benchmark_dict.setdefault("_performances", {}).setdefault(matcher, {})[
+                performance
+            ] = float(row2[i])
 
 def import_benchmark(root_path, performance_definitions):
     benchmarks = {}
-    #for performance_filename, performance_name in performance_definitions.items():
+    # for performance_filename, performance_name in performance_definitions.items():
     #    performance_csv = os.path.join(root_path, "_performances", performance_filename,
     #                                   "performance_overview_line1.csv")
     #    extract_score(performance_csv, performance_name, benchmarks)
@@ -41,8 +52,6 @@ def import_benchmark(root_path, performance_definitions):
                 scenario_path = os.path.join(dataset_path, scenario)
                 if not os.path.isdir(scenario_path) or scenario == "_performances":
                     continue
-                print("Dataset:", dataset)
-                print("Scenario:", scenario)
                 # outputs_dir = os.path.join(scenario_path, "_outputs", "MatchingStepLine1")
                 # for matcher in os.listdir(outputs_dir):
                 #    process_output_file(os.path.join(outputs_dir, matcher), dataset, scenario, matcher)
@@ -53,7 +62,6 @@ def import_benchmark(root_path, performance_definitions):
                 dataset_benchmarks[scenario] = scenario_benchmarks
             benchmarks[dataset] = dataset_benchmarks
     return benchmarks
-
 
 
 def generalize_benchmark_matchers(benchmarks):
