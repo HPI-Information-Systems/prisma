@@ -25,7 +25,7 @@ public class EmbeddedMappingMatcher extends Matcher {
 
     @Override
     public float[][] match(MatchTask matchTask, MatchingStep matchStep) {
-        return match(matchTask, matchStep, Integer.MAX_VALUE);
+        return match(matchTask, matchStep, 1000);
     }
 
     public float[][] match(MatchTask matchTask, MatchingStep matchStep, int maxIterations) {
@@ -65,28 +65,28 @@ public class EmbeddedMappingMatcher extends Matcher {
 
         //now to some two-opt switching
         int currentIteration = 0;
-//        boolean furtherImprovement = true;
-//        while (furtherImprovement && currentIteration <= maxIterations) {
-//            furtherImprovement = false;
-        getLogger().debug("Start two-opt switching the scenario '{}'.",
-                scenario.getName());
-        for (var outer = 0; outer < maxColumns; outer++) {
-            for (var inner = outer; inner < maxColumns; inner++) {
-                currentIteration++;
-                if (currentIteration > maxIterations) break;
-                if (bestMatch[outer][inner]) continue;
+        boolean furtherImprovement = true;
+        while (furtherImprovement && currentIteration <= maxIterations) {
+            currentIteration++;
+            furtherImprovement = false;
+            getLogger().debug("Start two-opt switching the scenario '{}'.",
+                    scenario.getName());
+            for (var outer = 0; outer < maxColumns; outer++) {
+                for (var inner = outer; inner < maxColumns; inner++) {
+                    if (bestMatch[outer][inner]) continue;
 
-                boolean[][] newMatch = twoOptSwitch(bestMatch, maxColumns, inner, outer);
+                    boolean[][] newMatch = twoOptSwitch(bestMatch, maxColumns, inner, outer);
 
-                double disNewMatch = lookUpDissimilarity(similarityByColumn, newMatch);
-                if (disNewMatch < disBestMatch) { //this can be optimized by only looking up the delta in dissimilarity
-                    getLogger().debug("EmbeddedMappingMatcher improve match by switching: '{}' x '{}'", outer, inner);
-                    bestMatch = newMatch;
-                    disBestMatch = disNewMatch;
+                    double disNewMatch = lookUpDissimilarity(similarityByColumn, newMatch);
+                    if (disNewMatch < disBestMatch) { //this can be optimized by only looking up the delta in dissimilarity
+                        getLogger().debug("EmbeddedMappingMatcher improve match by switching: '{}' x '{}'", outer, inner);
+                        bestMatch = newMatch;
+                        disBestMatch = disNewMatch;
+                        furtherImprovement = true;
+                    }
                 }
             }
         }
-//        }
         getLogger().debug("Finished two-opt switching the scenario '{}'.",
                 scenario.getName());
 
@@ -105,7 +105,7 @@ public class EmbeddedMappingMatcher extends Matcher {
 
     private static void unshuffle(ArrayList<float[]> list, List<Integer> rowMapping) {
         ArrayList<float[]> unshuffledList = new ArrayList<>(Collections.nCopies(list.size(), null));
-        for(int i  = 0 ; i < list.size(); ++i){
+        for (int i = 0; i < list.size(); ++i) {
             unshuffledList.set(rowMapping.get(i), list.get(i));
         }
         for (int i = 0; i < list.size(); i++) {
