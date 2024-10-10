@@ -252,11 +252,11 @@ def visualize_gdep_gamma(csv_name):
 
 def main():
     visualize_runtime_two_subplots()
-    #isualize_gdep_gamma("gdep_gamma_eval.csv")
+    visualize_gdep_gamma("gdep_gamma_eval.csv")
     #visualize_gdep_gamma("gdep_gamma_eval_sakila.csv")
     #visualize_gdep_gamma("gdep_gamma_eval_valentine.csv")
-    visualize_runtime()
-    visualize_gamma_eval()
+    #visualize_runtime()
+    #visualize_gamma_eval()
 
 
 if __name__ == "__main__":
