@@ -4,7 +4,7 @@ import numpy as np
 from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 import seaborn as sns
-#sns.set()
+# sns.set()
 
 
 def mle_line(params, x, y):
@@ -19,7 +19,6 @@ def read_csv(path):
         csvreader = csv.reader(fp)
         rows = list(csvreader)
     return rows
-
 
 
 COLORS = {
@@ -94,60 +93,12 @@ HATCHES = {
     "LEAPME": ".",
     "EmbDI": "\\",
     "CS": "x",
-    "I40": "+",
+    "I40": "++",
     "Profiling": "o",
     "Pdep Calculation": "+",
     "K&N": "..",
-    "JMM": "X"
+    "JMM": "X",
 }
-
-def visualize_runtime():
-    ## generate xNetGammaAttributePlot
-    data = read_csv("./data/runtimes.csv")
-    matchers = data[0][1:]
-    num_matchers = len(matchers)
-    bar_width = 0.35  # Width of each bar
-    margin = 0.5
-    index = np.arange(num_matchers)  # Index for the x-axis positions
-
-    plt.figure(figsize=(10, 5.5))
-    plt.rc('font', family='serif')
-
-    all_positions = []
-
-    for offset, runtimes_matcher in enumerate(data[1:]):
-        name = runtimes_matcher[0]
-        runtimes = [float(runtime) for runtime in runtimes_matcher[1:]]  # Convert runtimes to integers
-        bar_positions = (index * bar_width) + offset * (num_matchers  * bar_width + margin)  # Adjust bar positions for grouping
-        all_positions += list(bar_positions)
-        for runtime, matcher, pos in zip(runtimes, matchers, bar_positions):
-            if runtime == -1:
-                plt.plot([pos], [0.1], marker='*', color='black', markersize=10, zorder=5)
-            plt.bar([pos], [runtime], bar_width, color=RUNTIME_COLORS[matcher], edgecolor='black', label=("" if offset==0 else "_")+ matcher, hatch=HATCHES[matcher], zorder=3)
-            #if matcher == "PRISMA":
-            #    plt.bar([pos], [runtime * 0.98], bar_width, color=RUNTIME_COLORS[matcher], edgecolor='black', label=("" if offset==0 else "_")+ matcher + " Pdep Calculation", hatch=HATCHES["Pdep Calculation"], zorder=4)
-            #    plt.bar([pos], [runtime * np.log(0.6)], bar_width, color=RUNTIME_COLORS[matcher], edgecolor='black', label=("" if offset==0 else "_")+ matcher + " Profiling", hatch=HATCHES["Profiling"], zorder=5)
-
-
-    plt.ylabel('Runtimes (s)', labelpad=-10, fontsize=19)
-    plt.ylim([0.1, 2000])
-
-    plt.yscale('log')
-
-
-    handles = []
-    #for matcher, color in RUNTIME_COLORS.items():
-    #    handles.append(plt.Line2D([], [], color=color, marker="s", linestyle='None', markersize=10, label=matcher))
-    #plt.legend(handles=handles, loc='upper center', bbox_to_anchor=[0.45, 1.2], ncol=5, fontsize=16)
-    plt.legend(loc='upper center', bbox_to_anchor=[0.45, 1.2], ncol=6, fontsize=16, frameon=False)
-
-    plt.tight_layout()
-    plt.yticks([1, 10, 100, 1000], ["1", "10", "100", "1000"], fontsize=16)
-    plt.xticks([0.7, 2.95], ["Single Table", "Multiple Tables"], fontsize=19)
-    plt.grid(zorder=0)
-    plt.savefig("runtime_comparison.pdf")
-
-    plt.show()
 
 
 def visualize_runtime_two_subplots():
@@ -174,22 +125,25 @@ def visualize_runtime_two_subplots():
 
         for runtime, matcher, pos in zip(runtimes, matchers, bar_positions):
 
-            ax.bar(pos, runtime, bar_width,
-                    color=RUNTIME_COLORS[matcher],
-                    edgecolor='black', hatch=HATCHES[matcher],
-                    zorder=3, label=("" if ax==ax1 else "_")+matcher)
-
-
+            ax.bar(
+                pos,
+                runtime,
+                bar_width,
+                color=RUNTIME_COLORS[matcher],
+                edgecolor="black",
+                hatch=HATCHES[matcher],
+                zorder=3,
+                label=("" if ax == ax1 else "_") + matcher,
+            )
     ax1.text(0.5, -0.08, "Single Table", fontsize=20, ha='center', transform=ax1.transAxes)
     ax2.text(0.5, -0.08, "Multiple Tables", fontsize=20, ha='center', transform=ax2.transAxes)
 
-
     # Customize the first subplot
-    ax1.set_ylabel('Runtimes (s)', labelpad=-5, fontsize=20)
+    ax1.set_ylabel("Runtimes (s)", labelpad=-5, fontsize=18)
     ax1.set_ylim([0.1, 2000])
     ax1.set_xlim([-0.3, 1.5])
     ax1.set_yscale('log')
-    ax1.set_yticks([1, 10, 100, 1000], ["1", "10", "100", "1000"], fontsize=16)
+    ax1.set_yticks([1, 10, 100, 1000], ["1", "10", "100", "1000"], fontsize=18)
 
     ax1.set_xticks([])
     ax1.grid(zorder=0)
@@ -199,11 +153,11 @@ def visualize_runtime_two_subplots():
     ax2.set_xlim([-0.3, 1.5])
     ax2.set_yscale('log')
     ax2.set_xticks([])
-    ax2.set_yticks([1, 10, 100, 1000], ["1", "10", "100", "1000"], fontsize=16)
-
+    ax2.set_yticks([1, 10, 100, 1000], ["", "", "", ""], fontsize=1)
+    plt.subplots_adjust(wspace=0.05)
     ax2.grid(zorder=0)
     fig.legend( loc='upper center', bbox_to_anchor=[0.5, 1.0], ncol=7, fontsize=17, frameon=False, columnspacing=0.7)
-
+    plt.tight_layout(rect=(0, 0, 1, 0.92))
     plt.savefig("runtime_comparison.pdf")
 
     plt.show()
@@ -218,33 +172,44 @@ def visualize_gdep_gamma(csv_name):
     plt.figure(figsize=(11.5, 5.5))
     plt.rc('font', family='serif')
 
-    all_positions = []
-
     for offset, row in enumerate(data[2:]):
         gdep_treshold = row[0]
         f1_scores = row[1:-1]
         f1_scores= [float(f1_score) for f1_score in f1_scores]  # Convert runtimes to integers
-        plt.plot(gammas[1:-1], f1_scores,marker=MARKER[offset][0], label=gdep_treshold, markersize=MARKER[offset][1], zorder=5)
-        #    plt.bar([pos], [runtime], bar_width, color=RUNTIME_COLORS[matcher], edgecolor='black', label=("" if offset==0 else "_")+ matcher, hatch=HATCHES[matcher], zorder=3)
-            #if matcher == "PRISMA":
-            #    plt.bar([pos], [runtime * 0.98], bar_width, color=RUNTIME_COLORS[matcher], edgecolor='black', label=("" if offset==0 else "_")+ matcher + " Pdep Calculation", hatch=HATCHES["Pdep Calculation"], zorder=4)
-            #    plt.bar([pos], [runtime * np.log(0.6)], bar_width, color=RUNTIME_COLORS[matcher], edgecolor='black', label=("" if offset==0 else "_")+ matcher + " Profiling", hatch=HATCHES["Profiling"], zorder=5)
-
+        plt.plot(
+            gammas[1:-1],
+            f1_scores,
+            marker=MARKER[offset][0],
+            label=gdep_treshold,
+            markersize=MARKER[offset][1],
+            zorder=5,
+        )
 
     plt.ylabel('F1 Score', labelpad=0, fontsize=23)
     plt.xlabel('γ Parameter', labelpad=0, fontsize=23)
     handles = []
-    #for matcher, color in RUNTIME_COLORS.items():
-    #    handles.append(plt.Line2D([], [], color=color, marker="s", linestyle='None', markersize=10, label=matcher))
-    #plt.legend(handles=handles, loc='upper center', bbox_to_anchor=[0.45, 1.2], ncol=5, fontsize=16)
-    plt.legend(loc='lower center', bbox_to_anchor=[0.45, 0.97], ncol=6, fontsize=18, frameon=False)
-    #plt.tight_layout()
-    plt.text(0.5, 1.11, 'Gpdep Threshold τ', fontsize=18, ha='center', transform=plt.gca().transAxes)
-    #plt.title("Gpdep Threshold τ")
-    plt.yticks([0.44,0.46,0.48,0.50,.52], [0.44,0.46,0.48,0.50,.52], fontsize=16)
+    plt.legend(
+        loc="lower center",
+        bbox_to_anchor=[0.5, 0.97],
+        ncol=6,
+        fontsize=19,
+        frameon=False,
+    )
+    plt.text(
+        0.5,
+        1.11,
+        "gpdep Threshold τ",
+        fontsize=19,
+        ha="center",
+        transform=plt.gca().transAxes,
+    )
+    plt.yticks(
+        [0.46, 0.48, 0.50, 0.52, 0.54], [0.46, 0.48, 0.50, 0.52, 0.54], fontsize=19
+    )
     plt.xticks(gammas[1:-1:2], [f"0.{i}" for i in range(0, 10)], fontsize=19)
     plt.grid(zorder=0)
     plt.subplots_adjust(left=0.11, bottom=0.13)
+
     plt.savefig("Gamma-Gpdep.pdf")
 
     plt.show()
@@ -253,10 +218,6 @@ def visualize_gdep_gamma(csv_name):
 def main():
     visualize_runtime_two_subplots()
     visualize_gdep_gamma("gdep_gamma_eval.csv")
-    #visualize_gdep_gamma("gdep_gamma_eval_sakila.csv")
-    #visualize_gdep_gamma("gdep_gamma_eval_valentine.csv")
-    #visualize_runtime()
-    #visualize_gamma_eval()
 
 
 if __name__ == "__main__":
