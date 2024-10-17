@@ -5,10 +5,11 @@ PERFORMANCES = {
     "Accuracy": "Accuracy",
     "F1": "F1",
     "Precision": "Precision",
-    "Recall": "Recall"
+    "Recall": "Recall",
+    "MatcherRuntime": "MatcherRuntime",
 }
 
-METRICS = ["F1", "Recall", "Precision"]
+METRICS = ["F1", "Recall", "Precision", "MatcherRuntime"]
 FILTER_CONFIGS = [{"postprocessing" : "true", "kindOfFeature": "Distribution", "thresholdMatches": "true"}]
 DATASETS = [
     "ORIG_MTSN_SHUFFLED",
@@ -20,6 +21,18 @@ DATASETS = [
     "Valentine-Wikidata-Unionable",
     "TPC-DI-Unionable",
 ]
+
+ENC_DATASETS = [
+    "ENC_MTSN_SHUFFLED",
+    "ENC_MTDN_SHUFFLED",
+    "ENC_MTSN_SAMPLED",
+    "ENC_MTDN_SAMPLED",
+    "Magellan-Unionable_md5_encrypted",
+    "ChEMBL-Unionable_md5_encrypted",
+    "Valentine-Wikidata-Unionable_md5_encrypted",
+    "TPC-DI-Unionable_md5_encrypted",
+]
+
 MATCHER_LABELS = [
     "EmbeddedMappingMatcher",
     "KangEtNaughton",
