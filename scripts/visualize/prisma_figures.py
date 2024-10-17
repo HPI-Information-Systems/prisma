@@ -115,7 +115,7 @@ def visualize_runtime_two_subplots():
     index = np.arange(num_matchers)  # Index for the x-axis positions
 
     # Create subplots
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 6))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10.8, 6))
     plt.rc('font', family='serif')
 
     # Iterate through each row in data
@@ -139,7 +139,8 @@ def visualize_runtime_two_subplots():
     ax2.text(0.5, -0.08, "Multiple Tables", fontsize=20, ha='center', transform=ax2.transAxes)
 
     # Customize the first subplot
-    ax1.set_ylabel("Runtimes (s)", labelpad=-5, fontsize=18)
+    [x.set_linewidth(1.5) for x in ax1.spines.values()]
+    ax1.set_ylabel("Runtimes (s)", labelpad=-10, fontsize=18)
     ax1.set_ylim([0.1, 2000])
     ax1.set_xlim([-0.3, 1.5])
     ax1.set_yscale('log')
@@ -149,15 +150,16 @@ def visualize_runtime_two_subplots():
     ax1.grid(zorder=0)
 
     # Customize the second subplot
+    [x.set_linewidth(1.5) for x in ax2.spines.values()]
     ax2.set_ylim([0.1, 2000])
     ax2.set_xlim([-0.3, 1.5])
     ax2.set_yscale('log')
     ax2.set_xticks([])
     ax2.set_yticks([1, 10, 100, 1000], ["", "", "", ""], fontsize=1)
-    plt.subplots_adjust(wspace=0.05)
+    plt.subplots_adjust(wspace=0.04)
     ax2.grid(zorder=0)
-    fig.legend( loc='upper center', bbox_to_anchor=[0.5, 1.0], ncol=7, fontsize=17, frameon=False, columnspacing=0.7)
-    plt.tight_layout(rect=(0, 0, 1, 0.92))
+    fig.legend(loc='upper center', bbox_to_anchor=[0.5, 1.0], ncol=7, fontsize=17, frameon=False, columnspacing=0.7)
+    plt.tight_layout(rect=(0, 0, 0.99, 0.92))
     plt.savefig("runtime_comparison.pdf")
 
     plt.show()
