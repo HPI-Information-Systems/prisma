@@ -1,3 +1,3 @@
-indirizzo_id,indirizzo,indirizzo2,distretto,città_id,codice_postale,telefono
-1,47 MySakila Drive,,Alberta,300,,
-2,28 MySQL Boulevard,,QLD,576,,
+indirizzo_id,città_id,telefono,indirizzo2,distretto,codice_postale,indirizzo
+1,300,,,Alberta,,47 MySakila Drive
+2,576,,,QLD,,28 MySQL Boulevard

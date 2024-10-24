@@ -25,7 +25,7 @@ public class EmbeddedMappingMatcher extends Matcher {
 
     @Override
     public float[][] match(MatchTask matchTask, MatchingStep matchStep) {
-        return match(matchTask, matchStep, Integer.MAX_VALUE);
+        return match(matchTask, matchStep, 1000);
     }
 
     public float[][] match(MatchTask matchTask, MatchingStep matchStep, int maxIterations) {
@@ -46,14 +46,14 @@ public class EmbeddedMappingMatcher extends Matcher {
         }
 
         // randomization
-        long seed = 42;
-        List<Integer> rowMapping = IntStream.range(0, t1.getNumColumns()).boxed().collect(Collectors.toList());
-        Collections.shuffle(rowMapping, new Random(seed));
-        double[][] shuffledSimilarityByColumn = new double[t1.getNumColumns()][t2.getNumColumns()];
-        for (int i = 0; i < t1.getNumColumns(); i++) {
-            shuffledSimilarityByColumn[i] = similarityByColumn[rowMapping.get(i)];
-        }
-        similarityByColumn = shuffledSimilarityByColumn;
+        // long seed = 42;
+        // List<Integer> rowMapping = IntStream.range(0, t1.getNumColumns()).boxed().collect(Collectors.toList());
+        // Collections.shuffle(rowMapping, new Random(seed));
+        // double[][] shuffledSimilarityByColumn = new double[t1.getNumColumns()][t2.getNumColumns()];
+        // for (int i = 0; i < t1.getNumColumns(); i++) {
+        //     shuffledSimilarityByColumn[i] = similarityByColumn[rowMapping.get(i)];
+        // }
+        // similarityByColumn = shuffledSimilarityByColumn;
 
         getLogger().debug("Successfully created similarity Matrix based on the probability mass function for scenario '{}'.",
                 scenario.getName());
@@ -65,28 +65,28 @@ public class EmbeddedMappingMatcher extends Matcher {
 
         //now to some two-opt switching
         int currentIteration = 0;
-//        boolean furtherImprovement = true;
-//        while (furtherImprovement && currentIteration <= maxIterations) {
-//            furtherImprovement = false;
-        getLogger().debug("Start two-opt switching the scenario '{}'.",
-                scenario.getName());
-        for (var outer = 0; outer < maxColumns; outer++) {
-            for (var inner = outer; inner < maxColumns; inner++) {
-                currentIteration++;
-                if (currentIteration > maxIterations) break;
-                if (bestMatch[outer][inner]) continue;
+        boolean furtherImprovement = true;
+        while (furtherImprovement && currentIteration <= maxIterations) {
+            currentIteration++;
+            furtherImprovement = false;
+            getLogger().debug("Start two-opt switching the scenario '{}'.",
+                    scenario.getName());
+            for (var outer = 0; outer < maxColumns; outer++) {
+                for (var inner = outer; inner < maxColumns; inner++) {
+                    if (bestMatch[outer][inner]) continue;
 
-                boolean[][] newMatch = twoOptSwitch(bestMatch, maxColumns, inner, outer);
+                    boolean[][] newMatch = twoOptSwitch(bestMatch, maxColumns, inner, outer);
 
-                double disNewMatch = lookUpDissimilarity(similarityByColumn, newMatch);
-                if (disNewMatch < disBestMatch) { //this can be optimized by only looking up the delta in dissimilarity
-                    getLogger().debug("EmbeddedMappingMatcher improve match by switching: '{}' x '{}'", outer, inner);
-                    bestMatch = newMatch;
-                    disBestMatch = disNewMatch;
+                    double disNewMatch = lookUpDissimilarity(similarityByColumn, newMatch);
+                    if (disNewMatch < disBestMatch) { //this can be optimized by only looking up the delta in dissimilarity
+                        getLogger().debug("EmbeddedMappingMatcher improve match by switching: '{}' x '{}'", outer, inner);
+                        bestMatch = newMatch;
+                        disBestMatch = disNewMatch;
+                        furtherImprovement = true;
+                    }
                 }
             }
         }
-//        }
         getLogger().debug("Finished two-opt switching the scenario '{}'.",
                 scenario.getName());
 
@@ -99,13 +99,13 @@ public class EmbeddedMappingMatcher extends Matcher {
 
         // undo randomization
         ArrayList<float[]> finale = new ArrayList<>(Arrays.stream(finalResultAsPrimitiveFloat).toList());
-        unshuffle(finale, rowMapping);
+        //unshuffle(finale, rowMapping);
         return finale.toArray(new float[0][0]);
     }
 
     private static void unshuffle(ArrayList<float[]> list, List<Integer> rowMapping) {
         ArrayList<float[]> unshuffledList = new ArrayList<>(Collections.nCopies(list.size(), null));
-        for(int i  = 0 ; i < list.size(); ++i){
+        for (int i = 0; i < list.size(); ++i) {
             unshuffledList.set(rowMapping.get(i), list.get(i));
         }
         for (int i = 0; i < list.size(); i++) {

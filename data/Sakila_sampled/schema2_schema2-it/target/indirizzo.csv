@@ -1,601 +1,601 @@
-indirizzo_id,indirizzo,indirizzo2,distretto,codice_postale,telefono,città_id,città,stato_id,stato
-1,47 MySakila Drive,,Alberta,,,300,Lethbridge,20,Canada
-2,28 MySQL Boulevard,,QLD,,,576,Woodridge,8,Australia
-3,23 Workhaven Lane,,Alberta,,14033335568.0,300,Lethbridge,20,Canada
-4,1411 Lillydale Drive,,QLD,,6172235589.0,576,Woodridge,8,Australia
-5,1913 Hanoi Way,,Nagasaki,35200.0,28303384290.0,463,Sasebo,50,Japan
-6,1121 Loja Avenue,,California,17886.0,838635286649.0,449,San Bernardino,103,United States
-7,692 Joliet Street,,Attika,83579.0,448477190408.0,38,Athenai,39,Greece
-8,1566 Inegöl Manor,,Mandalay,53561.0,705814003527.0,349,Myingyan,64,Myanmar
-9,53 Idfu Parkway,,Nantou,42399.0,10655648674.0,361,Nantou,92,Taiwan
-10,1795 Santiago de Compostela Way,,Texas,18743.0,860452626434.0,295,Laredo,103,United States
-11,900 Santiago de Compostela Parkway,,Central Serbia,93896.0,716571220373.0,280,Kragujevac,108,Yugoslavia
-12,478 Joliet Way,,Hamilton,77948.0,657282285970.0,200,Hamilton,68,New Zealand
-13,613 Korolev Drive,,Masqat,45844.0,380657522649.0,329,Masqat,71,Oman
-14,1531 Salé Drive,,Esfahan,53628.0,648856936185.0,162,Esfahan,46,Iran
-15,1542 Tarlac Parkway,,Kanagawa,1027.0,635297277345.0,440,Sagamihara,50,Japan
-16,808 Bhopal Manor,,Haryana,10672.0,465887807014.0,582,Yamuna Nagar,44,India
-17,270 Amroha Parkway,,Osmaniye,29610.0,695479687538.0,384,Osmaniye,97,Turkey
-18,770 Bydgoszcz Avenue,,California,16266.0,517338314235.0,120,Citrus Heights,103,United States
-19,419 Iligan Lane,,Madhya Pradesh,72878.0,990911107354.0,76,Bhopal,44,India
-20,360 Toulouse Parkway,,England,54308.0,949312333307.0,495,Southend-on-Sea,102,United Kingdom
-21,270 Toulon Boulevard,,Kalmykia,81766.0,407752414682.0,156,Elista,80,Russian Federation
-22,320 Brest Avenue,,Kaduna,43331.0,747791594069.0,252,Kaduna,69,Nigeria
-23,1417 Lancaster Avenue,,Northern Cape,72192.0,272572357893.0,267,Kimberley,85,South Africa
-24,1688 Okara Way,,Nothwest Border Prov,21954.0,144453869132.0,327,Mardan,72,Pakistan
-25,262 A Coruña (La Coruña) Parkway,,Dhaka,34418.0,892775750063.0,525,Tangail,12,Bangladesh
-26,28 Charlotte Amalie Street,,Rabat-Sal-Zammour-Z,37551.0,161968374323.0,443,Salé,62,Morocco
-27,1780 Hino Boulevard,,Liepaja,7716.0,902731229323.0,303,Liepaja,54,Latvia
-28,96 Tafuna Way,,Córdoba,99865.0,934730187245.0,128,Córdoba,6,Argentina
-29,934 San Felipe de Puerto Plata Street,,Sind,99780.0,196495945706.0,472,Shikarpur,72,Pakistan
-30,18 Duisburg Boulevard,,,58327.0,998009777982.0,121,Città del Vaticano,41,Holy See (Vatican City State)
-31,217 Botshabelo Place,,Southern Mindanao,49521.0,665356572025.0,138,Davao,75,Philippines
-32,1425 Shikarpur Manor,,Bihar,65599.0,678220867005.0,346,Munger (Monghyr),44,India
-33,786 Aurora Avenue,,Yamaguchi,65750.0,18461860151.0,474,Shimonoseki,50,Japan
-34,1668 Anápolis Street,,Taipei,50199.0,525255540978.0,316,Lungtan,92,Taiwan
-35,33 Gorontalo Way,,West Bengali,30348.0,745994947458.0,257,Kamarhati,44,India
-36,176 Mandaluyong Place,,Uttar Pradesh,65213.0,627705991774.0,239,Jhansi,44,India
-37,127 Purnea (Purnia) Manor,,Piemonte,79388.0,911872220378.0,17,Alessandria,49,Italy
-38,61 Tama Street,,Okayama,94065.0,708403338270.0,284,Kurashiki,50,Japan
-39,391 Callao Drive,,Midi-Pyrnes,34021.0,440512153169.0,544,Toulouse,34,France
-40,334 Munger (Monghyr) Lane,,Markazi,38145.0,481183273622.0,31,Arak,46,Iran
-41,1440 Fukuyama Loop,,Henan,47929.0,912257250465.0,362,Nanyang,23,China
-42,269 Cam Ranh Parkway,,Chisinau,34689.0,489783829737.0,115,Chisinau,61,Moldova
-43,306 Antofagasta Place,,Esprito Santo,3989.0,378318851631.0,569,Vila Velha,15,Brazil
-44,671 Graz Street,,Oriental,94399.0,680768868518.0,353,Nador,62,Morocco
-45,42 Brindisi Place,,Yerevan,16744.0,42384721397.0,586,Yerevan,7,Armenia
-46,1632 Bislig Avenue,,Nonthaburi,61117.0,471675840679.0,394,Pak Kret,94,Thailand
-47,1447 Imus Way,,Tahiti,48942.0,539758313890.0,167,Faaa,36,French Polynesia
-48,1998 Halifax Drive,,Lipetsk,76022.0,177727722820.0,308,Lipetsk,80,Russian Federation
-49,1718 Valencia Street,,Antofagasta,37359.0,675292816413.0,27,Antofagasta,22,Chile
-50,46 Pjatigorsk Lane,,Moscow (City),23616.0,262076994845.0,343,Moscow,80,Russian Federation
-51,686 Garland Manor,,Cear,52535.0,69493378813.0,247,Juazeiro do Norte,15,Brazil
-52,909 Garland Manor,,Tatarstan,69367.0,705800322606.0,367,Niznekamsk,80,Russian Federation
-53,725 Isesaki Place,,Mekka,74428.0,876295323994.0,237,Jedda,82,Saudi Arabia
-54,115 Hidalgo Parkway,,Khartum,80168.0,307703950263.0,379,Omdurman,89,Sudan
-55,1135 Izumisano Parkway,,California,48150.0,171822533480.0,171,Fontana,103,United States
-56,939 Probolinggo Loop,,Galicia,4166.0,680428310138.0,1,A Coruña (La Coruña),87,Spain
-57,17 Kabul Boulevard,,Chiba,38594.0,697760867968.0,355,Nagareyama,50,Japan
-58,1964 Allappuzha (Alleppey) Street,,Yamaguchi,48980.0,920811325222.0,227,Iwakuni,50,Japan
-59,1697 Kowloon and New Kowloon Loop,,Moskova,57807.0,499352017190.0,49,Balašiha,80,Russian Federation
-60,1668 Saint Louis Place,,Tahiti,39072.0,347487831378.0,397,Papeete,36,French Polynesia
-61,943 Tokat Street,,Vaduz,45428.0,889318963672.0,560,Vaduz,55,Liechtenstein
-62,1114 Liepaja Street,,Sarawak,69226.0,212869228936.0,282,Kuching,59,Malaysia
-63,1213 Ranchi Parkway,,Karnataka,94352.0,800024380485.0,350,Mysore,44,India
-64,81 Hodeida Way,,Rajasthan,55561.0,250767749542.0,231,Jaipur,44,India
-65,915 Ponce Place,,Basel-Stadt,83980.0,1395251317.0,56,Basel,91,Switzerland
-66,1717 Guadalajara Lane,,Missouri,85505.0,914090181665.0,441,Saint Louis,103,United States
-67,1214 Hanoi Way,,Nebraska,67055.0,491001136577.0,306,Lincoln,103,United States
-68,1966 Amroha Avenue,,Sichuan,70385.0,333489324603.0,139,Daxian,23,China
-69,698 Otsu Street,,Cayenne,71110.0,409983924481.0,105,Cayenne,35,French Guiana
-70,1150 Kimchon Manor,,Skne ln,96109.0,663449333709.0,321,Malmö,90,Sweden
-71,1586 Guarujá Place,,Hunan,5135.0,947233365992.0,579,Xi´angtan,23,China
-72,57 Arlington Manor,,Madhya Pradesh,48960.0,990214419142.0,475,Shivapuri,44,India
-73,1031 Daugavpils Parkway,,Béchar,59025.0,107137400143.0,63,Béchar,2,Algeria
-74,1124 Buenaventura Drive,,Mekka,6856.0,407733804223.0,13,al-Hawiya,82,Saudi Arabia
-75,492 Cam Ranh Street,,Eastern Visayas,50805.0,565018274456.0,61,Baybay,75,Philippines
-76,89 Allappuzha (Alleppey) Manor,,National Capital Reg,75444.0,255800440636.0,517,Taguig,75,Philippines
-77,1947 Poços de Caldas Boulevard,,Chiayi,60951.0,427454485876.0,114,Chiayi,92,Taiwan
-78,1206 Dos Quebradas Place,,São Paulo,20207.0,241832790687.0,431,Rio Claro,15,Brazil
-79,1551 Rampur Lane,,Changhwa,72394.0,251164340471.0,108,Changhwa,92,Taiwan
-80,602 Paarl Street,,Pavlodar,98889.0,896314772871.0,402,Pavlodar,51,Kazakstan
-81,1692 Ede Loop,,São Paulo,9223.0,918711376618.0,30,Araçatuba,15,Brazil
-82,936 Salzburg Lane,,Uttar Pradesh,96709.0,875756771675.0,425,Rae Bareli,44,India
-83,586 Tete Way,,Kanagawa,1079.0,18581624103.0,256,Kamakura,50,Japan
-84,1888 Kabul Drive,,Oyo & Osun,20936.0,701457319790.0,217,Ife,69,Nigeria
-85,320 Baiyin Parkway,,Mahajanga,37307.0,223664661973.0,319,Mahajanga,57,Madagascar
-86,927 Bahía Blanca Parkway,,Krim,9495.0,821972242086.0,479,Simferopol,100,Ukraine
-87,929 Tallahassee Loop,,Gauteng,74671.0,800716535041.0,497,Springs,85,South Africa
-88,125 Città del Vaticano Boulevard,,Puebla,67912.0,48417642933.0,40,Atlixco,60,Mexico
-89,1557 Kütahya Boulevard,,England,88002.0,720998247660.0,88,Bradford,102,United Kingdom
-90,870 Ashqelon Loop,,Songkhla,84931.0,135117278909.0,489,Songkhla,94,Thailand
-91,1740 Portoviejo Avenue,,Sucre,29932.0,198123170793.0,480,Sincelejo,24,Colombia
-92,1942 Ciparay Parkway,,Cheju,82624.0,978987363654.0,113,Cheju,86,South Korea
-93,1926 El Alto Avenue,,Buenos Aires,75543.0,846225459260.0,289,La Plata,6,Argentina
-94,1952 Chatsworth Drive,,Guangdong,25958.0,991562402283.0,332,Meixian,23,China
-95,1370 Le Mans Avenue,,Brunei and Muara,52163.0,345679835036.0,53,Bandar Seri Begawan,16,Brunei
-96,984 Effon-Alaiye Avenue,,Gois,17119.0,132986892228.0,183,Goiânia,15,Brazil
-97,832 Nakhon Sawan Manor,,Inner Mongolia,49021.0,275595571388.0,592,Zalantun,23,China
-98,152 Kitwe Parkway,,Caraga,53182.0,835433605312.0,82,Bislig,75,Philippines
-99,1697 Tanauan Lane,,Punjab,22870.0,4764773857.0,399,Pathankot,44,India
-100,1308 Arecibo Way,,Georgia,30695.0,6171054059.0,41,Augusta-Richmond County,103,United States
-101,1599 Plock Drive,,Tete,71986.0,817248913162.0,534,Tete,63,Mozambique
-102,669 Firozabad Loop,,Abu Dhabi,92265.0,412903167998.0,12,al-Ayn,101,United Arab Emirates
-103,588 Vila Velha Manor,,Kyongsangbuk,51540.0,333339908719.0,268,Kimchon,86,South Korea
-104,1913 Kamakura Place,,Lipetsk,97287.0,942570536750.0,238,Jelets,80,Russian Federation
-105,733 Mandaluyong Place,,Asir,77459.0,196568435814.0,2,Abha,82,Saudi Arabia
-106,659 Vaduz Drive,,Ha Darom,49708.0,709935135487.0,34,Ashdod,48,Israel
-107,1177 Jelets Way,,Kwara & Kogi,3305.0,484292626944.0,220,Ilorin,69,Nigeria
-108,1386 Yangor Avenue,,Provence-Alpes-Cte,80720.0,449216226468.0,543,Toulon,34,France
-109,454 Nakhon Sawan Boulevard,,Funafuti,76383.0,963887147572.0,173,Funafuti,99,Tuvalu
-110,1867 San Juan Bautista Tuxtepec Avenue,,Ivanovo,78311.0,547003310357.0,225,Ivanovo,80,Russian Federation
-111,1532 Dzerzinsk Way,,Buenos Aires,9599.0,330838016880.0,334,Merlo,6,Argentina
-112,1002 Ahmadnagar Manor,,Mxico,93026.0,371490777743.0,213,Huixquilucan,60,Mexico
-113,682 Junan Way,,North West,30418.0,622255216127.0,273,Klerksdorp,85,South Africa
-114,804 Elista Drive,,Hubei,61069.0,379804592943.0,159,Enshi,23,China
-115,1378 Alvorada Avenue,,Distrito Federal,75834.0,272234298332.0,102,Caracas,104,Venezuela
-116,793 Cam Ranh Avenue,,California,87057.0,824370924746.0,292,Lancaster,103,United States
-117,1079 Tel Aviv-Jaffa Boulevard,,Sucre,10885.0,358178933857.0,132,Cumaná,104,Venezuela
-118,442 Rae Bareli Place,,Nordrhein-Westfalen,24321.0,886636413768.0,148,Duisburg,38,Germany
-119,1107 Nakhon Sawan Avenue,,Mxico,75149.0,867546627903.0,365,Nezahualcóyotl,60,Mexico
-120,544 Malmö Parkway,,Central Java,63502.0,386759646229.0,403,Pemalang,45,Indonesia
-121,1967 Sincelejo Place,,Gujarat,73644.0,577812616052.0,176,Gandhinagar,44,India
-122,333 Goiânia Way,,Texas,78625.0,909029256431.0,185,Grand Prairie,103,United States
-123,1987 Coacalco de Berriozábal Loop,,al-Qalyubiya,96065.0,787654415858.0,476,Shubra al-Khayma,29,Egypt
-124,241 Mosul Lane,,Risaralda,76157.0,765345144779.0,147,Dos Quebradas,24,Colombia
-125,211 Chiayi Drive,,Uttar Pradesh,58186.0,665993880048.0,164,Etawah,44,India
-126,1175 Tanauan Way,,Lima,64615.0,937222955822.0,305,Lima,74,Peru
-127,117 Boa Vista Way,,Uttar Pradesh,6804.0,677976133614.0,566,Varanasi (Benares),44,India
-128,848 Tafuna Manor,,Kütahya,45142.0,614935229095.0,281,Kütahya,97,Turkey
-129,569 Baicheng Lane,,Gauteng,60304.0,490211944645.0,85,Boksburg,85,South Africa
-130,1666 Qomsheh Drive,,São Paulo,66255.0,582835362905.0,410,Poá,15,Brazil
-131,801 Hagonoy Drive,,Smolensk,8439.0,237426099212.0,484,Smolensk,80,Russian Federation
-132,1050 Garden Grove Avenue,,Slaskie,4999.0,973047364353.0,236,Jastrzebie-Zdrój,76,Poland
-133,1854 Tieli Street,,Shandong,15819.0,509492324775.0,302,Liaocheng,23,China
-134,758 Junan Lane,,Gois,82639.0,935448624185.0,190,Águas Lindas de Goiás,15,Brazil
-135,1752 São Leopoldo Parkway,,Taka-Karpatia,14014.0,252265130067.0,345,Mukatševe,100,Ukraine
-136,898 Belém Manor,,Free State,49757.0,707169393853.0,87,Botshabelo,85,South Africa
-137,261 Saint Louis Way,,Coahuila de Zaragoza,83401.0,321944036800.0,541,Torreón,60,Mexico
-138,765 Southampton Drive,,al-Qalyubiya,4285.0,23712411567.0,421,Qalyub,29,Egypt
-139,943 Johannesburg Avenue,,Maharashtra,5892.0,90921003005.0,417,Pune,44,India
-140,788 Atšinsk Street,,Karnataka,81691.0,146497509724.0,211,Hubli-Dharwad,44,India
-141,1749 Daxian Place,,Gelderland,11044.0,963369996279.0,29,Apeldoorn,67,Netherlands
-142,1587 Sullana Lane,,Inner Mongolia,85769.0,468060467018.0,207,Hohhot,23,China
-143,1029 Dzerzinsk Manor,,Ynlin,57519.0,33173584456.0,542,Touliu,92,Taiwan
-144,1666 Beni-Mellal Place,,Tennessee,13377.0,9099941466.0,123,Clarksville,103,United States
-145,928 Jaffna Loop,,Hiroshima,93762.0,581852137991.0,172,Fukuyama,50,Japan
-146,483 Ljubertsy Parkway,,Scotland,60562.0,581174211853.0,149,Dundee,102,United Kingdom
-147,374 Bat Yam Boulevard,,Kilis,97700.0,923261616249.0,266,Kilis,97,Turkey
-148,1027 Songkhla Manor,,Minsk,30861.0,563660187896.0,340,Molodetšno,13,Belarus
-149,999 Sanaa Loop,,Gauteng,3439.0,918032330119.0,491,Soshanguve,85,South Africa
-150,879 Newcastle Way,,Michigan,90732.0,206841104594.0,499,Sterling Heights,103,United States
-151,1337 Lincoln Parkway,,Saitama,99457.0,597815221267.0,555,Urawa,50,Japan
-152,1952 Pune Lane,,Saint-Denis,92150.0,354615066969.0,442,Saint-Denis,79,Réunion
-153,782 Mosul Street,,Massachusetts,25545.0,885899703621.0,94,Brockton,103,United States
-154,781 Shimonoseki Drive,,Michoacn de Ocampo,95444.0,632316273199.0,202,Hidalgo,60,Mexico
-155,1560 Jelets Boulevard,,Shandong,77777.0,189446090264.0,291,Laiwu,23,China
-156,1963 Moscow Place,,Assam,64863.0,761379480249.0,354,Nagaon,44,India
-157,456 Escobar Way,,Jakarta Raya,36061.0,719202533520.0,232,Jakarta,45,Indonesia
-158,798 Cianjur Avenue,,Shanxi,76990.0,499408708580.0,590,Yuncheng,23,China
-159,185 Novi Sad Place,,Bern,41778.0,904253967161.0,72,Bern,91,Switzerland
-160,1367 Yantai Manor,,Ondo & Ekiti,21294.0,889538496300.0,381,Ondo,69,Nigeria
-161,1386 Nakhon Sawan Boulevard,,Pyongyang-si,53502.0,368899174225.0,420,Pyongyang,70,North Korea
-162,369 Papeete Way,,North Carolina,66639.0,170117068815.0,187,Greensboro,103,United States
-163,1440 Compton Place,,North Austria,81037.0,931059836497.0,307,Linz,9,Austria
-164,1623 Bahía Blanca Manor,,Moskova,81511.0,149981248346.0,310,Ljubertsy,80,Russian Federation
-165,97 Shimoga Avenue,,Tel Aviv,44660.0,177167004331.0,533,Tel Aviv-Jaffa,48,Israel
-166,1740 Le Mans Loop,,Pays de la Loire,22853.0,168476538960.0,297,Le Mans,34,France
-167,1287 Xi´angfan Boulevard,,Gifu,57844.0,819416131190.0,253,Kakamigahara,50,Japan
-168,842 Salzburg Lane,,Adana,3313.0,697151428760.0,529,Tarsus,97,Turkey
-169,154 Tallahassee Loop,,Xinxiang,62250.0,935508855935.0,199,Hami,23,China
-170,710 San Felipe del Progreso Avenue,,Lilongwe,76901.0,843801144113.0,304,Lilongwe,58,Malawi
-171,1540 Wroclaw Drive,,Maharashtra,62686.0,182363341674.0,107,Chandrapur,44,India
-172,475 Atšinsk Way,,Gansu,59571.0,201705577290.0,240,Jinchang,23,China
-173,1294 Firozabad Drive,,Ji´angxi,70618.0,161801569569.0,407,Pingxiang,23,China
-174,1877 Ezhou Lane,,Rajasthan,63337.0,264541743403.0,550,Udaipur,44,India
-175,316 Uruapan Street,,Perak,58194.0,275788967899.0,223,Ipoh,59,Malaysia
-176,29 Pyongyang Loop,,Batman,47753.0,734780743462.0,58,Batman,97,Turkey
-177,1010 Klerksdorp Way,,Steiermark,6802.0,493008546874.0,186,Graz,9,Austria
-178,1848 Salala Boulevard,,Miranda,25220.0,48265851133.0,373,Ocumare del Tuy,104,Venezuela
-179,431 Xi´angtan Avenue,,Kerala,4854.0,230250973122.0,18,Allappuzha (Alleppey),44,India
-180,757 Rustenburg Avenue,,Skikda,89668.0,506134035434.0,483,Skikda,2,Algeria
-181,146 Johannesburg Way,,Tamaulipas,54132.0,953689007081.0,330,Matamoros,60,Mexico
-182,1891 Rizhao Boulevard,,São Paulo,47288.0,391065549876.0,456,Santa Bárbara d´Oeste,15,Brazil
-183,1089 Iwatsuki Avenue,,Kirov,35109.0,866092335135.0,270,Kirovo-Tšepetsk,80,Russian Federation
-184,1410 Benin City Parkway,,Risaralda,29747.0,104150372603.0,405,Pereira,24,Colombia
-185,682 Garden Grove Place,,Tennessee,67497.0,72136330362.0,333,Memphis,103,United States
-186,533 al-Ayn Boulevard,,California,8862.0,662227486184.0,126,Compton,103,United States
-187,1839 Székesfehérvár Parkway,,Gois,55709.0,947468818183.0,317,Luziânia,15,Brazil
-188,741 Ambattur Manor,,Noord-Brabant,43310.0,302590383819.0,438,´s-Hertogenbosch,67,Netherlands
-189,927 Barcelona Street,,Chaharmahal va Bakht,65121.0,951486492670.0,467,Shahr-e Kord,46,Iran
-190,435 0 Way,,West Bengali,74750.0,760171523969.0,195,Haldia,44,India
-191,140 Chiayi Parkway,,Sumy,38982.0,855863906434.0,506,Sumy,100,Ukraine
-192,1166 Changhwa Street,,Caraga,58852.0,650752094490.0,62,Bayugan,75,Philippines
-193,891 Novi Sad Manor,,Ontario,5379.0,247646995453.0,383,Oshawa,20,Canada
-194,605 Rio Claro Parkway,,Tabora,49348.0,352469351088.0,513,Tabora,93,Tanzania
-195,1077 San Felipe de Puerto Plata Place,,Rostov-na-Donu,65387.0,812824036424.0,369,Novotšerkassk,80,Russian Federation
-196,9 San Miguel de Tucumán Manor,,Uttar Pradesh,90845.0,956188728558.0,169,Firozabad,44,India
-197,447 Surakarta Loop,,Nyanza,10428.0,940830176580.0,271,Kisumu,52,Kenya
-198,345 Oshawa Boulevard,,Tokyo-to,32114.0,104491201771.0,204,Hino,50,Japan
-199,1792 Valle de la Pascua Place,,Nordrhein-Westfalen,15540.0,419419591240.0,477,Siegen,38,Germany
-200,1074 Binzhou Manor,,Baden-Wrttemberg,36490.0,331132568928.0,325,Mannheim,38,Germany
-201,817 Bradford Loop,,Ji´angsu,89459.0,264286442804.0,109,Changzhou,23,China
-202,955 Bamenda Way,,Ondo & Ekiti,1545.0,768481779568.0,218,Ikerre,69,Nigeria
-203,1149 A Coruña (La Coruña) Boulevard,,Haiphong,95824.0,470884141195.0,194,Haiphong,105,Vietnam
-204,387 Mwene-Ditu Drive,,Ahal,8073.0,764477681869.0,35,Ashgabat,98,Turkmenistan
-205,68 Molodetšno Manor,,Nordrhein-Westfalen,4662.0,146640639760.0,575,Witten,38,Germany
-206,642 Nador Drive,,Maharashtra,3924.0,369050085652.0,77,Bhusawal,44,India
-207,1688 Nador Lane,,Sulawesi Utara,61613.0,652218196731.0,184,Gorontalo,45,Indonesia
-208,1215 Pyongyang Parkway,,Usak,25238.0,646237101779.0,557,Usak,97,Turkey
-209,1679 Antofagasta Street,,Alto Paran,86599.0,905903574913.0,122,Ciudad del Este,73,Paraguay
-210,1304 ´s-Hertogenbosch Way,,Santa Catarina,10925.0,90336226227.0,83,Blumenau,15,Brazil
-211,850 Salala Loop,,Kitaa,10800.0,403404780639.0,371,Nuuk,40,Greenland
-212,624 Oshawa Boulevard,,West Bengali,89959.0,49677664184.0,51,Balurghat,44,India
-213,43 Dadu Avenue,,Rajasthan,4855.0,95666951770.0,74,Bhilwara,44,India
-214,751 Lima Loop,,Aden,99405.0,756460337785.0,7,Aden,107,Yemen
-215,1333 Haldia Street,,Jilin,82161.0,408304391718.0,174,Fuyu,23,China
-217,1001 Miyakonojo Lane,,Taizz,67924.0,584316724815.0,518,Taizz,107,Yemen
-218,226 Brest Manor,,California,2299.0,785881412500.0,508,Sunnyvale,103,United States
-219,1229 Valencia Parkway,,Haskovo,99124.0,352679173732.0,498,Stara Zagora,17,Bulgaria
-220,1201 Qomsheh Manor,,Gois,21464.0,873492228462.0,28,Aparecida de Goiânia,15,Brazil
-221,866 Shivapuri Manor,,Uttar Pradesh,22474.0,778502731092.0,448,Sambhal,44,India
-222,1168 Najafabad Parkway,,Kabol,40301.0,886649065861.0,251,Kabul,1,Afghanistan
-223,1244 Allappuzha (Alleppey) Place,,Buenos Aires,20657.0,991802825778.0,567,Vicente López,6,Argentina
-224,1842 Luziânia Boulevard,,Zanzibar West,94420.0,706878974831.0,593,Zanzibar,93,Tanzania
-225,1926 Gingoog Street,,Sisilia,22824.0,469738825391.0,511,Syrakusa,49,Italy
-227,1820 Maringá Parkway,,Punjab,88307.0,99760893676.0,324,Mandi Bahauddin,72,Pakistan
-228,60 Poços de Caldas Street,,Rajasthan,82338.0,963063788669.0,243,Jodhpur,44,India
-229,1014 Loja Manor,,Tamil Nadu,66851.0,460795526514.0,22,Ambattur,44,India
-230,201 Effon-Alaiye Way,,Asunción,64344.0,684192903087.0,37,Asunción,73,Paraguay
-231,430 Alessandria Loop,,Saarland,47446.0,669828224459.0,439,Saarbrücken,38,Germany
-232,754 Valencia Place,,Phnom Penh,87911.0,594319417514.0,406,Phnom Penh,18,Cambodia
-233,356 Olomouc Manor,,Gois,93323.0,22326410776.0,26,Anápolis,15,Brazil
-234,1256 Bislig Boulevard,,Botosani,50598.0,479007229460.0,86,Botosani,78,Romania
-235,954 Kimchon Place,,West Bengali,42420.0,541327526474.0,559,Uttarpara-Kotrung,44,India
-236,885 Yingkou Manor,,Kaduna,31390.0,588964509072.0,596,Zaria,69,Nigeria
-237,1736 Cavite Place,,Qina,98775.0,431770603551.0,216,Idfu,29,Egypt
-238,346 Skikda Parkway,,Hawalli,90628.0,630424482919.0,233,Jalib al-Shuyukh,53,Kuwait
-239,98 Stara Zagora Boulevard,,Valle,76448.0,610173756082.0,96,Buenaventura,24,Colombia
-240,1479 Rustenburg Boulevard,,Southern Tagalog,18727.0,727785483194.0,527,Tanza,75,Philippines
-241,647 A Coruña (La Coruña) Street,,Chollanam,36971.0,792557457753.0,357,Naju,86,South Korea
-242,1964 Gijón Manor,,Karnataka,14408.0,918119601885.0,473,Shimoga,44,India
-243,47 Syktyvkar Lane,,West Java,22236.0,63937119031.0,118,Ciomas,45,Indonesia
-244,1148 Saarbrücken Parkway,,Fukushima,1921.0,137773001988.0,226,Iwaki,50,Japan
-245,1103 Bilbays Parkway,,Hubei,87660.0,279979529227.0,578,Xi´angfan,23,China
-246,1246 Boksburg Parkway,,Hebei,28349.0,890283544295.0,422,Qinhuangdao,23,China
-247,1483 Pathankot Street,,Tucumn,37288.0,686015532180.0,454,San Miguel de Tucumán,6,Argentina
-248,582 Papeete Loop,,Central Visayas,27722.0,569868543137.0,294,Lapu-Lapu,75,Philippines
-249,300 Junan Street,,Kyonggi,81314.0,890289150158.0,553,Uijongbu,86,South Korea
-250,829 Grand Prairie Way,,Paraná,6461.0,741070712873.0,328,Maringá,15,Brazil
-251,1473 Changhwa Parkway,,Mxico,75933.0,266798132374.0,124,Coacalco de Berriozábal,60,Mexico
-252,1309 Weifang Street,,Florida,57338.0,435785045362.0,520,Tallahassee,103,United States
-253,1760 Oshawa Manor,,Tianjin,38140.0,56257502250.0,535,Tianjin,23,China
-254,786 Stara Zagora Way,,Oyo & Osun,98332.0,716256596301.0,390,Oyo,69,Nigeria
-255,1966 Tonghae Street,,Anhalt Sachsen,36481.0,567359279425.0,198,Halle/Saale,38,Germany
-256,1497 Yuzhou Drive,,England,3433.0,246810237916.0,312,London,102,United Kingdom
-258,752 Ondo Loop,,Miyazaki,32474.0,134673576619.0,338,Miyakonojo,50,Japan
-259,1338 Zalantun Lane,,Minas Gerais,45403.0,840522972766.0,413,Poços de Caldas,15,Brazil
-260,127 Iwakuni Boulevard,,Central Luzon,20777.0,987442542471.0,192,Hagonoy,75,Philippines
-261,51 Laredo Avenue,,Sagaing,68146.0,884536620568.0,342,Monywa,64,Myanmar
-262,771 Yaoundé Manor,,Sofala,86768.0,245477603573.0,64,Beira,63,Mozambique
-263,532 Toulon Street,,Santiago,69517.0,46871694740.0,460,Santiago de los Caballeros,27,Dominican Republic
-264,1027 Banjul Place,,West Bengali,50390.0,538241037443.0,197,Halisahar,44,India
-265,1158 Mandi Bahauddin Parkway,,Shanxi,98484.0,276555730211.0,136,Datong,23,China
-266,862 Xintai Lane,,Cagayan Valley,30065.0,265153400632.0,548,Tuguegarao,75,Philippines
-267,816 Cayenne Parkway,,Manab,93629.0,282874611748.0,414,Portoviejo,28,Ecuador
-268,1831 Nam Dinh Loop,,National Capital Reg,51990.0,322888976727.0,323,Mandaluyong,75,Philippines
-269,446 Kirovo-Tšepetsk Lane,,Osaka,19428.0,303967439816.0,203,Higashiosaka,50,Japan
-270,682 Halisahar Place,,Severn Morava,20536.0,475553436330.0,378,Olomouc,26,Czech Republic
-271,1587 Loja Manor,,Salzburg,5410.0,621625204422.0,447,Salzburg,9,Austria
-272,1762 Paarl Parkway,,Hunan,53928.0,192459639410.0,298,Lengshuijiang,23,China
-273,1519 Ilorin Place,,Kerala,49298.0,357445645426.0,395,Palghat (Palakkad),44,India
-274,920 Kumbakonam Loop,,California,75090.0,685010736240.0,446,Salinas,103,United States
-275,906 Goiânia Way,,Wielkopolskie,83565.0,701767622697.0,255,Kalisz,76,Poland
-276,1675 Xi´angfan Manor,,Tamil Nadu,11763.0,271149517630.0,283,Kumbakonam,44,India
-277,85 San Felipe de Puerto Plata Drive,,Shandong,46063.0,170739645687.0,584,Yantai,23,China
-278,144 South Hill Loop,,Guanajuato,2012.0,45387294817.0,445,Salamanca,60,Mexico
-279,1884 Shikarpur Avenue,,Haryana,85548.0,959949395183.0,263,Karnal,44,India
-280,1980 Kamjanets-Podilskyi Street,,Illinois,89502.0,874337098891.0,404,Peoria,103,United States
-281,1944 Bamenda Way,,Michigan,24645.0,75975221996.0,573,Warren,103,United States
-282,556 Baybay Manor,,Oyo & Osun,55802.0,363982224739.0,374,Ogbomosho,69,Nigeria
-283,457 Tongliao Loop,,Bursa,56254.0,880756161823.0,222,Inegöl,97,Turkey
-284,600 Bradford Street,,East Azerbaidzan,96204.0,117592274996.0,514,Tabriz,46,Iran
-285,1006 Santa Bárbara d´Oeste Manor,,Ondo & Ekiti,36229.0,85059738746.0,389,Owo,69,Nigeria
-287,1405 Chisinau Place,,Ponce,8160.0,62781725285.0,411,Ponce,77,Puerto Rico
-288,226 Halifax Street,,Xinxiang,58492.0,790651020929.0,277,Korla,23,China
-289,1279 Udine Parkway,,Edo & Delta,75860.0,195003555232.0,69,Benin City,69,Nigeria
-290,1336 Benin City Drive,,Shiga,46044.0,341242939532.0,386,Otsu,50,Japan
-291,1155 Liaocheng Place,,Oyo & Osun,22650.0,558236142492.0,152,Effon-Alaiye,69,Nigeria
-292,1993 Tabuk Lane,,Tamil Nadu,64221.0,648482415405.0,522,Tambaram,44,India
-293,86 Higashiosaka Lane,,Guanajuato,33768.0,957128697225.0,563,Valle de Santiago,60,Mexico
-294,1912 Allende Manor,,Kowloon and New Kowl,58124.0,172262454487.0,279,Kowloon and New Kowloon,42,Hong Kong
-295,544 Tarsus Boulevard,,Gurico,53145.0,892523334.0,562,Valle de la Pascua,104,Venezuela
-296,1936 Cumaná Avenue,,Virginia,61195.0,976798660411.0,433,Roanoke,103,United States
-297,1192 Tongliao Street,,Sharja,19065.0,350970907017.0,470,Sharja,101,United Arab Emirates
-298,44 Najafabad Way,,Baskimaa,61391.0,96604821070.0,146,Donostia-San Sebastián,87,Spain
-299,32 Pudukkottai Lane,,Ohio,38834.0,967274728547.0,140,Dayton,103,United States
-300,661 Chisinau Lane,,Pietari,8856.0,816436065431.0,274,Kolpino,80,Russian Federation
-301,951 Stara Zagora Manor,,Punjab,98573.0,429925609431.0,400,Patiala,44,India
-302,922 Vila Velha Loop,,Maharashtra,4085.0,510737228015.0,9,Ahmadnagar,44,India
-303,898 Jining Lane,,Pohjois-Pohjanmaa,40070.0,161643343536.0,387,Oulu,33,Finland
-304,1635 Kuwana Boulevard,,Hiroshima,52137.0,710603868323.0,205,Hiroshima,50,Japan
-305,41 El Alto Parkway,,Maharashtra,56883.0,51917807050.0,398,Parbhani,44,India
-306,1883 Maikop Lane,,Kaliningrad,68469.0,96110042435.0,254,Kaliningrad,80,Russian Federation
-307,1908 Gaziantep Place,,Liaoning,58979.0,108053751300.0,536,Tiefa,23,China
-308,687 Alessandria Parkway,,Sanaa,57587.0,407218522294.0,455,Sanaa,107,Yemen
-309,827 Yuncheng Drive,,Callao,79047.0,504434452842.0,99,Callao,74,Peru
-310,913 Coacalco de Berriozábal Loop,,Texas,42141.0,262088367001.0,33,Arlington,103,United States
-311,715 São Bernardo do Campo Lane,,Kedah,84804.0,181179321332.0,507,Sungai Petani,59,Malaysia
-312,1354 Siegen Street,,Rio de Janeiro,80184.0,573441801529.0,25,Angra dos Reis,15,Brazil
-313,1191 Sungai Petani Boulevard,,Missouri,9668.0,983259819766.0,262,Kansas City,103,United States
-314,1224 Huejutla de Reyes Boulevard,,Lombardia,70923.0,806016930576.0,91,Brescia,49,Italy
-315,543 Bergamo Avenue,,Minas Gerais,59686.0,103602195112.0,215,Ibirité,15,Brazil
-316,746 Joliet Lane,,Kursk,94878.0,688485191923.0,286,Kursk,80,Russian Federation
-317,780 Kimberley Way,,Tabuk,17032.0,824396883951.0,515,Tabuk,82,Saudi Arabia
-318,1774 Yaoundé Place,,Hubei,91400.0,613124286867.0,166,Ezhou,23,China
-319,1957 Yantai Lane,,São Paulo,59255.0,704948322302.0,490,Sorocaba,15,Brazil
-320,1542 Lubumbashi Boulevard,,Tel Aviv,62472.0,508800331065.0,57,Bat Yam,48,Israel
-321,651 Pathankot Loop,,Maharashtra,59811.0,139378397418.0,336,Miraj,44,India
-322,1359 Zhoushan Parkway,,Streymoyar,29763.0,46568045367.0,545,Tórshavn,32,Faroe Islands
-323,1769 Iwaki Lane,,Kujawsko-Pomorskie,25787.0,556100547674.0,97,Bydgoszcz,76,Poland
-324,1145 Vilnius Manor,,Mxico,73170.0,674805712553.0,451,San Felipe del Progreso,60,Mexico
-325,1892 Nabereznyje Tšelny Lane,,Tutuila,28396.0,478229987054.0,516,Tafuna,3,American Samoa
-326,470 Boksburg Street,,Central,97960.0,908029859266.0,81,Birgunj,66,Nepal
-327,1427 A Coruña (La Coruña) Place,,Buenos Aires,85799.0,972574862516.0,45,Bahía Blanca,6,Argentina
-328,479 San Felipe del Progreso Avenue,,Morelos,54949.0,869051782691.0,130,Cuautla,60,Mexico
-329,867 Benin City Avenue,,Henan,78543.0,168884817145.0,591,Yuzhou,23,China
-330,981 Kumbakonam Place,,Distrito Federal,87611.0,829116184079.0,89,Brasília,15,Brazil
-331,1016 Iwakuni Street,,St George,49833.0,961370847344.0,269,Kingstown,81,Saint Vincent and the Grenadines
-332,663 Bahía Blanca Parkway,,Adana,33463.0,834418779292.0,5,Adana,97,Turkey
-333,1860 Taguig Loop,,West Java,59550.0,38158430589.0,119,Ciparay,45,Indonesia
-334,1816 Bydgoszcz Loop,,Dhaka,64308.0,965273813662.0,234,Jamalpur,12,Bangladesh
-335,587 Benguela Manor,,Illinois,91590.0,165450987037.0,42,Aurora,103,United States
-336,430 Kumbakonam Drive,,Santa Fé,28814.0,105470691550.0,457,Santa Fé,6,Argentina
-337,1838 Tabriz Lane,,Dhaka,1195.0,38988715447.0,143,Dhaka,12,Bangladesh
-338,431 Székesfehérvár Avenue,,Baki,57828.0,119501405123.0,48,Baku,10,Azerbaijan
-339,503 Sogamoso Loop,,Sumqayit,49812.0,834626715837.0,505,Sumqayit,10,Azerbaijan
-340,507 Smolensk Loop,,Sousse,22971.0,80303246192.0,492,Sousse,96,Tunisia
-341,1920 Weifang Avenue,,Uttar Pradesh,15643.0,869507847714.0,427,Rampur,44,India
-342,124 al-Manama Way,,Hiroshima,52368.0,647899404952.0,382,Onomichi,50,Japan
-343,1443 Mardan Street,,Western Cape,31483.0,231383037471.0,392,Paarl,85,South Africa
-344,1909 Benguela Lane,,Henan,19913.0,624138001031.0,581,Xinxiang,23,China
-345,68 Ponce Parkway,,Hanoi,85926.0,870635127812.0,201,Hanoi,105,Vietnam
-346,1217 Konotop Avenue,,Gelderland,504.0,718917251754.0,151,Ede,67,Netherlands
-347,1293 Nam Dinh Way,,Roraima,71583.0,697656479977.0,84,Boa Vista,15,Brazil
-348,785 Vaduz Street,,Baja California,36170.0,895616862749.0,335,Mexicali,60,Mexico
-349,1516 Escobar Drive,,Tongatapu,46069.0,64536069371.0,370,Nuku´alofa,95,Tonga
-350,1628 Nagareyama Lane,,Central,60079.0,20064292617.0,453,San Lorenzo,73,Paraguay
-351,1157 Nyeri Loop,,Adygea,56380.0,262744791493.0,320,Maikop,80,Russian Federation
-352,1673 Tangail Drive,,Daugavpils,26857.0,627924259271.0,137,Daugavpils,54,Latvia
-353,381 Kabul Way,,Taipei,87272.0,55477302294.0,209,Hsichuh,92,Taiwan
-354,953 Hodeida Street,,Southern Tagalog,18841.0,53912826864.0,221,Imus,75,Philippines
-355,469 Nakhon Sawan Street,,Tuvassia,58866.0,689199636560.0,531,Tšeboksary,80,Russian Federation
-356,1378 Beira Loop,,Krasnojarsk,40792.0,840957664136.0,597,Zeleznogorsk,80,Russian Federation
-357,1641 Changhwa Place,,Nord-Ouest,37636.0,256546485220.0,52,Bamenda,19,Cameroon
-358,1698 Southport Loop,,Hidalgo,49009.0,754358349853.0,393,Pachuca de Soto,60,Mexico
-359,519 Nyeri Manor,,São Paulo,37650.0,764680915323.0,461,Santo André,15,Brazil
-360,619 Huánuco Avenue,,Shimane,81508.0,142596392389.0,331,Matsue,50,Japan
-361,45 Aparecida de Goiânia Place,,Madhya Pradesh,7431.0,650496654258.0,464,Satna,44,India
-362,482 Kowloon and New Kowloon Manor,,Bratislava,97056.0,738968474939.0,90,Bratislava,84,Slovakia
-363,604 Bern Place,,Jharkhand,5373.0,620719383725.0,429,Ranchi,44,India
-364,1623 Kingstown Drive,,Buenos Aires,91299.0,296394569728.0,20,Almirante Brown,6,Argentina
-365,1009 Zanzibar Lane,,Arecibo,64875.0,102396298916.0,32,Arecibo,77,Puerto Rico
-366,114 Jalib al-Shuyukh Manor,,Centre,60440.0,845378657301.0,585,Yaoundé,19,Cameroon
-367,1163 London Parkway,,Par,6066.0,675120358494.0,66,Belém,15,Brazil
-368,1658 Jastrzebie-Zdrój Loop,,Central,96584.0,568367775448.0,372,Nyeri,52,Kenya
-369,817 Laredo Avenue,,Jalisco,77449.0,151249681135.0,188,Guadalajara,60,Mexico
-370,1565 Tangail Manor,,Okinawa,45750.0,634445428822.0,377,Okinawa,50,Japan
-371,1912 Emeishan Drive,,Balikesir,33050.0,99883471275.0,50,Balikesir,97,Turkey
-372,230 Urawa Drive,,Andhra Pradesh,2738.0,166898395731.0,8,Adoni,44,India
-373,1922 Miraj Way,,Esfahan,13203.0,320471479776.0,356,Najafabad,46,Iran
-374,433 Florencia Street,,Chihuahua,91330.0,561729882725.0,250,Juárez,60,Mexico
-375,1049 Matamoros Parkway,,Karnataka,69640.0,960505250340.0,191,Gulbarga,44,India
-376,1061 Ede Avenue,,Southern Tagalog,57810.0,333390595558.0,98,Cabuyao,75,Philippines
-377,154 Oshawa Manor,,East Java,72771.0,440365973660.0,415,Probolinggo,45,Indonesia
-378,1191 Tandil Drive,,Southern Tagalog,6362.0,45554316010.0,523,Tanauan,75,Philippines
-379,1133 Rizhao Avenue,,Pernambuco,2800.0,600264533987.0,572,Vitória de Santo Antão,15,Brazil
-380,1519 Santiago de los Caballeros Loop,,East Kasai,22025.0,409315295763.0,348,Mwene-Ditu,25,"Congo, The Democratic Republic of the"
-381,1618 Olomouc Manor,,Kurgan,26385.0,96846695220.0,285,Kurgan,80,Russian Federation
-382,220 Hidalgo Drive,,Kermanshah,45298.0,342720754566.0,265,Kermanshah,46,Iran
-383,686 Donostia-San Sebastián Lane,,Guangdong,97390.0,71857599858.0,471,Shenzhen,23,China
-384,97 Mogiljov Lane,,Gujarat,89294.0,924815207181.0,73,Bhavnagar,44,India
-385,1642 Charlotte Amalie Drive,,Slaskie,75442.0,821476736117.0,549,Tychy,76,Poland
-386,1368 Maracaíbo Boulevard,,,32716.0,934352415130.0,493,South Hill,5,Anguilla
-387,401 Sucre Boulevard,,New Hampshire,25007.0,486395999608.0,322,Manchester,103,United States
-388,368 Huánuco Boulevard,,Namibe,17165.0,106439158941.0,360,Namibe,4,Angola
-389,500 Lincoln Parkway,,Ji´angsu,95509.0,550306965159.0,210,Huai´an,23,China
-390,102 Chapra Drive,,Ibaragi,14073.0,776031833752.0,521,Tama,50,Japan
-391,1793 Meixian Place,,Hmelnytskyi,33535.0,619966287415.0,258,Kamjanets-Podilskyi,100,Ukraine
-392,514 Ife Way,,Shaba,69973.0,900235712074.0,315,Lubumbashi,25,"Congo, The Democratic Republic of the"
-393,717 Changzhou Lane,,Southern Tagalog,21615.0,426255288071.0,104,Cavite,75,Philippines
-394,753 Ilorin Avenue,,Sichuan,3656.0,464511145118.0,157,Emeishan,23,China
-395,1337 Mit Ghamr Avenue,,Nakhon Sawan,29810.0,175283210378.0,358,Nakhon Sawan,94,Thailand
-396,767 Pyongyang Drive,,Osaka,83536.0,667736124769.0,229,Izumisano,50,Japan
-397,614 Pak Kret Street,,Addis Abeba,27796.0,47808359842.0,6,Addis Abeba,31,Ethiopia
-398,954 Lapu-Lapu Way,,Moskova,8816.0,737229003916.0,278,Korolev,80,Russian Federation
-399,331 Bydgoszcz Parkway,,Asturia,966.0,537374465982.0,181,Gijón,87,Spain
-400,1152 Citrus Heights Manor,,al-Qadarif,5239.0,765957414528.0,15,al-Qadarif,89,Sudan
-401,168 Cianjur Manor,,Saitama,73824.0,679095087143.0,228,Iwatsuki,50,Japan
-402,616 Hagonoy Avenue,,Krasnojarsk,46043.0,604177838256.0,39,Atšinsk,80,Russian Federation
-403,1190 0 Place,,Rio Grande do Sul,10417.0,841876514789.0,44,Bagé,15,Brazil
-404,734 Béchar Place,,Punjab,30586.0,280578750435.0,375,Okara,72,Pakistan
-405,530 Lausanne Lane,,Texas,11067.0,775235029633.0,135,Dallas,103,United States
-406,454 Patiala Lane,,Fukushima,13496.0,794553031307.0,276,Koriyama,50,Japan
-407,1346 Mysore Drive,,Bretagne,61507.0,516647474029.0,92,Brest,34,France
-408,990 Etawah Loop,,Tamil Nadu,79940.0,206169448769.0,564,Valparai,44,India
-409,1266 Laredo Parkway,,Saitama,7664.0,1483365694.0,380,Omiya,50,Japan
-410,88 Nagaon Manor,,Buenos Aires,86868.0,779461480495.0,524,Tandil,6,Argentina
-411,264 Bhimavaram Manor,,St Thomas,54749.0,302526949177.0,111,Charlotte Amalie,106,"Virgin Islands, U.S."
-412,1639 Saarbrücken Drive,,North West,9827.0,328494873422.0,437,Rustenburg,85,South Africa
-413,692 Amroha Drive,,Northern,35575.0,359478883004.0,230,Jaffna,88,Sri Lanka
-414,1936 Lapu-Lapu Parkway,,Bauchi & Gombe,7122.0,653436985797.0,141,Deba Habe,69,Nigeria
-415,432 Garden Grove Street,,Ontario,65630.0,615964523510.0,430,Richmond Hill,20,Canada
-416,1445 Carmen Parkway,,West Java,70809.0,598912394463.0,117,Cianjur,45,Indonesia
-417,791 Salinas Street,,Punjab,40509.0,129953030512.0,208,Hoshiarpur,44,India
-418,126 Acuña Parkway,,West Bengali,58888.0,480039662421.0,71,Berhampore (Baharampur),44,India
-419,397 Sunnyvale Avenue,,Guanajuato,55566.0,680851640676.0,19,Allende,60,Mexico
-420,992 Klerksdorp Loop,,Utrecht,33711.0,855290087237.0,23,Amersfoort,67,Netherlands
-421,966 Arecibo Loop,,Sind,94018.0,15273765306.0,134,Dadu,72,Pakistan
-422,289 Santo André Manor,,al-Sharqiya,72410.0,214976066017.0,16,al-Qatif,82,Saudi Arabia
-423,437 Chungho Drive,,Puerto Plata,59489.0,491271355190.0,450,San Felipe de Puerto Plata,27,Dominican Republic
-424,1948 Bayugan Parkway,,Bihar,60622.0,987306329957.0,264,Katihar,44,India
-425,1866 al-Qatif Avenue,,California,89420.0,546793516940.0,155,El Monte,103,United States
-426,1661 Abha Drive,,Tamil Nadu,14400.0,270456873752.0,416,Pudukkottai,44,India
-427,1557 Cape Coral Parkway,,Hubei,46875.0,368284120423.0,293,Laohekou,23,China
-428,1727 Matamoros Place,,Sawhaj,78813.0,129673677866.0,465,Sawhaj,29,Egypt
-429,1269 Botosani Manor,,Guangdong,47394.0,736517327853.0,468,Shanwei,23,China
-430,355 Vitória de Santo Antão Way,,Oaxaca,81758.0,548003849552.0,452,San Juan Bautista Tuxtepec,60,Mexico
-431,1596 Acuña Parkway,,Jharkhand,70425.0,157133457169.0,418,Purnea (Purnia),44,India
-432,259 Ipoh Drive,,São Paulo,64964.0,419009857119.0,189,Guarujá,15,Brazil
-433,1823 Hoshiarpur Lane,,Komi,33191.0,307133768620.0,510,Syktyvkar,80,Russian Federation
-434,1404 Taguig Drive,,Okayama,87212.0,572068624538.0,547,Tsuyama,50,Japan
-435,740 Udaipur Lane,,Nizni Novgorod,33505.0,497288595103.0,150,Dzerzinsk,80,Russian Federation
-436,287 Cuautla Boulevard,,Chuquisaca,72736.0,82619513349.0,501,Sucre,14,Bolivia
-437,1766 Almirante Brown Street,,KwaZulu-Natal,63104.0,617567598243.0,364,Newcastle,85,South Africa
-438,596 Huixquilucan Place,,Nampula,65892.0,342709348083.0,351,Naçala-Porto,63,Mozambique
-439,1351 Aparecida de Goiânia Parkway,,Northern Mindanao,41775.0,959834530529.0,391,Ozamis,75,Philippines
-440,722 Bradford Lane,,Shandong,90920.0,746251338300.0,249,Junan,23,China
-441,983 Santa Fé Way,,British Colombia,47472.0,145720452260.0,565,Vancouver,20,Canada
-442,1245 Ibirité Way,,La Romana,40926.0,331888642162.0,290,La Romana,27,Dominican Republic
-443,1836 Korla Parkway,,Copperbelt,55405.0,689681677428.0,272,Kitwe,109,Zambia
-444,231 Kaliningrad Place,,Lombardia,57833.0,575081026569.0,70,Bergamo,49,Italy
-445,495 Bhimavaram Lane,,Maharashtra,3.0,82088937724.0,144,Dhule (Dhulia),44,India
-446,1924 Shimonoseki Drive,,Batna,52625.0,406784385440.0,59,Batna,2,Algeria
-447,105 Dzerzinsk Manor,,Inner Mongolia,48570.0,240776414296.0,540,Tongliao,23,China
-448,614 Denizli Parkway,,Rio Grande do Sul,29444.0,876491807547.0,486,São Leopoldo,15,Brazil
-449,1289 Belém Boulevard,,Tartumaa,88306.0,237368926031.0,530,Tartu,30,Estonia
-450,203 Tambaram Street,,Buenos Aires,73942.0,411549550611.0,161,Escobar,6,Argentina
-451,1704 Tambaram Manor,,West Bengali,2834.0,39463554936.0,554,Uluberia,44,India
-452,207 Cuernavaca Loop,,Tatarstan,52671.0,782900030287.0,352,Nabereznyje Tšelny,80,Russian Federation
-453,319 Springs Loop,,Baijeri,99552.0,72524459905.0,160,Erlangen,38,Germany
-454,956 Nam Dinh Manor,,Kerman,21872.0,474047727727.0,481,Sirjan,46,Iran
-455,1947 Paarl Way,,Central Java,23636.0,834061016202.0,509,Surakarta,45,Indonesia
-456,814 Simferopol Loop,,Sinaloa,48745.0,524567129902.0,154,El Fuerte,60,Mexico
-457,535 Ahmadnagar Manor,,Abu Dhabi,41136.0,985109775584.0,3,Abu Dhabi,101,United Arab Emirates
-458,138 Caracas Boulevard,,Zulia,16790.0,974433019532.0,326,Maracaíbo,104,Venezuela
-459,251 Florencia Drive,,Michoacn de Ocampo,16119.0,118011831565.0,556,Uruapan,60,Mexico
-460,659 Gatineau Boulevard,,La Paz,28587.0,205524798287.0,153,El Alto,14,Bolivia
-461,1889 Valparai Way,,Ziguinchor,75559.0,670370974122.0,600,Ziguinchor,83,Senegal
-462,1485 Bratislava Place,,Illinois,83183.0,924663855568.0,435,Rockford,103,United States
-463,935 Aden Boulevard,,Central Java,64709.0,335052544020.0,532,Tegal,45,Indonesia
-464,76 Kermanshah Manor,,Esfahan,23343.0,762361821578.0,423,Qomsheh,46,Iran
-465,734 Tanshui Avenue,,Caquet,70664.0,366776723320.0,170,Florencia,24,Colombia
-466,118 Jaffna Loop,,Northern Mindanao,10447.0,325526730021.0,182,Gingoog,75,Philippines
-467,1621 Tongliao Avenue,,Irkutsk,22173.0,209342540247.0,558,Usolje-Sibirskoje,80,Russian Federation
-468,1844 Usak Avenue,,Nova Scotia,84461.0,164414772677.0,196,Halifax,20,Canada
-469,1872 Toulon Loop,,OHiggins,7939.0,928809465153.0,428,Rancagua,22,Chile
-470,1088 Ibirité Place,,Jalisco,88502.0,49084281333.0,595,Zapopan,60,Mexico
-471,1322 Mosul Parkway,,Shandong,95400.0,268053970382.0,145,Dongying,23,China
-472,1447 Chatsworth Place,,Chihuahua,41545.0,769370126331.0,129,Cuauhtémoc,60,Mexico
-473,1257 Guadalajara Street,,Karnataka,33599.0,195337700615.0,78,Bijapur,44,India
-474,1469 Plock Lane,,Galicia,95835.0,622884741180.0,388,Ourense (Orense),87,Spain
-475,434 Ourense (Orense) Manor,,Hodeida,14122.0,562370137426.0,206,Hodeida,107,Yemen
-476,270 Tambaram Parkway,,Gauteng,9668.0,248446668735.0,244,Johannesburg,85,South Africa
-477,1786 Salinas Place,,Nam Ha,66546.0,206060652238.0,359,Nam Dinh,105,Vietnam
-478,1078 Stara Zagora Drive,,Aceh,69221.0,932992626595.0,301,Lhokseumawe,45,Indonesia
-479,1854 Okara Boulevard,,Drenthe,42123.0,131912793873.0,158,Emmen,67,Netherlands
-480,421 Yaoundé Street,,Sumy,11363.0,726875628268.0,385,Šostka,100,Ukraine
-481,1153 Allende Way,,Québec,20336.0,856872225376.0,179,Gatineau,20,Canada
-482,808 Naçala-Porto Parkway,,England,41060.0,553452430707.0,500,Stockport,102,United Kingdom
-483,632 Usolje-Sibirskoje Parkway,,Ha Darom,73085.0,667648979883.0,36,Ashqelon,48,Israel
-484,98 Pyongyang Boulevard,,Ohio,88749.0,191958435142.0,11,Akron,103,United States
-485,984 Novotšerkassk Loop,,Gaziantep,28165.0,435118527255.0,180,Gaziantep,97,Turkey
-486,64 Korla Street,,Mwanza,25145.0,510383179153.0,347,Mwanza,93,Tanzania
-487,1785 São Bernardo do Campo Street,,Veracruz,71182.0,684529463244.0,125,Coatzacoalcos,60,Mexico
-488,698 Jelets Boulevard,,Denizli,2596.0,975185523021.0,142,Denizli,97,Turkey
-489,1297 Alvorada Parkway,,Ningxia,11839.0,508348602835.0,587,Yinchuan,23,China
-490,1909 Dayton Avenue,,Guangdong,88513.0,702955450528.0,469,Shaoguan,23,China
-491,1789 Saint-Denis Parkway,,Coahuila de Zaragoza,8268.0,936806643983.0,4,Acuña,60,Mexico
-492,185 Mannheim Lane,,Stavropol,23661.0,589377568313.0,408,Pjatigorsk,80,Russian Federation
-493,184 Mandaluyong Street,,Baja California Sur,94239.0,488425406814.0,288,La Paz,60,Mexico
-494,591 Sungai Petani Drive,,Okayama,46400.0,37247325001.0,376,Okayama,50,Japan
-495,656 Matamoros Drive,,Boyac,19489.0,17305839123.0,487,Sogamoso,24,Colombia
-496,775 Šostka Drive,,al-Daqahliya,22358.0,171973024401.0,337,Mit Ghamr,29,Egypt
-497,1013 Tabuk Boulevard,,West Bengali,96203.0,158399646978.0,261,Kanchrapara,44,India
-498,319 Plock Parkway,,Istanbul,26101.0,854259976812.0,504,Sultanbeyli,97,Turkey
-499,1954 Kowloon and New Kowloon Way,,Chimborazo,63667.0,898559280434.0,434,Ríobamba,28,Ecuador
-500,362 Rajkot Lane,,Gansu,98030.0,962020153680.0,47,Baiyin,23,China
-501,1060 Tandil Lane,,Shandong,72349.0,211256301880.0,432,Rizhao,23,China
-502,1515 Korla Way,,England,57197.0,959467760895.0,589,York,102,United Kingdom
-503,1416 San Juan Bautista Tuxtepec Avenue,,Zufar,50592.0,144206758053.0,444,Salala,71,Oman
-504,1 Valle de Santiago Avenue,,Apulia,86208.0,465897838272.0,93,Brindisi,49,Italy
-505,519 Brescia Parkway,,East Java,69504.0,793996678771.0,318,Madiun,45,Indonesia
-506,414 Mandaluyong Street,,Lubelskie,16370.0,52709222667.0,314,Lublin,76,Poland
-507,1197 Sokoto Boulevard,,West Bengali,87687.0,868602816371.0,478,Siliguri (Shiliguri),44,India
-508,496 Celaya Drive,,Nagano,90797.0,759586584889.0,552,Ueda,50,Japan
-509,786 Matsue Way,,Illinois,37469.0,111177206479.0,245,Joliet,103,United States
-510,48 Maracaíbo Place,,Central Luzon,1570.0,82671830126.0,519,Talavera,75,Philippines
-511,1152 al-Qatif Lane,,Kalimantan Barat,44816.0,131370665218.0,412,Pontianak,45,Indonesia
-512,1269 Ipoh Avenue,,Eskisehir,54674.0,402630109080.0,163,Eskisehir,97,Turkey
-513,758 Korolev Parkway,,Andhra Pradesh,75474.0,441628280920.0,568,Vijayawada,44,India
-514,1747 Rustenburg Place,,Bihar,51369.0,442673923363.0,110,Chapra,44,India
-515,886 Tonghae Place,,Volgograd,19450.0,711928348157.0,259,Kamyšin,80,Russian Federation
-516,1574 Goiânia Boulevard,,Heilongjiang,39529.0,59634255214.0,502,Suihua,23,China
-517,548 Uruapan Street,,Ontario,35653.0,879347453467.0,312,London,102,United Kingdom
-519,962 Tama Loop,,,65952.0,282667506728.0,583,Yangor,65,Nauru
-520,1778 Gijón Manor,,Hubei,35156.0,288910576761.0,594,Zaoyang,23,China
-521,568 Dhule (Dhulia) Loop,,Coquimbo,92568.0,602101369463.0,127,Coquimbo,22,Chile
-522,1768 Udine Loop,,Battambang,32347.0,448876499197.0,60,Battambang,18,Cambodia
-523,608 Birgunj Parkway,,Taipei,400.0,627425618482.0,116,Chungho,92,Taiwan
-524,680 A Coruña (La Coruña) Manor,,Sivas,49806.0,158326114853.0,482,Sivas,97,Turkey
-525,1949 Sanya Street,,Gumma,61244.0,132100972047.0,224,Isesaki,50,Japan
-526,617 Klerksdorp Place,,Khanh Hoa,94707.0,574973479129.0,366,Nha Trang,105,Vietnam
-527,1993 0 Loop,,Liaoning,41214.0,25865528181.0,588,Yingkou,23,China
-528,1176 Southend-on-Sea Manor,,Southern Tagalog,81651.0,236679267178.0,458,Santa Rosa,75,Philippines
-529,600 Purnea (Purnia) Avenue,,Nghe An,18043.0,638409958875.0,571,Vinh,105,Vietnam
-530,1003 Qinhuangdao Street,,West Java,25972.0,35533115997.0,419,Purwakarta,45,Indonesia
-531,1986 Sivas Place,,Friuli-Venezia Giuli,95775.0,182059202712.0,551,Udine,49,Italy
-532,1427 Tabuk Place,,Florida,31342.0,214756839122.0,101,Cape Coral,103,United States
-533,556 Asunción Way,,Mogiljov,35364.0,338244023543.0,339,Mogiljov,13,Belarus
-534,486 Ondo Parkway,,Benguela,35202.0,105882218332.0,67,Benguela,4,Angola
-535,635 Brest Manor,,Andhra Pradesh,40899.0,80593242951.0,75,Bhimavaram,44,India
-536,166 Jinchang Street,,Buenos Aires,86760.0,717566026669.0,165,Ezeiza,6,Argentina
-537,958 Sagamihara Lane,,Mie,88408.0,427274926505.0,287,Kuwana,50,Japan
-538,1817 Livorno Way,,Khanh Hoa,79401.0,478380208348.0,100,Cam Ranh,105,Vietnam
-539,1332 Gaziantep Lane,,Shandong,22813.0,383353187467.0,80,Binzhou,23,China
-540,949 Allende Lane,,Uttar Pradesh,67521.0,122981120653.0,24,Amroha,44,India
-541,195 Ilorin Street,,Chari-Baguirmi,49250.0,8912935608.0,363,NDjamna,21,Chad
-542,193 Bhusawal Place,,Kang-won,9750.0,745267607502.0,539,Tonghae,86,South Korea
-543,43 Vilnius Manor,,Colorado,79814.0,484500282381.0,42,Aurora,103,United States
-544,183 Haiphong Street,,Jilin,69953.0,488600270038.0,46,Baicheng,23,China
-545,163 Augusta-Richmond County Loop,,Carabobo,33030.0,754579047924.0,561,Valencia,104,Venezuela
-546,191 José Azueta Parkway,,Ruse,13629.0,932156667696.0,436,Ruse,17,Bulgaria
-547,379 Lublin Parkway,,Toscana,74568.0,921960450089.0,309,Livorno,49,Italy
-548,1658 Cumaná Loop,,Sumatera Selatan,51309.0,784907335610.0,396,Pangkal Pinang,45,Indonesia
-549,454 Qinhuangdao Drive,,Tadla-Azilal,25866.0,786270036240.0,68,Beni-Mellal,62,Morocco
-550,1715 Okayama Street,,São Paulo,55676.0,169352919175.0,485,São Bernardo do Campo,15,Brazil
-551,182 Nuku´alofa Drive,,Sumy,15414.0,426346224043.0,275,Konotop,100,Ukraine
-552,390 Wroclaw Way,,Hainan,5753.0,357593328658.0,462,Sanya,23,China
-553,1421 Quilmes Lane,,Ishikawa,19151.0,135407755975.0,260,Kanazawa,50,Japan
-554,947 Tórshavn Place,,Central Luzon,841.0,50898428626.0,528,Tarlac,75,Philippines
-555,1764 Jalib al-Shuyukh Parkway,,Galicia,77642.0,84794532510.0,459,Santiago de Compostela,87,Spain
-556,346 Cam Ranh Avenue,,Zhejiang,39976.0,978430786151.0,599,Zhoushan,23,China
-557,1407 Pachuca de Soto Place,,Rio Grande do Sul,26284.0,380077794770.0,21,Alvorada,15,Brazil
-558,904 Clarksville Drive,,Zhejiang,52234.0,955349440539.0,193,Haining,23,China
-559,1917 Kumbakonam Parkway,,Vojvodina,11892.0,698182547686.0,368,Novi Sad,108,Yugoslavia
-560,1447 Imus Place,,Gujarat,12905.0,62127829280.0,426,Rajkot,44,India
-561,1497 Fengshan Drive,,KwaZulu-Natal,63022.0,368738360376.0,112,Chatsworth,85,South Africa
-562,869 Shikarpur Way,,England,57380.0,590764256785.0,496,Southport,102,United Kingdom
-563,1059 Yuncheng Avenue,,Vilna,47498.0,107092893983.0,570,Vilnius,56,Lithuania
-564,505 Madiun Boulevard,,Dolnoslaskie,97271.0,970638808606.0,577,Wroclaw,76,Poland
-565,1741 Hoshiarpur Boulevard,,al-Sharqiya,22372.0,855066328617.0,79,Bilbays,29,Egypt
-566,1229 Varanasi (Benares) Manor,,Buenos Aires,40195.0,817740355461.0,43,Avellaneda,6,Argentina
-567,1894 Boa Vista Way,,Texas,77464.0,239357986667.0,178,Garland,103,United States
-568,1342 Sharja Way,,Sokoto & Kebbi & Zam,93655.0,946114054231.0,488,Sokoto,69,Nigeria
-569,1342 Abha Boulevard,,Bukarest,10714.0,997453607116.0,95,Bucuresti,78,Romania
-570,415 Pune Avenue,,Shandong,44274.0,203202500108.0,580,Xintai,23,China
-571,1746 Faaa Way,,Huánuco,32515.0,863080561151.0,214,Huánuco,74,Peru
-572,539 Hami Way,,Tokat,52196.0,525518075499.0,538,Tokat,97,Turkey
-573,1407 Surakarta Manor,,Moskova,33224.0,324346485054.0,466,Serpuhov,80,Russian Federation
-574,502 Mandi Bahauddin Parkway,,Anzotegui,15992.0,618156722572.0,55,Barcelona,104,Venezuela
-575,1052 Pathankot Avenue,,Sichuan,77397.0,128499386727.0,299,Leshan,23,China
-576,1351 Sousse Lane,,Coahuila de Zaragoza,37815.0,203804046132.0,341,Monclova,60,Mexico
-577,1501 Pangkal Pinang Avenue,,Mazowieckie,943.0,770864062795.0,409,Plock,76,Poland
-578,1405 Hagonoy Avenue,,Slaskie,86587.0,867287719310.0,133,Czestochowa,76,Poland
-579,521 San Juan Bautista Tuxtepec Place,,Qaraghandy,95093.0,844018348565.0,598,Zhezqazghan,51,Kazakstan
-580,923 Tangail Boulevard,,Tokyo-to,33384.0,315528269898.0,10,Akishima,50,Japan
-581,186 Skikda Lane,,Morelos,89422.0,14465669789.0,131,Cuernavaca,60,Mexico
-582,1568 Celaya Parkway,,Kaohsiung,34750.0,278669994384.0,168,Fengshan,92,Taiwan
-583,1489 Kakamigahara Lane,,Taipei,98883.0,29341849811.0,526,Tanshui,92,Taiwan
-584,1819 Alessandria Loop,,Campeche,53829.0,377633994405.0,103,Carmen,60,Mexico
-585,1208 Tama Loop,,Ninawa,73605.0,954786054144.0,344,Mosul,47,Iraq
-586,951 Springs Lane,,Central Mindanao,96115.0,165164761435.0,219,Iligan,75,Philippines
-587,760 Miyakonojo Drive,,Guerrero,64682.0,294449058179.0,246,José Azueta,60,Mexico
-588,966 Asunción Way,,Hidalgo,62703.0,995527378381.0,212,Huejutla de Reyes,60,Mexico
-589,1584 Ljubertsy Lane,,England,22954.0,285710089439.0,494,Southampton,102,United Kingdom
-590,247 Jining Parkway,,Banjul,53446.0,170115379190.0,54,Banjul,37,Gambia
-591,773 Dallas Manor,,Buenos Aires,12664.0,914466027044.0,424,Quilmes,6,Argentina
-592,1923 Stara Zagora Lane,,Nantou,95179.0,182178609211.0,546,Tsaotun,92,Taiwan
-593,1402 Zanzibar Boulevard,,Guanajuato,71102.0,387448063440.0,106,Celaya,60,Mexico
-594,1464 Kursk Parkway,,Shandong,17381.0,338758048786.0,574,Weifang,23,China
-595,1074 Sanaa Parkway,,Loja,22474.0,154124128457.0,311,Loja,28,Ecuador
-596,1759 Niznekamsk Avenue,,al-Manama,39414.0,864392582257.0,14,al-Manama,11,Bahrain
-597,32 Liaocheng Way,,Minas Gerais,1944.0,410877354933.0,248,Juiz de Fora,15,Brazil
-598,42 Fontana Avenue,,Fejr,14684.0,437829801725.0,512,Székesfehérvár,43,Hungary
-599,1895 Zhezqazghan Drive,,California,36693.0,137809746111.0,177,Garden Grove,103,United States
-600,1837 Kaduna Parkway,,Inner Mongolia,82580.0,640843562301.0,241,Jining,23,China
-601,844 Bucuresti Place,,Liaoning,36603.0,935952366111.0,242,Jinzhou,23,China
-602,1101 Bucuresti Boulevard,,West Greece,97661.0,199514580428.0,401,Patras,39,Greece
-603,1103 Quilmes Boulevard,,Piura,52137.0,644021380889.0,503,Sullana,74,Peru
-604,1331 Usak Boulevard,,Vaud,61960.0,145308717464.0,296,Lausanne,91,Switzerland
-605,1325 Fukuyama Street,,Heilongjiang,27107.0,288241215394.0,537,Tieli,23,China
+distretto,indirizzo2,codice_postale,indirizzo,città,telefono,stato_id,città_id,stato,indirizzo_id
+Alberta,,,47 MySakila Drive,Lethbridge,,20,300,Canada,1
+QLD,,,28 MySQL Boulevard,Woodridge,,8,576,Australia,2
+Alberta,,,23 Workhaven Lane,Lethbridge,14033335568.0,20,300,Canada,3
+QLD,,,1411 Lillydale Drive,Woodridge,6172235589.0,8,576,Australia,4
+Nagasaki,,35200.0,1913 Hanoi Way,Sasebo,28303384290.0,50,463,Japan,5
+California,,17886.0,1121 Loja Avenue,San Bernardino,838635286649.0,103,449,United States,6
+Attika,,83579.0,692 Joliet Street,Athenai,448477190408.0,39,38,Greece,7
+Mandalay,,53561.0,1566 Inegöl Manor,Myingyan,705814003527.0,64,349,Myanmar,8
+Nantou,,42399.0,53 Idfu Parkway,Nantou,10655648674.0,92,361,Taiwan,9
+Texas,,18743.0,1795 Santiago de Compostela Way,Laredo,860452626434.0,103,295,United States,10
+Central Serbia,,93896.0,900 Santiago de Compostela Parkway,Kragujevac,716571220373.0,108,280,Yugoslavia,11
+Hamilton,,77948.0,478 Joliet Way,Hamilton,657282285970.0,68,200,New Zealand,12
+Masqat,,45844.0,613 Korolev Drive,Masqat,380657522649.0,71,329,Oman,13
+Esfahan,,53628.0,1531 Salé Drive,Esfahan,648856936185.0,46,162,Iran,14
+Kanagawa,,1027.0,1542 Tarlac Parkway,Sagamihara,635297277345.0,50,440,Japan,15
+Haryana,,10672.0,808 Bhopal Manor,Yamuna Nagar,465887807014.0,44,582,India,16
+Osmaniye,,29610.0,270 Amroha Parkway,Osmaniye,695479687538.0,97,384,Turkey,17
+California,,16266.0,770 Bydgoszcz Avenue,Citrus Heights,517338314235.0,103,120,United States,18
+Madhya Pradesh,,72878.0,419 Iligan Lane,Bhopal,990911107354.0,44,76,India,19
+England,,54308.0,360 Toulouse Parkway,Southend-on-Sea,949312333307.0,102,495,United Kingdom,20
+Kalmykia,,81766.0,270 Toulon Boulevard,Elista,407752414682.0,80,156,Russian Federation,21
+Kaduna,,43331.0,320 Brest Avenue,Kaduna,747791594069.0,69,252,Nigeria,22
+Northern Cape,,72192.0,1417 Lancaster Avenue,Kimberley,272572357893.0,85,267,South Africa,23
+Nothwest Border Prov,,21954.0,1688 Okara Way,Mardan,144453869132.0,72,327,Pakistan,24
+Dhaka,,34418.0,262 A Coruña (La Coruña) Parkway,Tangail,892775750063.0,12,525,Bangladesh,25
+Rabat-Sal-Zammour-Z,,37551.0,28 Charlotte Amalie Street,Salé,161968374323.0,62,443,Morocco,26
+Liepaja,,7716.0,1780 Hino Boulevard,Liepaja,902731229323.0,54,303,Latvia,27
+Córdoba,,99865.0,96 Tafuna Way,Córdoba,934730187245.0,6,128,Argentina,28
+Sind,,99780.0,934 San Felipe de Puerto Plata Street,Shikarpur,196495945706.0,72,472,Pakistan,29
+,,58327.0,18 Duisburg Boulevard,Città del Vaticano,998009777982.0,41,121,Holy See (Vatican City State),30
+Southern Mindanao,,49521.0,217 Botshabelo Place,Davao,665356572025.0,75,138,Philippines,31
+Bihar,,65599.0,1425 Shikarpur Manor,Munger (Monghyr),678220867005.0,44,346,India,32
+Yamaguchi,,65750.0,786 Aurora Avenue,Shimonoseki,18461860151.0,50,474,Japan,33
+Taipei,,50199.0,1668 Anápolis Street,Lungtan,525255540978.0,92,316,Taiwan,34
+West Bengali,,30348.0,33 Gorontalo Way,Kamarhati,745994947458.0,44,257,India,35
+Uttar Pradesh,,65213.0,176 Mandaluyong Place,Jhansi,627705991774.0,44,239,India,36
+Piemonte,,79388.0,127 Purnea (Purnia) Manor,Alessandria,911872220378.0,49,17,Italy,37
+Okayama,,94065.0,61 Tama Street,Kurashiki,708403338270.0,50,284,Japan,38
+Midi-Pyrnes,,34021.0,391 Callao Drive,Toulouse,440512153169.0,34,544,France,39
+Markazi,,38145.0,334 Munger (Monghyr) Lane,Arak,481183273622.0,46,31,Iran,40
+Henan,,47929.0,1440 Fukuyama Loop,Nanyang,912257250465.0,23,362,China,41
+Chisinau,,34689.0,269 Cam Ranh Parkway,Chisinau,489783829737.0,61,115,Moldova,42
+Esprito Santo,,3989.0,306 Antofagasta Place,Vila Velha,378318851631.0,15,569,Brazil,43
+Oriental,,94399.0,671 Graz Street,Nador,680768868518.0,62,353,Morocco,44
+Yerevan,,16744.0,42 Brindisi Place,Yerevan,42384721397.0,7,586,Armenia,45
+Nonthaburi,,61117.0,1632 Bislig Avenue,Pak Kret,471675840679.0,94,394,Thailand,46
+Tahiti,,48942.0,1447 Imus Way,Faaa,539758313890.0,36,167,French Polynesia,47
+Lipetsk,,76022.0,1998 Halifax Drive,Lipetsk,177727722820.0,80,308,Russian Federation,48
+Antofagasta,,37359.0,1718 Valencia Street,Antofagasta,675292816413.0,22,27,Chile,49
+Moscow (City),,23616.0,46 Pjatigorsk Lane,Moscow,262076994845.0,80,343,Russian Federation,50
+Cear,,52535.0,686 Garland Manor,Juazeiro do Norte,69493378813.0,15,247,Brazil,51
+Tatarstan,,69367.0,909 Garland Manor,Niznekamsk,705800322606.0,80,367,Russian Federation,52
+Mekka,,74428.0,725 Isesaki Place,Jedda,876295323994.0,82,237,Saudi Arabia,53
+Khartum,,80168.0,115 Hidalgo Parkway,Omdurman,307703950263.0,89,379,Sudan,54
+California,,48150.0,1135 Izumisano Parkway,Fontana,171822533480.0,103,171,United States,55
+Galicia,,4166.0,939 Probolinggo Loop,A Coruña (La Coruña),680428310138.0,87,1,Spain,56
+Chiba,,38594.0,17 Kabul Boulevard,Nagareyama,697760867968.0,50,355,Japan,57
+Yamaguchi,,48980.0,1964 Allappuzha (Alleppey) Street,Iwakuni,920811325222.0,50,227,Japan,58
+Moskova,,57807.0,1697 Kowloon and New Kowloon Loop,Balašiha,499352017190.0,80,49,Russian Federation,59
+Tahiti,,39072.0,1668 Saint Louis Place,Papeete,347487831378.0,36,397,French Polynesia,60
+Vaduz,,45428.0,943 Tokat Street,Vaduz,889318963672.0,55,560,Liechtenstein,61
+Sarawak,,69226.0,1114 Liepaja Street,Kuching,212869228936.0,59,282,Malaysia,62
+Karnataka,,94352.0,1213 Ranchi Parkway,Mysore,800024380485.0,44,350,India,63
+Rajasthan,,55561.0,81 Hodeida Way,Jaipur,250767749542.0,44,231,India,64
+Basel-Stadt,,83980.0,915 Ponce Place,Basel,1395251317.0,91,56,Switzerland,65
+Missouri,,85505.0,1717 Guadalajara Lane,Saint Louis,914090181665.0,103,441,United States,66
+Nebraska,,67055.0,1214 Hanoi Way,Lincoln,491001136577.0,103,306,United States,67
+Sichuan,,70385.0,1966 Amroha Avenue,Daxian,333489324603.0,23,139,China,68
+Cayenne,,71110.0,698 Otsu Street,Cayenne,409983924481.0,35,105,French Guiana,69
+Skne ln,,96109.0,1150 Kimchon Manor,Malmö,663449333709.0,90,321,Sweden,70
+Hunan,,5135.0,1586 Guarujá Place,Xi´angtan,947233365992.0,23,579,China,71
+Madhya Pradesh,,48960.0,57 Arlington Manor,Shivapuri,990214419142.0,44,475,India,72
+Béchar,,59025.0,1031 Daugavpils Parkway,Béchar,107137400143.0,2,63,Algeria,73
+Mekka,,6856.0,1124 Buenaventura Drive,al-Hawiya,407733804223.0,82,13,Saudi Arabia,74
+Eastern Visayas,,50805.0,492 Cam Ranh Street,Baybay,565018274456.0,75,61,Philippines,75
+National Capital Reg,,75444.0,89 Allappuzha (Alleppey) Manor,Taguig,255800440636.0,75,517,Philippines,76
+Chiayi,,60951.0,1947 Poços de Caldas Boulevard,Chiayi,427454485876.0,92,114,Taiwan,77
+São Paulo,,20207.0,1206 Dos Quebradas Place,Rio Claro,241832790687.0,15,431,Brazil,78
+Changhwa,,72394.0,1551 Rampur Lane,Changhwa,251164340471.0,92,108,Taiwan,79
+Pavlodar,,98889.0,602 Paarl Street,Pavlodar,896314772871.0,51,402,Kazakstan,80
+São Paulo,,9223.0,1692 Ede Loop,Araçatuba,918711376618.0,15,30,Brazil,81
+Uttar Pradesh,,96709.0,936 Salzburg Lane,Rae Bareli,875756771675.0,44,425,India,82
+Kanagawa,,1079.0,586 Tete Way,Kamakura,18581624103.0,50,256,Japan,83
+Oyo & Osun,,20936.0,1888 Kabul Drive,Ife,701457319790.0,69,217,Nigeria,84
+Mahajanga,,37307.0,320 Baiyin Parkway,Mahajanga,223664661973.0,57,319,Madagascar,85
+Krim,,9495.0,927 Bahía Blanca Parkway,Simferopol,821972242086.0,100,479,Ukraine,86
+Gauteng,,74671.0,929 Tallahassee Loop,Springs,800716535041.0,85,497,South Africa,87
+Puebla,,67912.0,125 Città del Vaticano Boulevard,Atlixco,48417642933.0,60,40,Mexico,88
+England,,88002.0,1557 Kütahya Boulevard,Bradford,720998247660.0,102,88,United Kingdom,89
+Songkhla,,84931.0,870 Ashqelon Loop,Songkhla,135117278909.0,94,489,Thailand,90
+Sucre,,29932.0,1740 Portoviejo Avenue,Sincelejo,198123170793.0,24,480,Colombia,91
+Cheju,,82624.0,1942 Ciparay Parkway,Cheju,978987363654.0,86,113,South Korea,92
+Buenos Aires,,75543.0,1926 El Alto Avenue,La Plata,846225459260.0,6,289,Argentina,93
+Guangdong,,25958.0,1952 Chatsworth Drive,Meixian,991562402283.0,23,332,China,94
+Brunei and Muara,,52163.0,1370 Le Mans Avenue,Bandar Seri Begawan,345679835036.0,16,53,Brunei,95
+Gois,,17119.0,984 Effon-Alaiye Avenue,Goiânia,132986892228.0,15,183,Brazil,96
+Inner Mongolia,,49021.0,832 Nakhon Sawan Manor,Zalantun,275595571388.0,23,592,China,97
+Caraga,,53182.0,152 Kitwe Parkway,Bislig,835433605312.0,75,82,Philippines,98
+Punjab,,22870.0,1697 Tanauan Lane,Pathankot,4764773857.0,44,399,India,99
+Georgia,,30695.0,1308 Arecibo Way,Augusta-Richmond County,6171054059.0,103,41,United States,100
+Tete,,71986.0,1599 Plock Drive,Tete,817248913162.0,63,534,Mozambique,101
+Abu Dhabi,,92265.0,669 Firozabad Loop,al-Ayn,412903167998.0,101,12,United Arab Emirates,102
+Kyongsangbuk,,51540.0,588 Vila Velha Manor,Kimchon,333339908719.0,86,268,South Korea,103
+Lipetsk,,97287.0,1913 Kamakura Place,Jelets,942570536750.0,80,238,Russian Federation,104
+Asir,,77459.0,733 Mandaluyong Place,Abha,196568435814.0,82,2,Saudi Arabia,105
+Ha Darom,,49708.0,659 Vaduz Drive,Ashdod,709935135487.0,48,34,Israel,106
+Kwara & Kogi,,3305.0,1177 Jelets Way,Ilorin,484292626944.0,69,220,Nigeria,107
+Provence-Alpes-Cte,,80720.0,1386 Yangor Avenue,Toulon,449216226468.0,34,543,France,108
+Funafuti,,76383.0,454 Nakhon Sawan Boulevard,Funafuti,963887147572.0,99,173,Tuvalu,109
+Ivanovo,,78311.0,1867 San Juan Bautista Tuxtepec Avenue,Ivanovo,547003310357.0,80,225,Russian Federation,110
+Buenos Aires,,9599.0,1532 Dzerzinsk Way,Merlo,330838016880.0,6,334,Argentina,111
+Mxico,,93026.0,1002 Ahmadnagar Manor,Huixquilucan,371490777743.0,60,213,Mexico,112
+North West,,30418.0,682 Junan Way,Klerksdorp,622255216127.0,85,273,South Africa,113
+Hubei,,61069.0,804 Elista Drive,Enshi,379804592943.0,23,159,China,114
+Distrito Federal,,75834.0,1378 Alvorada Avenue,Caracas,272234298332.0,104,102,Venezuela,115
+California,,87057.0,793 Cam Ranh Avenue,Lancaster,824370924746.0,103,292,United States,116
+Sucre,,10885.0,1079 Tel Aviv-Jaffa Boulevard,Cumaná,358178933857.0,104,132,Venezuela,117
+Nordrhein-Westfalen,,24321.0,442 Rae Bareli Place,Duisburg,886636413768.0,38,148,Germany,118
+Mxico,,75149.0,1107 Nakhon Sawan Avenue,Nezahualcóyotl,867546627903.0,60,365,Mexico,119
+Central Java,,63502.0,544 Malmö Parkway,Pemalang,386759646229.0,45,403,Indonesia,120
+Gujarat,,73644.0,1967 Sincelejo Place,Gandhinagar,577812616052.0,44,176,India,121
+Texas,,78625.0,333 Goiânia Way,Grand Prairie,909029256431.0,103,185,United States,122
+al-Qalyubiya,,96065.0,1987 Coacalco de Berriozábal Loop,Shubra al-Khayma,787654415858.0,29,476,Egypt,123
+Risaralda,,76157.0,241 Mosul Lane,Dos Quebradas,765345144779.0,24,147,Colombia,124
+Uttar Pradesh,,58186.0,211 Chiayi Drive,Etawah,665993880048.0,44,164,India,125
+Lima,,64615.0,1175 Tanauan Way,Lima,937222955822.0,74,305,Peru,126
+Uttar Pradesh,,6804.0,117 Boa Vista Way,Varanasi (Benares),677976133614.0,44,566,India,127
+Kütahya,,45142.0,848 Tafuna Manor,Kütahya,614935229095.0,97,281,Turkey,128
+Gauteng,,60304.0,569 Baicheng Lane,Boksburg,490211944645.0,85,85,South Africa,129
+São Paulo,,66255.0,1666 Qomsheh Drive,Poá,582835362905.0,15,410,Brazil,130
+Smolensk,,8439.0,801 Hagonoy Drive,Smolensk,237426099212.0,80,484,Russian Federation,131
+Slaskie,,4999.0,1050 Garden Grove Avenue,Jastrzebie-Zdrój,973047364353.0,76,236,Poland,132
+Shandong,,15819.0,1854 Tieli Street,Liaocheng,509492324775.0,23,302,China,133
+Gois,,82639.0,758 Junan Lane,Águas Lindas de Goiás,935448624185.0,15,190,Brazil,134
+Taka-Karpatia,,14014.0,1752 São Leopoldo Parkway,Mukatševe,252265130067.0,100,345,Ukraine,135
+Free State,,49757.0,898 Belém Manor,Botshabelo,707169393853.0,85,87,South Africa,136
+Coahuila de Zaragoza,,83401.0,261 Saint Louis Way,Torreón,321944036800.0,60,541,Mexico,137
+al-Qalyubiya,,4285.0,765 Southampton Drive,Qalyub,23712411567.0,29,421,Egypt,138
+Maharashtra,,5892.0,943 Johannesburg Avenue,Pune,90921003005.0,44,417,India,139
+Karnataka,,81691.0,788 Atšinsk Street,Hubli-Dharwad,146497509724.0,44,211,India,140
+Gelderland,,11044.0,1749 Daxian Place,Apeldoorn,963369996279.0,67,29,Netherlands,141
+Inner Mongolia,,85769.0,1587 Sullana Lane,Hohhot,468060467018.0,23,207,China,142
+Ynlin,,57519.0,1029 Dzerzinsk Manor,Touliu,33173584456.0,92,542,Taiwan,143
+Tennessee,,13377.0,1666 Beni-Mellal Place,Clarksville,9099941466.0,103,123,United States,144
+Hiroshima,,93762.0,928 Jaffna Loop,Fukuyama,581852137991.0,50,172,Japan,145
+Scotland,,60562.0,483 Ljubertsy Parkway,Dundee,581174211853.0,102,149,United Kingdom,146
+Kilis,,97700.0,374 Bat Yam Boulevard,Kilis,923261616249.0,97,266,Turkey,147
+Minsk,,30861.0,1027 Songkhla Manor,Molodetšno,563660187896.0,13,340,Belarus,148
+Gauteng,,3439.0,999 Sanaa Loop,Soshanguve,918032330119.0,85,491,South Africa,149
+Michigan,,90732.0,879 Newcastle Way,Sterling Heights,206841104594.0,103,499,United States,150
+Saitama,,99457.0,1337 Lincoln Parkway,Urawa,597815221267.0,50,555,Japan,151
+Saint-Denis,,92150.0,1952 Pune Lane,Saint-Denis,354615066969.0,79,442,Réunion,152
+Massachusetts,,25545.0,782 Mosul Street,Brockton,885899703621.0,103,94,United States,153
+Michoacn de Ocampo,,95444.0,781 Shimonoseki Drive,Hidalgo,632316273199.0,60,202,Mexico,154
+Shandong,,77777.0,1560 Jelets Boulevard,Laiwu,189446090264.0,23,291,China,155
+Assam,,64863.0,1963 Moscow Place,Nagaon,761379480249.0,44,354,India,156
+Jakarta Raya,,36061.0,456 Escobar Way,Jakarta,719202533520.0,45,232,Indonesia,157
+Shanxi,,76990.0,798 Cianjur Avenue,Yuncheng,499408708580.0,23,590,China,158
+Bern,,41778.0,185 Novi Sad Place,Bern,904253967161.0,91,72,Switzerland,159
+Ondo & Ekiti,,21294.0,1367 Yantai Manor,Ondo,889538496300.0,69,381,Nigeria,160
+Pyongyang-si,,53502.0,1386 Nakhon Sawan Boulevard,Pyongyang,368899174225.0,70,420,North Korea,161
+North Carolina,,66639.0,369 Papeete Way,Greensboro,170117068815.0,103,187,United States,162
+North Austria,,81037.0,1440 Compton Place,Linz,931059836497.0,9,307,Austria,163
+Moskova,,81511.0,1623 Bahía Blanca Manor,Ljubertsy,149981248346.0,80,310,Russian Federation,164
+Tel Aviv,,44660.0,97 Shimoga Avenue,Tel Aviv-Jaffa,177167004331.0,48,533,Israel,165
+Pays de la Loire,,22853.0,1740 Le Mans Loop,Le Mans,168476538960.0,34,297,France,166
+Gifu,,57844.0,1287 Xi´angfan Boulevard,Kakamigahara,819416131190.0,50,253,Japan,167
+Adana,,3313.0,842 Salzburg Lane,Tarsus,697151428760.0,97,529,Turkey,168
+Xinxiang,,62250.0,154 Tallahassee Loop,Hami,935508855935.0,23,199,China,169
+Lilongwe,,76901.0,710 San Felipe del Progreso Avenue,Lilongwe,843801144113.0,58,304,Malawi,170
+Maharashtra,,62686.0,1540 Wroclaw Drive,Chandrapur,182363341674.0,44,107,India,171
+Gansu,,59571.0,475 Atšinsk Way,Jinchang,201705577290.0,23,240,China,172
+Ji´angxi,,70618.0,1294 Firozabad Drive,Pingxiang,161801569569.0,23,407,China,173
+Rajasthan,,63337.0,1877 Ezhou Lane,Udaipur,264541743403.0,44,550,India,174
+Perak,,58194.0,316 Uruapan Street,Ipoh,275788967899.0,59,223,Malaysia,175
+Batman,,47753.0,29 Pyongyang Loop,Batman,734780743462.0,97,58,Turkey,176
+Steiermark,,6802.0,1010 Klerksdorp Way,Graz,493008546874.0,9,186,Austria,177
+Miranda,,25220.0,1848 Salala Boulevard,Ocumare del Tuy,48265851133.0,104,373,Venezuela,178
+Kerala,,4854.0,431 Xi´angtan Avenue,Allappuzha (Alleppey),230250973122.0,44,18,India,179
+Skikda,,89668.0,757 Rustenburg Avenue,Skikda,506134035434.0,2,483,Algeria,180
+Tamaulipas,,54132.0,146 Johannesburg Way,Matamoros,953689007081.0,60,330,Mexico,181
+São Paulo,,47288.0,1891 Rizhao Boulevard,Santa Bárbara d´Oeste,391065549876.0,15,456,Brazil,182
+Kirov,,35109.0,1089 Iwatsuki Avenue,Kirovo-Tšepetsk,866092335135.0,80,270,Russian Federation,183
+Risaralda,,29747.0,1410 Benin City Parkway,Pereira,104150372603.0,24,405,Colombia,184
+Tennessee,,67497.0,682 Garden Grove Place,Memphis,72136330362.0,103,333,United States,185
+California,,8862.0,533 al-Ayn Boulevard,Compton,662227486184.0,103,126,United States,186
+Gois,,55709.0,1839 Székesfehérvár Parkway,Luziânia,947468818183.0,15,317,Brazil,187
+Noord-Brabant,,43310.0,741 Ambattur Manor,´s-Hertogenbosch,302590383819.0,67,438,Netherlands,188
+Chaharmahal va Bakht,,65121.0,927 Barcelona Street,Shahr-e Kord,951486492670.0,46,467,Iran,189
+West Bengali,,74750.0,435 0 Way,Haldia,760171523969.0,44,195,India,190
+Sumy,,38982.0,140 Chiayi Parkway,Sumy,855863906434.0,100,506,Ukraine,191
+Caraga,,58852.0,1166 Changhwa Street,Bayugan,650752094490.0,75,62,Philippines,192
+Ontario,,5379.0,891 Novi Sad Manor,Oshawa,247646995453.0,20,383,Canada,193
+Tabora,,49348.0,605 Rio Claro Parkway,Tabora,352469351088.0,93,513,Tanzania,194
+Rostov-na-Donu,,65387.0,1077 San Felipe de Puerto Plata Place,Novotšerkassk,812824036424.0,80,369,Russian Federation,195
+Uttar Pradesh,,90845.0,9 San Miguel de Tucumán Manor,Firozabad,956188728558.0,44,169,India,196
+Nyanza,,10428.0,447 Surakarta Loop,Kisumu,940830176580.0,52,271,Kenya,197
+Tokyo-to,,32114.0,345 Oshawa Boulevard,Hino,104491201771.0,50,204,Japan,198
+Nordrhein-Westfalen,,15540.0,1792 Valle de la Pascua Place,Siegen,419419591240.0,38,477,Germany,199
+Baden-Wrttemberg,,36490.0,1074 Binzhou Manor,Mannheim,331132568928.0,38,325,Germany,200
+Ji´angsu,,89459.0,817 Bradford Loop,Changzhou,264286442804.0,23,109,China,201
+Ondo & Ekiti,,1545.0,955 Bamenda Way,Ikerre,768481779568.0,69,218,Nigeria,202
+Haiphong,,95824.0,1149 A Coruña (La Coruña) Boulevard,Haiphong,470884141195.0,105,194,Vietnam,203
+Ahal,,8073.0,387 Mwene-Ditu Drive,Ashgabat,764477681869.0,98,35,Turkmenistan,204
+Nordrhein-Westfalen,,4662.0,68 Molodetšno Manor,Witten,146640639760.0,38,575,Germany,205
+Maharashtra,,3924.0,642 Nador Drive,Bhusawal,369050085652.0,44,77,India,206
+Sulawesi Utara,,61613.0,1688 Nador Lane,Gorontalo,652218196731.0,45,184,Indonesia,207
+Usak,,25238.0,1215 Pyongyang Parkway,Usak,646237101779.0,97,557,Turkey,208
+Alto Paran,,86599.0,1679 Antofagasta Street,Ciudad del Este,905903574913.0,73,122,Paraguay,209
+Santa Catarina,,10925.0,1304 ´s-Hertogenbosch Way,Blumenau,90336226227.0,15,83,Brazil,210
+Kitaa,,10800.0,850 Salala Loop,Nuuk,403404780639.0,40,371,Greenland,211
+West Bengali,,89959.0,624 Oshawa Boulevard,Balurghat,49677664184.0,44,51,India,212
+Rajasthan,,4855.0,43 Dadu Avenue,Bhilwara,95666951770.0,44,74,India,213
+Aden,,99405.0,751 Lima Loop,Aden,756460337785.0,107,7,Yemen,214
+Jilin,,82161.0,1333 Haldia Street,Fuyu,408304391718.0,23,174,China,215
+Taizz,,67924.0,1001 Miyakonojo Lane,Taizz,584316724815.0,107,518,Yemen,217
+California,,2299.0,226 Brest Manor,Sunnyvale,785881412500.0,103,508,United States,218
+Haskovo,,99124.0,1229 Valencia Parkway,Stara Zagora,352679173732.0,17,498,Bulgaria,219
+Gois,,21464.0,1201 Qomsheh Manor,Aparecida de Goiânia,873492228462.0,15,28,Brazil,220
+Uttar Pradesh,,22474.0,866 Shivapuri Manor,Sambhal,778502731092.0,44,448,India,221
+Kabol,,40301.0,1168 Najafabad Parkway,Kabul,886649065861.0,1,251,Afghanistan,222
+Buenos Aires,,20657.0,1244 Allappuzha (Alleppey) Place,Vicente López,991802825778.0,6,567,Argentina,223
+Zanzibar West,,94420.0,1842 Luziânia Boulevard,Zanzibar,706878974831.0,93,593,Tanzania,224
+Sisilia,,22824.0,1926 Gingoog Street,Syrakusa,469738825391.0,49,511,Italy,225
+Punjab,,88307.0,1820 Maringá Parkway,Mandi Bahauddin,99760893676.0,72,324,Pakistan,227
+Rajasthan,,82338.0,60 Poços de Caldas Street,Jodhpur,963063788669.0,44,243,India,228
+Tamil Nadu,,66851.0,1014 Loja Manor,Ambattur,460795526514.0,44,22,India,229
+Asunción,,64344.0,201 Effon-Alaiye Way,Asunción,684192903087.0,73,37,Paraguay,230
+Saarland,,47446.0,430 Alessandria Loop,Saarbrücken,669828224459.0,38,439,Germany,231
+Phnom Penh,,87911.0,754 Valencia Place,Phnom Penh,594319417514.0,18,406,Cambodia,232
+Gois,,93323.0,356 Olomouc Manor,Anápolis,22326410776.0,15,26,Brazil,233
+Botosani,,50598.0,1256 Bislig Boulevard,Botosani,479007229460.0,78,86,Romania,234
+West Bengali,,42420.0,954 Kimchon Place,Uttarpara-Kotrung,541327526474.0,44,559,India,235
+Kaduna,,31390.0,885 Yingkou Manor,Zaria,588964509072.0,69,596,Nigeria,236
+Qina,,98775.0,1736 Cavite Place,Idfu,431770603551.0,29,216,Egypt,237
+Hawalli,,90628.0,346 Skikda Parkway,Jalib al-Shuyukh,630424482919.0,53,233,Kuwait,238
+Valle,,76448.0,98 Stara Zagora Boulevard,Buenaventura,610173756082.0,24,96,Colombia,239
+Southern Tagalog,,18727.0,1479 Rustenburg Boulevard,Tanza,727785483194.0,75,527,Philippines,240
+Chollanam,,36971.0,647 A Coruña (La Coruña) Street,Naju,792557457753.0,86,357,South Korea,241
+Karnataka,,14408.0,1964 Gijón Manor,Shimoga,918119601885.0,44,473,India,242
+West Java,,22236.0,47 Syktyvkar Lane,Ciomas,63937119031.0,45,118,Indonesia,243
+Fukushima,,1921.0,1148 Saarbrücken Parkway,Iwaki,137773001988.0,50,226,Japan,244
+Hubei,,87660.0,1103 Bilbays Parkway,Xi´angfan,279979529227.0,23,578,China,245
+Hebei,,28349.0,1246 Boksburg Parkway,Qinhuangdao,890283544295.0,23,422,China,246
+Tucumn,,37288.0,1483 Pathankot Street,San Miguel de Tucumán,686015532180.0,6,454,Argentina,247
+Central Visayas,,27722.0,582 Papeete Loop,Lapu-Lapu,569868543137.0,75,294,Philippines,248
+Kyonggi,,81314.0,300 Junan Street,Uijongbu,890289150158.0,86,553,South Korea,249
+Paraná,,6461.0,829 Grand Prairie Way,Maringá,741070712873.0,15,328,Brazil,250
+Mxico,,75933.0,1473 Changhwa Parkway,Coacalco de Berriozábal,266798132374.0,60,124,Mexico,251
+Florida,,57338.0,1309 Weifang Street,Tallahassee,435785045362.0,103,520,United States,252
+Tianjin,,38140.0,1760 Oshawa Manor,Tianjin,56257502250.0,23,535,China,253
+Oyo & Osun,,98332.0,786 Stara Zagora Way,Oyo,716256596301.0,69,390,Nigeria,254
+Anhalt Sachsen,,36481.0,1966 Tonghae Street,Halle/Saale,567359279425.0,38,198,Germany,255
+England,,3433.0,1497 Yuzhou Drive,London,246810237916.0,102,312,United Kingdom,256
+Miyazaki,,32474.0,752 Ondo Loop,Miyakonojo,134673576619.0,50,338,Japan,258
+Minas Gerais,,45403.0,1338 Zalantun Lane,Poços de Caldas,840522972766.0,15,413,Brazil,259
+Central Luzon,,20777.0,127 Iwakuni Boulevard,Hagonoy,987442542471.0,75,192,Philippines,260
+Sagaing,,68146.0,51 Laredo Avenue,Monywa,884536620568.0,64,342,Myanmar,261
+Sofala,,86768.0,771 Yaoundé Manor,Beira,245477603573.0,63,64,Mozambique,262
+Santiago,,69517.0,532 Toulon Street,Santiago de los Caballeros,46871694740.0,27,460,Dominican Republic,263
+West Bengali,,50390.0,1027 Banjul Place,Halisahar,538241037443.0,44,197,India,264
+Shanxi,,98484.0,1158 Mandi Bahauddin Parkway,Datong,276555730211.0,23,136,China,265
+Cagayan Valley,,30065.0,862 Xintai Lane,Tuguegarao,265153400632.0,75,548,Philippines,266
+Manab,,93629.0,816 Cayenne Parkway,Portoviejo,282874611748.0,28,414,Ecuador,267
+National Capital Reg,,51990.0,1831 Nam Dinh Loop,Mandaluyong,322888976727.0,75,323,Philippines,268
+Osaka,,19428.0,446 Kirovo-Tšepetsk Lane,Higashiosaka,303967439816.0,50,203,Japan,269
+Severn Morava,,20536.0,682 Halisahar Place,Olomouc,475553436330.0,26,378,Czech Republic,270
+Salzburg,,5410.0,1587 Loja Manor,Salzburg,621625204422.0,9,447,Austria,271
+Hunan,,53928.0,1762 Paarl Parkway,Lengshuijiang,192459639410.0,23,298,China,272
+Kerala,,49298.0,1519 Ilorin Place,Palghat (Palakkad),357445645426.0,44,395,India,273
+California,,75090.0,920 Kumbakonam Loop,Salinas,685010736240.0,103,446,United States,274
+Wielkopolskie,,83565.0,906 Goiânia Way,Kalisz,701767622697.0,76,255,Poland,275
+Tamil Nadu,,11763.0,1675 Xi´angfan Manor,Kumbakonam,271149517630.0,44,283,India,276
+Shandong,,46063.0,85 San Felipe de Puerto Plata Drive,Yantai,170739645687.0,23,584,China,277
+Guanajuato,,2012.0,144 South Hill Loop,Salamanca,45387294817.0,60,445,Mexico,278
+Haryana,,85548.0,1884 Shikarpur Avenue,Karnal,959949395183.0,44,263,India,279
+Illinois,,89502.0,1980 Kamjanets-Podilskyi Street,Peoria,874337098891.0,103,404,United States,280
+Michigan,,24645.0,1944 Bamenda Way,Warren,75975221996.0,103,573,United States,281
+Oyo & Osun,,55802.0,556 Baybay Manor,Ogbomosho,363982224739.0,69,374,Nigeria,282
+Bursa,,56254.0,457 Tongliao Loop,Inegöl,880756161823.0,97,222,Turkey,283
+East Azerbaidzan,,96204.0,600 Bradford Street,Tabriz,117592274996.0,46,514,Iran,284
+Ondo & Ekiti,,36229.0,1006 Santa Bárbara d´Oeste Manor,Owo,85059738746.0,69,389,Nigeria,285
+Ponce,,8160.0,1405 Chisinau Place,Ponce,62781725285.0,77,411,Puerto Rico,287
+Xinxiang,,58492.0,226 Halifax Street,Korla,790651020929.0,23,277,China,288
+Edo & Delta,,75860.0,1279 Udine Parkway,Benin City,195003555232.0,69,69,Nigeria,289
+Shiga,,46044.0,1336 Benin City Drive,Otsu,341242939532.0,50,386,Japan,290
+Oyo & Osun,,22650.0,1155 Liaocheng Place,Effon-Alaiye,558236142492.0,69,152,Nigeria,291
+Tamil Nadu,,64221.0,1993 Tabuk Lane,Tambaram,648482415405.0,44,522,India,292
+Guanajuato,,33768.0,86 Higashiosaka Lane,Valle de Santiago,957128697225.0,60,563,Mexico,293
+Kowloon and New Kowl,,58124.0,1912 Allende Manor,Kowloon and New Kowloon,172262454487.0,42,279,Hong Kong,294
+Gurico,,53145.0,544 Tarsus Boulevard,Valle de la Pascua,892523334.0,104,562,Venezuela,295
+Virginia,,61195.0,1936 Cumaná Avenue,Roanoke,976798660411.0,103,433,United States,296
+Sharja,,19065.0,1192 Tongliao Street,Sharja,350970907017.0,101,470,United Arab Emirates,297
+Baskimaa,,61391.0,44 Najafabad Way,Donostia-San Sebastián,96604821070.0,87,146,Spain,298
+Ohio,,38834.0,32 Pudukkottai Lane,Dayton,967274728547.0,103,140,United States,299
+Pietari,,8856.0,661 Chisinau Lane,Kolpino,816436065431.0,80,274,Russian Federation,300
+Punjab,,98573.0,951 Stara Zagora Manor,Patiala,429925609431.0,44,400,India,301
+Maharashtra,,4085.0,922 Vila Velha Loop,Ahmadnagar,510737228015.0,44,9,India,302
+Pohjois-Pohjanmaa,,40070.0,898 Jining Lane,Oulu,161643343536.0,33,387,Finland,303
+Hiroshima,,52137.0,1635 Kuwana Boulevard,Hiroshima,710603868323.0,50,205,Japan,304
+Maharashtra,,56883.0,41 El Alto Parkway,Parbhani,51917807050.0,44,398,India,305
+Kaliningrad,,68469.0,1883 Maikop Lane,Kaliningrad,96110042435.0,80,254,Russian Federation,306
+Liaoning,,58979.0,1908 Gaziantep Place,Tiefa,108053751300.0,23,536,China,307
+Sanaa,,57587.0,687 Alessandria Parkway,Sanaa,407218522294.0,107,455,Yemen,308
+Callao,,79047.0,827 Yuncheng Drive,Callao,504434452842.0,74,99,Peru,309
+Texas,,42141.0,913 Coacalco de Berriozábal Loop,Arlington,262088367001.0,103,33,United States,310
+Kedah,,84804.0,715 São Bernardo do Campo Lane,Sungai Petani,181179321332.0,59,507,Malaysia,311
+Rio de Janeiro,,80184.0,1354 Siegen Street,Angra dos Reis,573441801529.0,15,25,Brazil,312
+Missouri,,9668.0,1191 Sungai Petani Boulevard,Kansas City,983259819766.0,103,262,United States,313
+Lombardia,,70923.0,1224 Huejutla de Reyes Boulevard,Brescia,806016930576.0,49,91,Italy,314
+Minas Gerais,,59686.0,543 Bergamo Avenue,Ibirité,103602195112.0,15,215,Brazil,315
+Kursk,,94878.0,746 Joliet Lane,Kursk,688485191923.0,80,286,Russian Federation,316
+Tabuk,,17032.0,780 Kimberley Way,Tabuk,824396883951.0,82,515,Saudi Arabia,317
+Hubei,,91400.0,1774 Yaoundé Place,Ezhou,613124286867.0,23,166,China,318
+São Paulo,,59255.0,1957 Yantai Lane,Sorocaba,704948322302.0,15,490,Brazil,319
+Tel Aviv,,62472.0,1542 Lubumbashi Boulevard,Bat Yam,508800331065.0,48,57,Israel,320
+Maharashtra,,59811.0,651 Pathankot Loop,Miraj,139378397418.0,44,336,India,321
+Streymoyar,,29763.0,1359 Zhoushan Parkway,Tórshavn,46568045367.0,32,545,Faroe Islands,322
+Kujawsko-Pomorskie,,25787.0,1769 Iwaki Lane,Bydgoszcz,556100547674.0,76,97,Poland,323
+Mxico,,73170.0,1145 Vilnius Manor,San Felipe del Progreso,674805712553.0,60,451,Mexico,324
+Tutuila,,28396.0,1892 Nabereznyje Tšelny Lane,Tafuna,478229987054.0,3,516,American Samoa,325
+Central,,97960.0,470 Boksburg Street,Birgunj,908029859266.0,66,81,Nepal,326
+Buenos Aires,,85799.0,1427 A Coruña (La Coruña) Place,Bahía Blanca,972574862516.0,6,45,Argentina,327
+Morelos,,54949.0,479 San Felipe del Progreso Avenue,Cuautla,869051782691.0,60,130,Mexico,328
+Henan,,78543.0,867 Benin City Avenue,Yuzhou,168884817145.0,23,591,China,329
+Distrito Federal,,87611.0,981 Kumbakonam Place,Brasília,829116184079.0,15,89,Brazil,330
+St George,,49833.0,1016 Iwakuni Street,Kingstown,961370847344.0,81,269,Saint Vincent and the Grenadines,331
+Adana,,33463.0,663 Bahía Blanca Parkway,Adana,834418779292.0,97,5,Turkey,332
+West Java,,59550.0,1860 Taguig Loop,Ciparay,38158430589.0,45,119,Indonesia,333
+Dhaka,,64308.0,1816 Bydgoszcz Loop,Jamalpur,965273813662.0,12,234,Bangladesh,334
+Illinois,,91590.0,587 Benguela Manor,Aurora,165450987037.0,103,42,United States,335
+Santa Fé,,28814.0,430 Kumbakonam Drive,Santa Fé,105470691550.0,6,457,Argentina,336
+Dhaka,,1195.0,1838 Tabriz Lane,Dhaka,38988715447.0,12,143,Bangladesh,337
+Baki,,57828.0,431 Székesfehérvár Avenue,Baku,119501405123.0,10,48,Azerbaijan,338
+Sumqayit,,49812.0,503 Sogamoso Loop,Sumqayit,834626715837.0,10,505,Azerbaijan,339
+Sousse,,22971.0,507 Smolensk Loop,Sousse,80303246192.0,96,492,Tunisia,340
+Uttar Pradesh,,15643.0,1920 Weifang Avenue,Rampur,869507847714.0,44,427,India,341
+Hiroshima,,52368.0,124 al-Manama Way,Onomichi,647899404952.0,50,382,Japan,342
+Western Cape,,31483.0,1443 Mardan Street,Paarl,231383037471.0,85,392,South Africa,343
+Henan,,19913.0,1909 Benguela Lane,Xinxiang,624138001031.0,23,581,China,344
+Hanoi,,85926.0,68 Ponce Parkway,Hanoi,870635127812.0,105,201,Vietnam,345
+Gelderland,,504.0,1217 Konotop Avenue,Ede,718917251754.0,67,151,Netherlands,346
+Roraima,,71583.0,1293 Nam Dinh Way,Boa Vista,697656479977.0,15,84,Brazil,347
+Baja California,,36170.0,785 Vaduz Street,Mexicali,895616862749.0,60,335,Mexico,348
+Tongatapu,,46069.0,1516 Escobar Drive,Nuku´alofa,64536069371.0,95,370,Tonga,349
+Central,,60079.0,1628 Nagareyama Lane,San Lorenzo,20064292617.0,73,453,Paraguay,350
+Adygea,,56380.0,1157 Nyeri Loop,Maikop,262744791493.0,80,320,Russian Federation,351
+Daugavpils,,26857.0,1673 Tangail Drive,Daugavpils,627924259271.0,54,137,Latvia,352
+Taipei,,87272.0,381 Kabul Way,Hsichuh,55477302294.0,92,209,Taiwan,353
+Southern Tagalog,,18841.0,953 Hodeida Street,Imus,53912826864.0,75,221,Philippines,354
+Tuvassia,,58866.0,469 Nakhon Sawan Street,Tšeboksary,689199636560.0,80,531,Russian Federation,355
+Krasnojarsk,,40792.0,1378 Beira Loop,Zeleznogorsk,840957664136.0,80,597,Russian Federation,356
+Nord-Ouest,,37636.0,1641 Changhwa Place,Bamenda,256546485220.0,19,52,Cameroon,357
+Hidalgo,,49009.0,1698 Southport Loop,Pachuca de Soto,754358349853.0,60,393,Mexico,358
+São Paulo,,37650.0,519 Nyeri Manor,Santo André,764680915323.0,15,461,Brazil,359
+Shimane,,81508.0,619 Huánuco Avenue,Matsue,142596392389.0,50,331,Japan,360
+Madhya Pradesh,,7431.0,45 Aparecida de Goiânia Place,Satna,650496654258.0,44,464,India,361
+Bratislava,,97056.0,482 Kowloon and New Kowloon Manor,Bratislava,738968474939.0,84,90,Slovakia,362
+Jharkhand,,5373.0,604 Bern Place,Ranchi,620719383725.0,44,429,India,363
+Buenos Aires,,91299.0,1623 Kingstown Drive,Almirante Brown,296394569728.0,6,20,Argentina,364
+Arecibo,,64875.0,1009 Zanzibar Lane,Arecibo,102396298916.0,77,32,Puerto Rico,365
+Centre,,60440.0,114 Jalib al-Shuyukh Manor,Yaoundé,845378657301.0,19,585,Cameroon,366
+Par,,6066.0,1163 London Parkway,Belém,675120358494.0,15,66,Brazil,367
+Central,,96584.0,1658 Jastrzebie-Zdrój Loop,Nyeri,568367775448.0,52,372,Kenya,368
+Jalisco,,77449.0,817 Laredo Avenue,Guadalajara,151249681135.0,60,188,Mexico,369
+Okinawa,,45750.0,1565 Tangail Manor,Okinawa,634445428822.0,50,377,Japan,370
+Balikesir,,33050.0,1912 Emeishan Drive,Balikesir,99883471275.0,97,50,Turkey,371
+Andhra Pradesh,,2738.0,230 Urawa Drive,Adoni,166898395731.0,44,8,India,372
+Esfahan,,13203.0,1922 Miraj Way,Najafabad,320471479776.0,46,356,Iran,373
+Chihuahua,,91330.0,433 Florencia Street,Juárez,561729882725.0,60,250,Mexico,374
+Karnataka,,69640.0,1049 Matamoros Parkway,Gulbarga,960505250340.0,44,191,India,375
+Southern Tagalog,,57810.0,1061 Ede Avenue,Cabuyao,333390595558.0,75,98,Philippines,376
+East Java,,72771.0,154 Oshawa Manor,Probolinggo,440365973660.0,45,415,Indonesia,377
+Southern Tagalog,,6362.0,1191 Tandil Drive,Tanauan,45554316010.0,75,523,Philippines,378
+Pernambuco,,2800.0,1133 Rizhao Avenue,Vitória de Santo Antão,600264533987.0,15,572,Brazil,379
+East Kasai,,22025.0,1519 Santiago de los Caballeros Loop,Mwene-Ditu,409315295763.0,25,348,"Congo, The Democratic Republic of the",380
+Kurgan,,26385.0,1618 Olomouc Manor,Kurgan,96846695220.0,80,285,Russian Federation,381
+Kermanshah,,45298.0,220 Hidalgo Drive,Kermanshah,342720754566.0,46,265,Iran,382
+Guangdong,,97390.0,686 Donostia-San Sebastián Lane,Shenzhen,71857599858.0,23,471,China,383
+Gujarat,,89294.0,97 Mogiljov Lane,Bhavnagar,924815207181.0,44,73,India,384
+Slaskie,,75442.0,1642 Charlotte Amalie Drive,Tychy,821476736117.0,76,549,Poland,385
+,,32716.0,1368 Maracaíbo Boulevard,South Hill,934352415130.0,5,493,Anguilla,386
+New Hampshire,,25007.0,401 Sucre Boulevard,Manchester,486395999608.0,103,322,United States,387
+Namibe,,17165.0,368 Huánuco Boulevard,Namibe,106439158941.0,4,360,Angola,388
+Ji´angsu,,95509.0,500 Lincoln Parkway,Huai´an,550306965159.0,23,210,China,389
+Ibaragi,,14073.0,102 Chapra Drive,Tama,776031833752.0,50,521,Japan,390
+Hmelnytskyi,,33535.0,1793 Meixian Place,Kamjanets-Podilskyi,619966287415.0,100,258,Ukraine,391
+Shaba,,69973.0,514 Ife Way,Lubumbashi,900235712074.0,25,315,"Congo, The Democratic Republic of the",392
+Southern Tagalog,,21615.0,717 Changzhou Lane,Cavite,426255288071.0,75,104,Philippines,393
+Sichuan,,3656.0,753 Ilorin Avenue,Emeishan,464511145118.0,23,157,China,394
+Nakhon Sawan,,29810.0,1337 Mit Ghamr Avenue,Nakhon Sawan,175283210378.0,94,358,Thailand,395
+Osaka,,83536.0,767 Pyongyang Drive,Izumisano,667736124769.0,50,229,Japan,396
+Addis Abeba,,27796.0,614 Pak Kret Street,Addis Abeba,47808359842.0,31,6,Ethiopia,397
+Moskova,,8816.0,954 Lapu-Lapu Way,Korolev,737229003916.0,80,278,Russian Federation,398
+Asturia,,966.0,331 Bydgoszcz Parkway,Gijón,537374465982.0,87,181,Spain,399
+al-Qadarif,,5239.0,1152 Citrus Heights Manor,al-Qadarif,765957414528.0,89,15,Sudan,400
+Saitama,,73824.0,168 Cianjur Manor,Iwatsuki,679095087143.0,50,228,Japan,401
+Krasnojarsk,,46043.0,616 Hagonoy Avenue,Atšinsk,604177838256.0,80,39,Russian Federation,402
+Rio Grande do Sul,,10417.0,1190 0 Place,Bagé,841876514789.0,15,44,Brazil,403
+Punjab,,30586.0,734 Béchar Place,Okara,280578750435.0,72,375,Pakistan,404
+Texas,,11067.0,530 Lausanne Lane,Dallas,775235029633.0,103,135,United States,405
+Fukushima,,13496.0,454 Patiala Lane,Koriyama,794553031307.0,50,276,Japan,406
+Bretagne,,61507.0,1346 Mysore Drive,Brest,516647474029.0,34,92,France,407
+Tamil Nadu,,79940.0,990 Etawah Loop,Valparai,206169448769.0,44,564,India,408
+Saitama,,7664.0,1266 Laredo Parkway,Omiya,1483365694.0,50,380,Japan,409
+Buenos Aires,,86868.0,88 Nagaon Manor,Tandil,779461480495.0,6,524,Argentina,410
+St Thomas,,54749.0,264 Bhimavaram Manor,Charlotte Amalie,302526949177.0,106,111,"Virgin Islands, U.S.",411
+North West,,9827.0,1639 Saarbrücken Drive,Rustenburg,328494873422.0,85,437,South Africa,412
+Northern,,35575.0,692 Amroha Drive,Jaffna,359478883004.0,88,230,Sri Lanka,413
+Bauchi & Gombe,,7122.0,1936 Lapu-Lapu Parkway,Deba Habe,653436985797.0,69,141,Nigeria,414
+Ontario,,65630.0,432 Garden Grove Street,Richmond Hill,615964523510.0,20,430,Canada,415
+West Java,,70809.0,1445 Carmen Parkway,Cianjur,598912394463.0,45,117,Indonesia,416
+Punjab,,40509.0,791 Salinas Street,Hoshiarpur,129953030512.0,44,208,India,417
+West Bengali,,58888.0,126 Acuña Parkway,Berhampore (Baharampur),480039662421.0,44,71,India,418
+Guanajuato,,55566.0,397 Sunnyvale Avenue,Allende,680851640676.0,60,19,Mexico,419
+Utrecht,,33711.0,992 Klerksdorp Loop,Amersfoort,855290087237.0,67,23,Netherlands,420
+Sind,,94018.0,966 Arecibo Loop,Dadu,15273765306.0,72,134,Pakistan,421
+al-Sharqiya,,72410.0,289 Santo André Manor,al-Qatif,214976066017.0,82,16,Saudi Arabia,422
+Puerto Plata,,59489.0,437 Chungho Drive,San Felipe de Puerto Plata,491271355190.0,27,450,Dominican Republic,423
+Bihar,,60622.0,1948 Bayugan Parkway,Katihar,987306329957.0,44,264,India,424
+California,,89420.0,1866 al-Qatif Avenue,El Monte,546793516940.0,103,155,United States,425
+Tamil Nadu,,14400.0,1661 Abha Drive,Pudukkottai,270456873752.0,44,416,India,426
+Hubei,,46875.0,1557 Cape Coral Parkway,Laohekou,368284120423.0,23,293,China,427
+Sawhaj,,78813.0,1727 Matamoros Place,Sawhaj,129673677866.0,29,465,Egypt,428
+Guangdong,,47394.0,1269 Botosani Manor,Shanwei,736517327853.0,23,468,China,429
+Oaxaca,,81758.0,355 Vitória de Santo Antão Way,San Juan Bautista Tuxtepec,548003849552.0,60,452,Mexico,430
+Jharkhand,,70425.0,1596 Acuña Parkway,Purnea (Purnia),157133457169.0,44,418,India,431
+São Paulo,,64964.0,259 Ipoh Drive,Guarujá,419009857119.0,15,189,Brazil,432
+Komi,,33191.0,1823 Hoshiarpur Lane,Syktyvkar,307133768620.0,80,510,Russian Federation,433
+Okayama,,87212.0,1404 Taguig Drive,Tsuyama,572068624538.0,50,547,Japan,434
+Nizni Novgorod,,33505.0,740 Udaipur Lane,Dzerzinsk,497288595103.0,80,150,Russian Federation,435
+Chuquisaca,,72736.0,287 Cuautla Boulevard,Sucre,82619513349.0,14,501,Bolivia,436
+KwaZulu-Natal,,63104.0,1766 Almirante Brown Street,Newcastle,617567598243.0,85,364,South Africa,437
+Nampula,,65892.0,596 Huixquilucan Place,Naçala-Porto,342709348083.0,63,351,Mozambique,438
+Northern Mindanao,,41775.0,1351 Aparecida de Goiânia Parkway,Ozamis,959834530529.0,75,391,Philippines,439
+Shandong,,90920.0,722 Bradford Lane,Junan,746251338300.0,23,249,China,440
+British Colombia,,47472.0,983 Santa Fé Way,Vancouver,145720452260.0,20,565,Canada,441
+La Romana,,40926.0,1245 Ibirité Way,La Romana,331888642162.0,27,290,Dominican Republic,442
+Copperbelt,,55405.0,1836 Korla Parkway,Kitwe,689681677428.0,109,272,Zambia,443
+Lombardia,,57833.0,231 Kaliningrad Place,Bergamo,575081026569.0,49,70,Italy,444
+Maharashtra,,3.0,495 Bhimavaram Lane,Dhule (Dhulia),82088937724.0,44,144,India,445
+Batna,,52625.0,1924 Shimonoseki Drive,Batna,406784385440.0,2,59,Algeria,446
+Inner Mongolia,,48570.0,105 Dzerzinsk Manor,Tongliao,240776414296.0,23,540,China,447
+Rio Grande do Sul,,29444.0,614 Denizli Parkway,São Leopoldo,876491807547.0,15,486,Brazil,448
+Tartumaa,,88306.0,1289 Belém Boulevard,Tartu,237368926031.0,30,530,Estonia,449
+Buenos Aires,,73942.0,203 Tambaram Street,Escobar,411549550611.0,6,161,Argentina,450
+West Bengali,,2834.0,1704 Tambaram Manor,Uluberia,39463554936.0,44,554,India,451
+Tatarstan,,52671.0,207 Cuernavaca Loop,Nabereznyje Tšelny,782900030287.0,80,352,Russian Federation,452
+Baijeri,,99552.0,319 Springs Loop,Erlangen,72524459905.0,38,160,Germany,453
+Kerman,,21872.0,956 Nam Dinh Manor,Sirjan,474047727727.0,46,481,Iran,454
+Central Java,,23636.0,1947 Paarl Way,Surakarta,834061016202.0,45,509,Indonesia,455
+Sinaloa,,48745.0,814 Simferopol Loop,El Fuerte,524567129902.0,60,154,Mexico,456
+Abu Dhabi,,41136.0,535 Ahmadnagar Manor,Abu Dhabi,985109775584.0,101,3,United Arab Emirates,457
+Zulia,,16790.0,138 Caracas Boulevard,Maracaíbo,974433019532.0,104,326,Venezuela,458
+Michoacn de Ocampo,,16119.0,251 Florencia Drive,Uruapan,118011831565.0,60,556,Mexico,459
+La Paz,,28587.0,659 Gatineau Boulevard,El Alto,205524798287.0,14,153,Bolivia,460
+Ziguinchor,,75559.0,1889 Valparai Way,Ziguinchor,670370974122.0,83,600,Senegal,461
+Illinois,,83183.0,1485 Bratislava Place,Rockford,924663855568.0,103,435,United States,462
+Central Java,,64709.0,935 Aden Boulevard,Tegal,335052544020.0,45,532,Indonesia,463
+Esfahan,,23343.0,76 Kermanshah Manor,Qomsheh,762361821578.0,46,423,Iran,464
+Caquet,,70664.0,734 Tanshui Avenue,Florencia,366776723320.0,24,170,Colombia,465
+Northern Mindanao,,10447.0,118 Jaffna Loop,Gingoog,325526730021.0,75,182,Philippines,466
+Irkutsk,,22173.0,1621 Tongliao Avenue,Usolje-Sibirskoje,209342540247.0,80,558,Russian Federation,467
+Nova Scotia,,84461.0,1844 Usak Avenue,Halifax,164414772677.0,20,196,Canada,468
+OHiggins,,7939.0,1872 Toulon Loop,Rancagua,928809465153.0,22,428,Chile,469
+Jalisco,,88502.0,1088 Ibirité Place,Zapopan,49084281333.0,60,595,Mexico,470
+Shandong,,95400.0,1322 Mosul Parkway,Dongying,268053970382.0,23,145,China,471
+Chihuahua,,41545.0,1447 Chatsworth Place,Cuauhtémoc,769370126331.0,60,129,Mexico,472
+Karnataka,,33599.0,1257 Guadalajara Street,Bijapur,195337700615.0,44,78,India,473
+Galicia,,95835.0,1469 Plock Lane,Ourense (Orense),622884741180.0,87,388,Spain,474
+Hodeida,,14122.0,434 Ourense (Orense) Manor,Hodeida,562370137426.0,107,206,Yemen,475
+Gauteng,,9668.0,270 Tambaram Parkway,Johannesburg,248446668735.0,85,244,South Africa,476
+Nam Ha,,66546.0,1786 Salinas Place,Nam Dinh,206060652238.0,105,359,Vietnam,477
+Aceh,,69221.0,1078 Stara Zagora Drive,Lhokseumawe,932992626595.0,45,301,Indonesia,478
+Drenthe,,42123.0,1854 Okara Boulevard,Emmen,131912793873.0,67,158,Netherlands,479
+Sumy,,11363.0,421 Yaoundé Street,Šostka,726875628268.0,100,385,Ukraine,480
+Québec,,20336.0,1153 Allende Way,Gatineau,856872225376.0,20,179,Canada,481
+England,,41060.0,808 Naçala-Porto Parkway,Stockport,553452430707.0,102,500,United Kingdom,482
+Ha Darom,,73085.0,632 Usolje-Sibirskoje Parkway,Ashqelon,667648979883.0,48,36,Israel,483
+Ohio,,88749.0,98 Pyongyang Boulevard,Akron,191958435142.0,103,11,United States,484
+Gaziantep,,28165.0,984 Novotšerkassk Loop,Gaziantep,435118527255.0,97,180,Turkey,485
+Mwanza,,25145.0,64 Korla Street,Mwanza,510383179153.0,93,347,Tanzania,486
+Veracruz,,71182.0,1785 São Bernardo do Campo Street,Coatzacoalcos,684529463244.0,60,125,Mexico,487
+Denizli,,2596.0,698 Jelets Boulevard,Denizli,975185523021.0,97,142,Turkey,488
+Ningxia,,11839.0,1297 Alvorada Parkway,Yinchuan,508348602835.0,23,587,China,489
+Guangdong,,88513.0,1909 Dayton Avenue,Shaoguan,702955450528.0,23,469,China,490
+Coahuila de Zaragoza,,8268.0,1789 Saint-Denis Parkway,Acuña,936806643983.0,60,4,Mexico,491
+Stavropol,,23661.0,185 Mannheim Lane,Pjatigorsk,589377568313.0,80,408,Russian Federation,492
+Baja California Sur,,94239.0,184 Mandaluyong Street,La Paz,488425406814.0,60,288,Mexico,493
+Okayama,,46400.0,591 Sungai Petani Drive,Okayama,37247325001.0,50,376,Japan,494
+Boyac,,19489.0,656 Matamoros Drive,Sogamoso,17305839123.0,24,487,Colombia,495
+al-Daqahliya,,22358.0,775 Šostka Drive,Mit Ghamr,171973024401.0,29,337,Egypt,496
+West Bengali,,96203.0,1013 Tabuk Boulevard,Kanchrapara,158399646978.0,44,261,India,497
+Istanbul,,26101.0,319 Plock Parkway,Sultanbeyli,854259976812.0,97,504,Turkey,498
+Chimborazo,,63667.0,1954 Kowloon and New Kowloon Way,Ríobamba,898559280434.0,28,434,Ecuador,499
+Gansu,,98030.0,362 Rajkot Lane,Baiyin,962020153680.0,23,47,China,500
+Shandong,,72349.0,1060 Tandil Lane,Rizhao,211256301880.0,23,432,China,501
+England,,57197.0,1515 Korla Way,York,959467760895.0,102,589,United Kingdom,502
+Zufar,,50592.0,1416 San Juan Bautista Tuxtepec Avenue,Salala,144206758053.0,71,444,Oman,503
+Apulia,,86208.0,1 Valle de Santiago Avenue,Brindisi,465897838272.0,49,93,Italy,504
+East Java,,69504.0,519 Brescia Parkway,Madiun,793996678771.0,45,318,Indonesia,505
+Lubelskie,,16370.0,414 Mandaluyong Street,Lublin,52709222667.0,76,314,Poland,506
+West Bengali,,87687.0,1197 Sokoto Boulevard,Siliguri (Shiliguri),868602816371.0,44,478,India,507
+Nagano,,90797.0,496 Celaya Drive,Ueda,759586584889.0,50,552,Japan,508
+Illinois,,37469.0,786 Matsue Way,Joliet,111177206479.0,103,245,United States,509
+Central Luzon,,1570.0,48 Maracaíbo Place,Talavera,82671830126.0,75,519,Philippines,510
+Kalimantan Barat,,44816.0,1152 al-Qatif Lane,Pontianak,131370665218.0,45,412,Indonesia,511
+Eskisehir,,54674.0,1269 Ipoh Avenue,Eskisehir,402630109080.0,97,163,Turkey,512
+Andhra Pradesh,,75474.0,758 Korolev Parkway,Vijayawada,441628280920.0,44,568,India,513
+Bihar,,51369.0,1747 Rustenburg Place,Chapra,442673923363.0,44,110,India,514
+Volgograd,,19450.0,886 Tonghae Place,Kamyšin,711928348157.0,80,259,Russian Federation,515
+Heilongjiang,,39529.0,1574 Goiânia Boulevard,Suihua,59634255214.0,23,502,China,516
+Ontario,,35653.0,548 Uruapan Street,London,879347453467.0,102,312,United Kingdom,517
+,,65952.0,962 Tama Loop,Yangor,282667506728.0,65,583,Nauru,519
+Hubei,,35156.0,1778 Gijón Manor,Zaoyang,288910576761.0,23,594,China,520
+Coquimbo,,92568.0,568 Dhule (Dhulia) Loop,Coquimbo,602101369463.0,22,127,Chile,521
+Battambang,,32347.0,1768 Udine Loop,Battambang,448876499197.0,18,60,Cambodia,522
+Taipei,,400.0,608 Birgunj Parkway,Chungho,627425618482.0,92,116,Taiwan,523
+Sivas,,49806.0,680 A Coruña (La Coruña) Manor,Sivas,158326114853.0,97,482,Turkey,524
+Gumma,,61244.0,1949 Sanya Street,Isesaki,132100972047.0,50,224,Japan,525
+Khanh Hoa,,94707.0,617 Klerksdorp Place,Nha Trang,574973479129.0,105,366,Vietnam,526
+Liaoning,,41214.0,1993 0 Loop,Yingkou,25865528181.0,23,588,China,527
+Southern Tagalog,,81651.0,1176 Southend-on-Sea Manor,Santa Rosa,236679267178.0,75,458,Philippines,528
+Nghe An,,18043.0,600 Purnea (Purnia) Avenue,Vinh,638409958875.0,105,571,Vietnam,529
+West Java,,25972.0,1003 Qinhuangdao Street,Purwakarta,35533115997.0,45,419,Indonesia,530
+Friuli-Venezia Giuli,,95775.0,1986 Sivas Place,Udine,182059202712.0,49,551,Italy,531
+Florida,,31342.0,1427 Tabuk Place,Cape Coral,214756839122.0,103,101,United States,532
+Mogiljov,,35364.0,556 Asunción Way,Mogiljov,338244023543.0,13,339,Belarus,533
+Benguela,,35202.0,486 Ondo Parkway,Benguela,105882218332.0,4,67,Angola,534
+Andhra Pradesh,,40899.0,635 Brest Manor,Bhimavaram,80593242951.0,44,75,India,535
+Buenos Aires,,86760.0,166 Jinchang Street,Ezeiza,717566026669.0,6,165,Argentina,536
+Mie,,88408.0,958 Sagamihara Lane,Kuwana,427274926505.0,50,287,Japan,537
+Khanh Hoa,,79401.0,1817 Livorno Way,Cam Ranh,478380208348.0,105,100,Vietnam,538
+Shandong,,22813.0,1332 Gaziantep Lane,Binzhou,383353187467.0,23,80,China,539
+Uttar Pradesh,,67521.0,949 Allende Lane,Amroha,122981120653.0,44,24,India,540
+Chari-Baguirmi,,49250.0,195 Ilorin Street,NDjamna,8912935608.0,21,363,Chad,541
+Kang-won,,9750.0,193 Bhusawal Place,Tonghae,745267607502.0,86,539,South Korea,542
+Colorado,,79814.0,43 Vilnius Manor,Aurora,484500282381.0,103,42,United States,543
+Jilin,,69953.0,183 Haiphong Street,Baicheng,488600270038.0,23,46,China,544
+Carabobo,,33030.0,163 Augusta-Richmond County Loop,Valencia,754579047924.0,104,561,Venezuela,545
+Ruse,,13629.0,191 José Azueta Parkway,Ruse,932156667696.0,17,436,Bulgaria,546
+Toscana,,74568.0,379 Lublin Parkway,Livorno,921960450089.0,49,309,Italy,547
+Sumatera Selatan,,51309.0,1658 Cumaná Loop,Pangkal Pinang,784907335610.0,45,396,Indonesia,548
+Tadla-Azilal,,25866.0,454 Qinhuangdao Drive,Beni-Mellal,786270036240.0,62,68,Morocco,549
+São Paulo,,55676.0,1715 Okayama Street,São Bernardo do Campo,169352919175.0,15,485,Brazil,550
+Sumy,,15414.0,182 Nuku´alofa Drive,Konotop,426346224043.0,100,275,Ukraine,551
+Hainan,,5753.0,390 Wroclaw Way,Sanya,357593328658.0,23,462,China,552
+Ishikawa,,19151.0,1421 Quilmes Lane,Kanazawa,135407755975.0,50,260,Japan,553
+Central Luzon,,841.0,947 Tórshavn Place,Tarlac,50898428626.0,75,528,Philippines,554
+Galicia,,77642.0,1764 Jalib al-Shuyukh Parkway,Santiago de Compostela,84794532510.0,87,459,Spain,555
+Zhejiang,,39976.0,346 Cam Ranh Avenue,Zhoushan,978430786151.0,23,599,China,556
+Rio Grande do Sul,,26284.0,1407 Pachuca de Soto Place,Alvorada,380077794770.0,15,21,Brazil,557
+Zhejiang,,52234.0,904 Clarksville Drive,Haining,955349440539.0,23,193,China,558
+Vojvodina,,11892.0,1917 Kumbakonam Parkway,Novi Sad,698182547686.0,108,368,Yugoslavia,559
+Gujarat,,12905.0,1447 Imus Place,Rajkot,62127829280.0,44,426,India,560
+KwaZulu-Natal,,63022.0,1497 Fengshan Drive,Chatsworth,368738360376.0,85,112,South Africa,561
+England,,57380.0,869 Shikarpur Way,Southport,590764256785.0,102,496,United Kingdom,562
+Vilna,,47498.0,1059 Yuncheng Avenue,Vilnius,107092893983.0,56,570,Lithuania,563
+Dolnoslaskie,,97271.0,505 Madiun Boulevard,Wroclaw,970638808606.0,76,577,Poland,564
+al-Sharqiya,,22372.0,1741 Hoshiarpur Boulevard,Bilbays,855066328617.0,29,79,Egypt,565
+Buenos Aires,,40195.0,1229 Varanasi (Benares) Manor,Avellaneda,817740355461.0,6,43,Argentina,566
+Texas,,77464.0,1894 Boa Vista Way,Garland,239357986667.0,103,178,United States,567
+Sokoto & Kebbi & Zam,,93655.0,1342 Sharja Way,Sokoto,946114054231.0,69,488,Nigeria,568
+Bukarest,,10714.0,1342 Abha Boulevard,Bucuresti,997453607116.0,78,95,Romania,569
+Shandong,,44274.0,415 Pune Avenue,Xintai,203202500108.0,23,580,China,570
+Huánuco,,32515.0,1746 Faaa Way,Huánuco,863080561151.0,74,214,Peru,571
+Tokat,,52196.0,539 Hami Way,Tokat,525518075499.0,97,538,Turkey,572
+Moskova,,33224.0,1407 Surakarta Manor,Serpuhov,324346485054.0,80,466,Russian Federation,573
+Anzotegui,,15992.0,502 Mandi Bahauddin Parkway,Barcelona,618156722572.0,104,55,Venezuela,574
+Sichuan,,77397.0,1052 Pathankot Avenue,Leshan,128499386727.0,23,299,China,575
+Coahuila de Zaragoza,,37815.0,1351 Sousse Lane,Monclova,203804046132.0,60,341,Mexico,576
+Mazowieckie,,943.0,1501 Pangkal Pinang Avenue,Plock,770864062795.0,76,409,Poland,577
+Slaskie,,86587.0,1405 Hagonoy Avenue,Czestochowa,867287719310.0,76,133,Poland,578
+Qaraghandy,,95093.0,521 San Juan Bautista Tuxtepec Place,Zhezqazghan,844018348565.0,51,598,Kazakstan,579
+Tokyo-to,,33384.0,923 Tangail Boulevard,Akishima,315528269898.0,50,10,Japan,580
+Morelos,,89422.0,186 Skikda Lane,Cuernavaca,14465669789.0,60,131,Mexico,581
+Kaohsiung,,34750.0,1568 Celaya Parkway,Fengshan,278669994384.0,92,168,Taiwan,582
+Taipei,,98883.0,1489 Kakamigahara Lane,Tanshui,29341849811.0,92,526,Taiwan,583
+Campeche,,53829.0,1819 Alessandria Loop,Carmen,377633994405.0,60,103,Mexico,584
+Ninawa,,73605.0,1208 Tama Loop,Mosul,954786054144.0,47,344,Iraq,585
+Central Mindanao,,96115.0,951 Springs Lane,Iligan,165164761435.0,75,219,Philippines,586
+Guerrero,,64682.0,760 Miyakonojo Drive,José Azueta,294449058179.0,60,246,Mexico,587
+Hidalgo,,62703.0,966 Asunción Way,Huejutla de Reyes,995527378381.0,60,212,Mexico,588
+England,,22954.0,1584 Ljubertsy Lane,Southampton,285710089439.0,102,494,United Kingdom,589
+Banjul,,53446.0,247 Jining Parkway,Banjul,170115379190.0,37,54,Gambia,590
+Buenos Aires,,12664.0,773 Dallas Manor,Quilmes,914466027044.0,6,424,Argentina,591
+Nantou,,95179.0,1923 Stara Zagora Lane,Tsaotun,182178609211.0,92,546,Taiwan,592
+Guanajuato,,71102.0,1402 Zanzibar Boulevard,Celaya,387448063440.0,60,106,Mexico,593
+Shandong,,17381.0,1464 Kursk Parkway,Weifang,338758048786.0,23,574,China,594
+Loja,,22474.0,1074 Sanaa Parkway,Loja,154124128457.0,28,311,Ecuador,595
+al-Manama,,39414.0,1759 Niznekamsk Avenue,al-Manama,864392582257.0,11,14,Bahrain,596
+Minas Gerais,,1944.0,32 Liaocheng Way,Juiz de Fora,410877354933.0,15,248,Brazil,597
+Fejr,,14684.0,42 Fontana Avenue,Székesfehérvár,437829801725.0,43,512,Hungary,598
+California,,36693.0,1895 Zhezqazghan Drive,Garden Grove,137809746111.0,103,177,United States,599
+Inner Mongolia,,82580.0,1837 Kaduna Parkway,Jining,640843562301.0,23,241,China,600
+Liaoning,,36603.0,844 Bucuresti Place,Jinzhou,935952366111.0,23,242,China,601
+West Greece,,97661.0,1101 Bucuresti Boulevard,Patras,199514580428.0,39,401,Greece,602
+Piura,,52137.0,1103 Quilmes Boulevard,Sullana,644021380889.0,74,503,Peru,603
+Vaud,,61960.0,1331 Usak Boulevard,Lausanne,145308717464.0,91,296,Switzerland,604
+Heilongjiang,,27107.0,1325 Fukuyama Street,Tieli,288241215394.0,23,537,China,605

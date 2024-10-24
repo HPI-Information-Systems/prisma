@@ -149,7 +149,7 @@ public class KangEtNaughton extends TablePairMatcher {
         // Count occurrences of X, Y, and XY.
         Map<String, Integer> frequencyCounterX = new HashMap<>();
         Map<String, Integer> frequencyCounterY = new HashMap<>();
-        Map<List<String>, Integer> frequencyCounterXY = new HashMap<>();
+        Map<List<String>, Integer> frequencyCounterXY = new LinkedHashMap<>();
         for (int i = 0; i < total; i++) {
             frequencyCounterX.put(columnValuesX.get(i), frequencyCounterX.getOrDefault(columnValuesX.get(i), 0) + 1);
             frequencyCounterY.put(columnValuesY.get(i), frequencyCounterY.getOrDefault(columnValuesY.get(i), 0) + 1);
